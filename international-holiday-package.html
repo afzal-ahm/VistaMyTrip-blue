@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Holiday Packages – World Tours | Vista My Trip</title>
+<meta name="description" content="Explore the world with Vista My Trip — Bali, Dubai, Maldives, Thailand, Singapore, Vietnam, Europe & more. Book affordable international tour packages from India.">
+<link rel="icon" href="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ANNOUNCE -->
+<div class="announce">
+  🌏 <strong>International Packages:</strong> Bali from ₹39,999 · Dubai from ₹49,999 · Maldives from ₹59,999 &nbsp;·&nbsp;
+  <a href="contact.html">Enquire Now →</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'">
+    </a>
+    <div class="nav-links">
+      <a href="index.html"                         class="nav-link">Home</a>
+      <a href="holiday-package.html"               class="nav-link">🏔️ India Tours</a>
+      <a href="international-holiday-package.html" class="nav-link active">✈️ International</a>
+      <a href="weekend-getaways.html"              class="nav-link">🚗 Weekend Trips</a>
+      <a href="corporate-tours.html"               class="nav-link">💼 Corporate</a>
+      <a href="about-us.html"                      class="nav-link">About</a>
+      <a href="blog.html"                          class="nav-link">Blog</a>
+      <a href="contact.html"                       class="nav-link">Contact</a>
+    </div>
+    <div class="nav-end">
+      <a href="tel:+919220161414" class="nav-phone"><i class="fa-solid fa-phone"></i> +91-92-20-16-14-14</a>
+      <a href="contact.html" class="btn-red"><i class="fa-solid fa-paper-plane"></i> Free Quote</a>
+    </div>
+    <button class="burger-btn" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HAMBURGER DRAWER -->
+<div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true">
+  <div class="mob-drawer-backdrop" id="mobBackdrop"></div>
+  <div class="mob-drawer-panel">
+    <div class="mob-panel-head">
+      <a href="index.html" class="logo"><img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" style="height:42px;" onerror="this.style.display='none'"></a>
+      <button class="mob-close-btn" id="mobClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="mob-panel-links">
+      <a href="index.html"                         class="mob-panel-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="holiday-package.html"               class="mob-panel-link"><i class="fa-solid fa-mountain-sun"></i> India Tours</a>
+      <a href="international-holiday-package.html" class="mob-panel-link"><i class="fa-solid fa-earth-asia"></i> International</a>
+      <a href="weekend-getaways.html"              class="mob-panel-link"><i class="fa-solid fa-car"></i> Weekend Trips</a>
+      <a href="corporate-tours.html"               class="mob-panel-link"><i class="fa-solid fa-briefcase"></i> Corporate Tours</a>
+      <a href="about-us.html"                      class="mob-panel-link"><i class="fa-solid fa-circle-info"></i> About Us</a>
+      <a href="blog.html"                          class="mob-panel-link"><i class="fa-solid fa-newspaper"></i> Blog</a>
+      <a href="contact.html"                       class="mob-panel-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="mob-panel-cta">
+      <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> +91-92-20-16-14-14</a>
+      <a href="contact.html" class="btn-red"><i class="fa-solid fa-paper-plane"></i> Get Free Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&q=80');"></div>
+  <div class="page-hero-inner">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>International Packages</span>
+    </div>
+    <h1>🌏 International Holiday Packages</h1>
+    <p>Explore the world's most stunning destinations — crafted itineraries, visa assistance, and end-to-end support for a seamless international experience from India.</p>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-bar-inner">
+    <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All</button>
+    <button class="filter-chip"   onclick="filterPkgs('southeast-asia',this)">🌴 South East Asia</button>
+    <button class="filter-chip"   onclick="filterPkgs('middle-east',this)">🕌 Middle East</button>
+    <button class="filter-chip"   onclick="filterPkgs('europe',this)">🏰 Europe</button>
+    <button class="filter-chip"   onclick="filterPkgs('islands',this)">🏝️ Island Getaways</button>
+    <button class="filter-chip"   onclick="filterPkgs('asia',this)">🗾 East Asia</button>
+    <button class="filter-chip"   onclick="filterPkgs('honeymoon',this)">💕 Honeymoon</button>
+  </div>
+</div>
+
+<!-- DESTINATIONS OVERVIEW -->
+<section>
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag tn">🌏 Browse By Destination</div>
+        <h2 class="sec-title">Top International Destinations</h2>
+        <p class="sec-sub">From quick getaways to grand adventures — pick your dream destination</p>
+      </div>
+    </div>
+
+    <div class="region-grid">
+      <a href="packages-tour-international/bali.html" class="region-card">
+        <div class="rc-flag">🇮🇩</div><div class="rc-name">Bali</div><div class="rc-count">5 packages · From ₹39,999</div>
+      </a>
+      <a href="packages-tour-international/dubai.html" class="region-card">
+        <div class="rc-flag">🇦🇪</div><div class="rc-name">Dubai</div><div class="rc-count">6 packages · From ₹49,999</div>
+      </a>
+      <a href="packages-tour-international/maldives.html" class="region-card">
+        <div class="rc-flag">🇲🇻</div><div class="rc-name">Maldives</div><div class="rc-count">4 packages · From ₹59,999</div>
+      </a>
+      <a href="packages-tour-international/thailand.html" class="region-card">
+        <div class="rc-flag">🇹🇭</div><div class="rc-name">Thailand</div><div class="rc-count">5 packages · From ₹34,999</div>
+      </a>
+      <a href="packages-tour-international/singapore.html" class="region-card">
+        <div class="rc-flag">🇸🇬</div><div class="rc-name">Singapore</div><div class="rc-count">4 packages · From ₹44,999</div>
+      </a>
+      <a href="packages-tour-international/vietnam.html" class="region-card">
+        <div class="rc-flag">🇻🇳</div><div class="rc-name">Vietnam</div><div class="rc-count">3 packages · From ₹42,999</div>
+      </a>
+      <a href="packages-tour-international/europe.html" class="region-card">
+        <div class="rc-flag">🇪🇺</div><div class="rc-name">Europe</div><div class="rc-count">6 packages · From ₹1,15,000</div>
+      </a>
+      <a href="packages-tour-international/malaysia.html" class="region-card">
+        <div class="rc-flag">🇲🇾</div><div class="rc-name">Malaysia</div><div class="rc-count">3 packages · From ₹38,999</div>
+      </a>
+      <a href="packages-tour-international/bhutan.html" class="region-card">
+        <div class="rc-flag">🇧🇹</div><div class="rc-name">Bhutan</div><div class="rc-count">4 packages · From ₹29,999</div>
+      </a>
+      <a href="packages-tour-international/russia.html" class="region-card">
+        <div class="rc-flag">🇷🇺</div><div class="rc-name">Russia</div><div class="rc-count">2 packages · From ₹85,000</div>
+      </a>
+      <a href="packages-tour-international/baku.html" class="region-card">
+        <div class="rc-flag">🇦🇿</div><div class="rc-name">Baku</div><div class="rc-count">3 packages · From ₹55,000</div>
+      </a>
+      <a href="packages-tour-international/kazakhstan-tour-packages.html" class="region-card">
+        <div class="rc-flag">🇰🇿</div><div class="rc-name">Kazakhstan</div><div class="rc-count">2 packages · From ₹60,000</div>
+      </a>
+    </div>
+
+    <!-- Visa Note -->
+    <div class="visa-strip">
+      <i class="fa-solid fa-passport"></i>
+      <p>✅ We assist with <strong>Visa applications</strong> for all major destinations including Dubai, Thailand, Bali, Schengen (Europe) & more. <a href="contact.html" style="color:var(--red);font-weight:700;">Talk to our visa team →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ALL PACKAGES -->
+<section style="background:var(--light);">
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag tr">✈️ All Packages</div>
+        <h2 class="sec-title">International Tour Packages</h2>
+        <p class="sec-sub">All packages include flights/hotels/transfers + 24/7 support</p>
+      </div>
+    </div>
+    <div class="pkg-grid">
+
+      <!-- BALI -->
+      <a href="packages-tour-international/bali.html" class="pkg-card" data-pkg-cat="southeast-asia honeymoon islands">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500&q=80" alt="Bali" loading="lazy">
+          <div class="pkg-dur">5N / 6D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Bali – Island of the Gods</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Ubud · Seminyak · Uluwatu · Kuta</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> Visa on Arrival</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(512 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹39,999</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- DUBAI -->
+      <a href="packages-tour-international/dubai.html" class="pkg-card" data-pkg-cat="middle-east honeymoon">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=80" alt="Dubai" loading="lazy">
+          <div class="pkg-off">₹3,000 OFF</div><div class="pkg-dur">4N / 5D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Dubai – The City of Wonders</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Dubai City · Desert Safari · Burj Khalifa</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> Visa Assistance</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(438 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-old">₹52,999</div><div class="pkg-new">₹49,999</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- MALDIVES -->
+      <a href="packages-tour-international/maldives.html" class="pkg-card" data-pkg-cat="islands honeymoon">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=500&q=80" alt="Maldives" loading="lazy">
+          <div class="pkg-dur">4N / 5D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Maldives – Your Private Paradise</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> North Malé Atoll · Water Villas</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> Visa on Arrival</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(267 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹59,999</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- THAILAND -->
+      <a href="packages-tour-international/thailand.html" class="pkg-card" data-pkg-cat="southeast-asia">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=500&q=80" alt="Thailand" loading="lazy">
+          <div class="pkg-off">₹2,000 OFF</div><div class="pkg-dur">6N / 7D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Thailand – Land of Smiles</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Bangkok · Pattaya · Krabi · Phuket</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> Visa on Arrival</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(389 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-old">₹36,999</div><div class="pkg-new">₹34,999</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- SINGAPORE -->
+      <a href="packages-tour-international/singapore.html" class="pkg-card" data-pkg-cat="southeast-asia asia">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=500&q=80" alt="Singapore" loading="lazy">
+          <div class="pkg-dur">5N / 6D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Singapore – The Lion City</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Gardens by Bay · Sentosa · Marina Bay</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> e-Visa</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(341 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹44,999</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- VIETNAM -->
+      <a href="packages-tour-international/vietnam.html" class="pkg-card" data-pkg-cat="southeast-asia asia">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=500&q=80" alt="Vietnam" loading="lazy">
+          <div class="pkg-dur">6N / 7D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Vietnam – Hidden Gem of Asia</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Hanoi · Ha Long Bay · Da Nang · Ho Chi Minh</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.7</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> Visa on Arrival</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★☆</span><span class="pkg-rev">(198 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹42,999</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- EUROPE -->
+      <a href="packages-tour-international/europe.html" class="pkg-card" data-pkg-cat="europe">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=500&q=80" alt="Europe" loading="lazy">
+          <div class="pkg-off">Best Value</div><div class="pkg-dur">9N / 10D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Europe – Grand Tour of 5 Countries</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Paris · Rome · Amsterdam · Zurich · London</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> Schengen Visa</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(312 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹1,15,000</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- MALAYSIA -->
+      <a href="packages-tour-international/malaysia.html" class="pkg-card" data-pkg-cat="southeast-asia asia">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=500&q=80" alt="Malaysia" loading="lazy">
+          <div class="pkg-dur">5N / 6D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Malaysia – Truly Asia</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Kuala Lumpur · Genting · Langkawi</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.7</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> Visa Free</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★☆</span><span class="pkg-rev">(221 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹38,999</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- BHUTAN -->
+      <a href="packages-tour-international/bhutan.html" class="pkg-card" data-pkg-cat="asia">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Bhutan" loading="lazy">
+          <div class="pkg-dur">4N / 5D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Bhutan – The Last Shangri-La</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Thimphu · Paro · Punakha</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> Permit Incl.</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(175 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹29,999</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <!-- BAKU -->
+      <a href="packages-tour-international/baku.html" class="pkg-card" data-pkg-cat="middle-east europe">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=500&q=80" alt="Baku Azerbaijan" loading="lazy">
+          <div class="pkg-dur">5N / 6D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Baku Azerbaijan – Where East Meets West</div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Baku City · Gobustan · Gabala</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span><span><i class="fa-solid fa-plane"></i> Flights Incl.</span><span><i class="fa-solid fa-passport"></i> e-Visa</span></div>
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(192 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹55,000</div><div class="pkg-per">per person (twin sharing)</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section>
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag tn">🎁 What's Included</div>
+        <h2 class="sec-title">Every International Package Includes</h2>
+        <p class="sec-sub">Complete end-to-end service — nothing hidden, nothing extra</p>
+      </div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon wi-n"><i class="fa-solid fa-plane"></i></div><h3>Return Flights</h3><p>Comfortable economy-class flights from your nearest Indian airport — all included.</p></div>
+      <div class="why-card"><div class="why-icon wi-r"><i class="fa-solid fa-hotel"></i></div><h3>Hotel Stay</h3><p>Handpicked 3–5 star hotels with daily breakfast (and dinner where applicable).</p></div>
+      <div class="why-card"><div class="why-icon wi-g"><i class="fa-solid fa-passport"></i></div><h3>Visa Assistance</h3><p>Our team helps you with complete visa documentation and application for a stress-free process.</p></div>
+      <div class="why-card"><div class="why-icon wi-n"><i class="fa-solid fa-van-shuttle"></i></div><h3>Airport Transfers</h3><p>Comfortable AC vehicle pickups and drops at all airports and between destinations.</p></div>
+      <div class="why-card"><div class="why-icon wi-r"><i class="fa-solid fa-map-location-dot"></i></div><h3>Guided Sightseeing</h3><p>Expert English-speaking local guides at every major attraction and city.</p></div>
+      <div class="why-card"><div class="why-icon wi-g"><i class="fa-solid fa-headset"></i></div><h3>24/7 Support</h3><p>Dedicated travel manager available round the clock throughout your international trip.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="background:var(--navy);">
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag" style="background:rgba(247,202,46,.18);color:var(--gold);">⭐ Reviews</div>
+        <h2 class="sec-title" style="color:white;">International Travellers Love Us</h2>
+        <p class="sec-sub" style="color:rgba(255,255,255,.55);">Here's what our globe-trotters say</p>
+      </div>
+    </div>
+    <div class="review-grid">
+      <div class="review-card"><div class="rev-stars">★★★★★</div><p class="rev-text">"Booked our Bali honeymoon with Vista My Trip — every detail was perfect. The villa, the transfers, the sunset dinner. Couldn't have asked for more!"</p><div class="rev-author"><div class="rev-av">AM</div><div><div class="rev-name">Ananya & Mohit</div><div class="rev-trip">Bali Honeymoon · Feb 2025</div></div></div></div>
+      <div class="review-card"><div class="rev-stars">★★★★★</div><p class="rev-text">"Our Europe trip was flawlessly organised. 5 countries in 10 days — Paris, Rome, Zurich — and the team handled everything including the Schengen visa."</p><div class="rev-author"><div class="rev-av" style="background:var(--gold-dark);">SP</div><div><div class="rev-name">Sunita Patel</div><div class="rev-trip">Europe Grand Tour · Oct 2024</div></div></div></div>
+      <div class="review-card"><div class="rev-stars">★★★★★</div><p class="rev-text">"Dubai was on our bucket list for years. Vista My Trip made it affordable and magical — the desert safari, Burj Khalifa, everything was perfectly timed!"</p><div class="rev-author"><div class="rev-av" style="background:var(--navy-mid);">VK</div><div><div class="rev-name">Vivek Kumar</div><div class="rev-trip">Dubai Family Tour · Dec 2024</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <h2>Ready for Your <span>International Adventure?</span></h2>
+  <p>Get a personalised quote with flights, hotels, and visa assistance — all in one call.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Get Free Quote</a>
+    <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> +91-92-20-16-14-14</a>
+    <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="ft-brand">
+        <div class="logo"><img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'" style="height:38px;"><span>Vista My Trip</span></div>
+        <div class="ft-tagline">Premium Quality, Perfect Journey....</div>
+        <p>We craft unforgettable journeys across India and the world — tailored to your dreams, delivered with care.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/vistamytrips"  class="soc" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/vistamytrip"  class="soc" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@VistaMyTrip"   class="soc" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://x.com/vistamytrip"              class="soc" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/vistamytrip" class="soc" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/919220161414"             class="soc wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>India Tours</h4>
+        <div class="ft-links">
+          <a href="packages-tour-india/explore-kashmir.html"><i class="fa-solid fa-chevron-right"></i>Kashmir</a>
+          <a href="packages-tour-india/ladakh.html"><i class="fa-solid fa-chevron-right"></i>Ladakh</a>
+          <a href="packages-tour-india/kerala.html"><i class="fa-solid fa-chevron-right"></i>Kerala</a>
+          <a href="packages-tour-india/rajasthan.html"><i class="fa-solid fa-chevron-right"></i>Rajasthan</a>
+          <a href="packages-tour-india/spiti-valley.html"><i class="fa-solid fa-chevron-right"></i>Spiti Valley</a>
+          <a href="packages-tour-india/andaman.html"><i class="fa-solid fa-chevron-right"></i>Andaman</a>
+          <a href="packages-tour-india/chardham-yatra.html"><i class="fa-solid fa-chevron-right"></i>Chardham Yatra</a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>International</h4>
+        <div class="ft-links">
+          <a href="packages-tour-international/bali.html"><i class="fa-solid fa-chevron-right"></i>Bali</a>
+          <a href="packages-tour-international/dubai.html"><i class="fa-solid fa-chevron-right"></i>Dubai</a>
+          <a href="packages-tour-international/maldives.html"><i class="fa-solid fa-chevron-right"></i>Maldives</a>
+          <a href="packages-tour-international/thailand.html"><i class="fa-solid fa-chevron-right"></i>Thailand</a>
+          <a href="packages-tour-international/singapore.html"><i class="fa-solid fa-chevron-right"></i>Singapore</a>
+          <a href="packages-tour-international/europe.html"><i class="fa-solid fa-chevron-right"></i>Europe</a>
+          <a href="packages-tour-international/vietnam.html"><i class="fa-solid fa-chevron-right"></i>Vietnam</a>
+          <a href="packages-tour-international/malaysia.html"><i class="fa-solid fa-chevron-right"></i>Malaysia</a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Contact Us</h4>
+        <div class="c-list">
+          <div class="c-item"><i class="fa-solid fa-phone"></i><span>+91-92-20-16-14-14</span></div>
+          <div class="c-item"><i class="fa-brands fa-whatsapp"></i><span>+91-92-20-16-14-14</span></div>
+          <div class="c-item"><i class="fa-solid fa-envelope"></i><span>info@vistamytrip.com</span></div>
+          <div class="c-item"><i class="fa-solid fa-location-dot"></i><span>New Delhi, India</span></div>
+        </div>
+        <h4 style="margin-top:22px;">Quick Links</h4>
+        <div class="ft-links" style="margin-top:10px;">
+          <a href="about-us.html"><i class="fa-solid fa-chevron-right"></i>About Us</a>
+          <a href="blog.html"><i class="fa-solid fa-chevron-right"></i>Travel Blog</a>
+          <a href="privacy-policy.html"><i class="fa-solid fa-chevron-right"></i>Privacy Policy</a>
+          <a href="terms-and-conditions.html"><i class="fa-solid fa-chevron-right"></i>Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>© 2025 Vista My Trip Pvt. Ltd. All rights reserved. | CIN: U63090DL2023PTC417352</p>
+      <div class="ft-blinks">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms</a>
+        <a href="cancelation-refund-policy.html">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919220161414" class="wa-fab" target="_blank" title="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
