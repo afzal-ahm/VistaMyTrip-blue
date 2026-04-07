@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Blog | Tips, Guides & Inspiration | Vista My Trip</title>
+<meta name="description" content="Explore Vista My Trip's travel blog — destination guides, packing tips, budget travel advice, and travel inspiration for India and international destinations.">
+<link rel="icon" href="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ── PAGE-SPECIFIC BLOG STYLES ── */
+.blog-hero {
+  background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid));
+  padding: 80px 24px 70px; text-align: center; position: relative; overflow: hidden;
+}
+.blog-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&q=60') center/cover;
+  opacity: 0.1;
+}
+.blog-hero-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+.blog-hero h1 { font-family: var(--fd); font-size: clamp(30px,5vw,50px); font-weight: 700; color: white; margin-bottom: 14px; }
+.blog-hero h1 span { color: var(--gold); }
+.blog-hero p { font-size: 16px; color: rgba(255,255,255,.7); line-height: 1.7; margin-bottom: 30px; }
+.blog-breadcrumb { display: flex; align-items: center; gap: 8px; justify-content: center; margin-bottom: 20px; font-size: 13px; color: rgba(255,255,255,.5); }
+.blog-breadcrumb a { color: rgba(255,255,255,.6); }
+.blog-breadcrumb i { font-size: 9px; }
+
+/* Search bar */
+.blog-search-wrap {
+  max-width: 500px; margin: 0 auto;
+  background: white; border-radius: var(--r-md); padding: 6px 6px 6px 18px;
+  display: flex; align-items: center; gap: 10px; box-shadow: var(--sh-lg);
+}
+.blog-search-wrap input {
+  flex: 1; border: none; outline: none; font-size: 14px; font-family: var(--fb);
+  color: var(--text); background: transparent;
+}
+.blog-search-wrap button {
+  background: var(--red); color: white; border: none; padding: 10px 20px;
+  border-radius: var(--r-sm); font-size: 13.5px; font-weight: 700;
+  cursor: pointer; display: flex; align-items: center; gap: 7px; transition: var(--ease);
+}
+.blog-search-wrap button:hover { background: var(--red-dark); }
+
+/* Category filter */
+.blog-filter { background: white; border-bottom: 1px solid var(--border); padding: 0 24px; position: sticky; top: 80px; z-index: 99; }
+.blog-filter-inner { max-width: 1280px; margin: 0 auto; display: flex; gap: 4px; overflow-x: auto; padding: 12px 0; }
+.blog-filter-inner::-webkit-scrollbar { height: 0; }
+.bcat-chip {
+  padding: 8px 18px; border-radius: 50px; font-size: 13px; font-weight: 600;
+  color: var(--muted); background: var(--off); border: 1.5px solid var(--border);
+  cursor: pointer; transition: var(--ease); white-space: nowrap; display: flex; align-items: center; gap: 6px;
+}
+.bcat-chip:hover, .bcat-chip.on { background: var(--navy); color: white; border-color: var(--navy); }
+
+/* Featured post */
+.blog-featured { background: var(--off); }
+.featured-card {
+  display: grid; grid-template-columns: 1.2fr 1fr; border-radius: var(--r-lg);
+  overflow: hidden; box-shadow: var(--sh-lg); background: white;
+  border: 1.5px solid var(--border);
+}
+.featured-img { position: relative; min-height: 380px; }
+.featured-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.featured-badge {
+  position: absolute; top: 18px; left: 18px;
+  background: var(--red); color: white; font-size: 11px; font-weight: 800;
+  padding: 5px 12px; border-radius: 50px; letter-spacing: .06em; text-transform: uppercase;
+}
+.featured-body { padding: 40px 36px; display: flex; flex-direction: column; justify-content: center; }
+.featured-cat {
+  font-size: 11px; font-weight: 800; color: var(--red); letter-spacing: .1em;
+  text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 7px;
+}
+.featured-body h2 { font-family: var(--fd); font-size: clamp(22px,2.5vw,30px); font-weight: 700; color: var(--navy); margin-bottom: 14px; line-height: 1.3; }
+.featured-body p { font-size: 14.5px; color: var(--muted); line-height: 1.75; margin-bottom: 22px; }
+.featured-meta { display: flex; align-items: center; gap: 16px; font-size: 12.5px; color: var(--muted); margin-bottom: 24px; }
+.featured-meta i { color: var(--red); }
+.read-more {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--navy); color: white; padding: 11px 22px;
+  border-radius: var(--r-sm); font-size: 13.5px; font-weight: 700;
+  transition: var(--ease); width: fit-content;
+}
+.read-more:hover { background: var(--red); transform: translateY(-2px); }
+
+/* Blog grid */
+.blog-section { background: white; }
+.blog-layout { display: grid; grid-template-columns: 1fr 320px; gap: 44px; }
+.blog-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
+.blog-card {
+  background: white; border-radius: var(--r-md); overflow: hidden;
+  border: 1.5px solid var(--border); transition: var(--ease); display: flex; flex-direction: column;
+}
+.blog-card:hover { box-shadow: var(--sh-lg); transform: translateY(-4px); border-color: transparent; }
+.blog-card-img { position: relative; height: 200px; overflow: hidden; }
+.blog-card-img img { width: 100%; height: 100%; object-fit: cover; transition: var(--ease); }
+.blog-card:hover .blog-card-img img { transform: scale(1.06); }
+.blog-cat-tag {
+  position: absolute; top: 12px; left: 12px;
+  background: var(--navy); color: white; font-size: 10.5px; font-weight: 700;
+  padding: 4px 11px; border-radius: 50px; text-transform: uppercase; letter-spacing: .05em;
+}
+.blog-card-body { padding: 20px 18px; flex: 1; display: flex; flex-direction: column; }
+.blog-card-meta { display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+.blog-card-meta i { color: var(--red); font-size: 11px; }
+.blog-card h3 { font-family: var(--fd); font-size: 17px; font-weight: 700; color: var(--navy); line-height: 1.35; margin-bottom: 10px; }
+.blog-card p { font-size: 13.5px; color: var(--muted); line-height: 1.65; flex: 1; }
+.blog-card-footer {
+  margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.blog-read-link {
+  font-size: 13px; font-weight: 700; color: var(--navy);
+  display: flex; align-items: center; gap: 5px; transition: var(--ease);
+}
+.blog-read-link:hover { color: var(--red); }
+.blog-card-time { font-size: 12px; color: var(--muted); }
+
+/* Sidebar */
+.blog-sidebar { display: flex; flex-direction: column; gap: 28px; }
+.sidebar-widget {
+  background: var(--off); border-radius: var(--r-md); padding: 24px;
+  border: 1.5px solid var(--border);
+}
+.sw-title {
+  font-family: var(--fd); font-size: 17px; font-weight: 700; color: var(--navy);
+  margin-bottom: 18px; padding-bottom: 12px; border-bottom: 2px solid var(--border);
+  display: flex; align-items: center; gap: 8px;
+}
+.sw-title i { color: var(--red); }
+
+/* Popular posts */
+.pop-post { display: flex; gap: 12px; margin-bottom: 16px; }
+.pop-post:last-child { margin-bottom: 0; }
+.pop-post-img { width: 72px; height: 72px; border-radius: var(--r-sm); object-fit: cover; flex-shrink: 0; }
+.pop-post-text h4 { font-size: 13.5px; font-weight: 700; color: var(--navy); line-height: 1.35; margin-bottom: 4px; }
+.pop-post-text span { font-size: 12px; color: var(--muted); }
+
+/* Categories list */
+.cat-list { display: flex; flex-direction: column; gap: 10px; }
+.cat-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 12px; background: white; border-radius: var(--r-sm);
+  border: 1.5px solid var(--border); cursor: pointer; transition: var(--ease);
+}
+.cat-row:hover { background: var(--navy); border-color: var(--navy); color: white; }
+.cat-row:hover .cat-count { background: rgba(255,255,255,.2); color: white; }
+.cat-name { font-size: 13.5px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.cat-count { background: var(--navy-light); color: var(--navy); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 50px; }
+
+/* Tags */
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+.blog-tag {
+  background: white; border: 1.5px solid var(--border); color: var(--muted);
+  font-size: 12.5px; font-weight: 600; padding: 5px 13px; border-radius: 50px;
+  cursor: pointer; transition: var(--ease);
+}
+.blog-tag:hover { background: var(--navy); color: white; border-color: var(--navy); }
+
+/* Newsletter widget */
+.nl-widget { background: linear-gradient(135deg, var(--navy-dark), var(--navy)); }
+.nl-widget .sw-title { color: white; border-color: rgba(255,255,255,.15); }
+.nl-widget p { font-size: 13.5px; color: rgba(255,255,255,.65); margin-bottom: 16px; line-height: 1.6; }
+.nl-form { display: flex; flex-direction: column; gap: 10px; }
+.nl-form input {
+  border: 1.5px solid rgba(255,255,255,.2); border-radius: var(--r-sm);
+  padding: 11px 14px; font-size: 14px; font-family: var(--fb);
+  color: white; background: rgba(255,255,255,.08); outline: none;
+}
+.nl-form input::placeholder { color: rgba(255,255,255,.4); }
+.nl-form input:focus { border-color: var(--gold); }
+.nl-form button {
+  background: var(--gold); color: var(--navy); border: none; padding: 11px;
+  border-radius: var(--r-sm); font-size: 14px; font-weight: 800;
+  cursor: pointer; transition: var(--ease); font-family: var(--fb);
+}
+.nl-form button:hover { background: var(--gold-dark); color: white; }
+
+/* Pagination */
+.pagination { display: flex; align-items: center; gap: 8px; justify-content: center; margin-top: 40px; }
+.page-btn {
+  width: 40px; height: 40px; border-radius: var(--r-sm); display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700; cursor: pointer; transition: var(--ease);
+  background: var(--off); border: 1.5px solid var(--border); color: var(--text);
+}
+.page-btn:hover, .page-btn.on { background: var(--navy); color: white; border-color: var(--navy); }
+
+@media (max-width: 1024px) {
+  .blog-layout { grid-template-columns: 1fr; }
+  .blog-grid { grid-template-columns: repeat(2,1fr); }
+  .featured-card { grid-template-columns: 1fr; }
+  .featured-img { min-height: 280px; }
+}
+@media (max-width: 600px) {
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-filter { top: 58px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCE -->
+<div class="announce">
+  📖 <strong>New Post:</strong> Best Time to Visit Kashmir — Complete 2025 Guide &nbsp;·&nbsp;
+  <a href="#">Read Now →</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="site-nav" id="navbar-placeholder"></nav>
+<div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
+
+<!-- HERO -->
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Blog</span>
+    </div>
+    <h1>Travel Tips, Guides &<br><span>Inspiration</span></h1>
+    <p>Explore destination guides, packing tips, budget travel hacks, and insider advice from our team of travel experts.</p>
+    <div class="blog-search-wrap">
+      <input type="text" placeholder="Search destinations, tips, guides…">
+      <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORY FILTER -->
+<div class="blog-filter">
+  <div class="blog-filter-inner">
+    <button class="bcat-chip on">🌍 All Posts</button>
+    <button class="bcat-chip">🏔️ India Travel</button>
+    <button class="bcat-chip">✈️ International</button>
+    <button class="bcat-chip">🏖️ Beach & Islands</button>
+    <button class="bcat-chip">🏕️ Adventure</button>
+    <button class="bcat-chip">💑 Honeymoon</button>
+    <button class="bcat-chip">👨‍👩‍👧 Family Travel</button>
+    <button class="bcat-chip">💡 Travel Tips</button>
+    <button class="bcat-chip">💰 Budget Travel</button>
+  </div>
+</div>
+
+<!-- FEATURED POST -->
+<section class="blog-featured">
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag tn">⭐ Featured</div>
+        <h2 class="sec-title">Editor's Pick</h2>
+      </div>
+    </div>
+    <div class="featured-card" style="margin-top:32px;">
+      <div class="featured-img">
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80" alt="Kashmir Travel Guide">
+        <div class="featured-badge">⭐ Featured</div>
+      </div>
+      <div class="featured-body">
+        <div class="featured-cat"><i class="fa-solid fa-mountain-sun"></i> India Travel</div>
+        <h2>The Ultimate Kashmir Travel Guide 2025: Everything You Need to Know</h2>
+        <p>From the pristine Dal Lake to the snow-laden Gulmarg slopes — Kashmir is India's crowning jewel. This complete guide covers the best time to visit, top attractions, accommodation tips, and curated itineraries for every kind of traveller.</p>
+        <div class="featured-meta">
+          <span><i class="fa-regular fa-calendar"></i> March 15, 2025</span>
+          <span><i class="fa-regular fa-clock"></i> 12 min read</span>
+          <span><i class="fa-regular fa-eye"></i> 18,420 views</span>
+        </div>
+        <a href="#" class="read-more">Read Full Guide <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG GRID + SIDEBAR -->
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-layout">
+      <!-- Main posts -->
+      <div>
+        <div class="sec-hd" style="margin-bottom:28px;">
+          <div>
+            <div class="sec-tag tn">📰 Latest Posts</div>
+            <h2 class="sec-title">Recent Articles</h2>
+          </div>
+        </div>
+        <div class="blog-grid">
+
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1527838832700-5059252407fa?w=500&q=70" alt="Ladakh">
+              <div class="blog-cat-tag">Adventure</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><i class="fa-regular fa-calendar"></i> Mar 10, 2025 <i class="fa-regular fa-clock"></i> 9 min</div>
+              <h3>Ladakh in 7 Days: The Perfect First-Timer's Itinerary</h3>
+              <p>Plan your Ladakh adventure with this day-by-day itinerary covering Pangong, Nubra Valley, and Magnetic Hill without missing a thing.</p>
+              <div class="blog-card-footer">
+                <a href="#" class="blog-read-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                <span class="blog-card-time">9 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&q=70" alt="Kerala">
+              <div class="blog-cat-tag">India Travel</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><i class="fa-regular fa-calendar"></i> Mar 5, 2025 <i class="fa-regular fa-clock"></i> 7 min</div>
+              <h3>Kerala Backwaters: A Complete Guide to Alleppey Houseboats</h3>
+              <p>Everything you need to know about booking, what to expect on board, the best routes, and tips for making the most of your houseboat stay.</p>
+              <div class="blog-card-footer">
+                <a href="#" class="blog-read-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                <span class="blog-card-time">7 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=70" alt="Dubai">
+              <div class="blog-cat-tag">International</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><i class="fa-regular fa-calendar"></i> Feb 28, 2025 <i class="fa-regular fa-clock"></i> 8 min</div>
+              <h3>Dubai on a Budget: 15 Things to Do Without Breaking the Bank</h3>
+              <p>Dubai doesn't have to be expensive. Discover free attractions, affordable dining, and smart hacks that let you enjoy this glamorous city for less.</p>
+              <div class="blog-card-footer">
+                <a href="#" class="blog-read-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                <span class="blog-card-time">8 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=500&q=70" alt="Rajasthan">
+              <div class="blog-cat-tag">India Travel</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><i class="fa-regular fa-calendar"></i> Feb 20, 2025 <i class="fa-regular fa-clock"></i> 10 min</div>
+              <h3>The Royal Rajasthan Circuit: Jaipur, Jodhpur & Udaipur in 10 Days</h3>
+              <p>The Golden Triangle of Rajasthan awaits — forts, palaces, desert safaris, and royal cuisine all in one epic two-week journey.</p>
+              <div class="blog-card-footer">
+                <a href="#" class="blog-read-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                <span class="blog-card-time">10 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500&q=70" alt="Bali">
+              <div class="blog-cat-tag">International</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><i class="fa-regular fa-calendar"></i> Feb 15, 2025 <i class="fa-regular fa-clock"></i> 6 min</div>
+              <h3>Bali Honeymoon Guide: Most Romantic Spots & Stays in 2025</h3>
+              <p>Planning a Bali honeymoon? From cliff-top villas in Uluwatu to misty rice terraces in Ubud — here's everything couples need to know.</p>
+              <div class="blog-card-footer">
+                <a href="#" class="blog-read-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                <span class="blog-card-time">6 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=70" alt="Spiti Valley">
+              <div class="blog-cat-tag">Adventure</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><i class="fa-regular fa-calendar"></i> Feb 8, 2025 <i class="fa-regular fa-clock"></i> 11 min</div>
+              <h3>Spiti Valley Road Trip: Routes, Permits, Stays & Best Season</h3>
+              <p>The road to Spiti is not just a journey — it's a transformation. Plan your high-altitude adventure with this comprehensive guide for 2025.</p>
+              <div class="blog-card-footer">
+                <a href="#" class="blog-read-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                <span class="blog-card-time">11 min read</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Pagination -->
+        <div class="pagination">
+          <div class="page-btn on">1</div>
+          <div class="page-btn">2</div>
+          <div class="page-btn">3</div>
+          <div class="page-btn">4</div>
+          <div class="page-btn"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="blog-sidebar">
+        <!-- Newsletter -->
+        <div class="sidebar-widget nl-widget">
+          <div class="sw-title" style="color:white;"><i class="fa-solid fa-envelope" style="color:var(--gold)"></i> Newsletter</div>
+          <p>Get travel tips, exclusive deals, and new itineraries delivered to your inbox every week.</p>
+          <div class="nl-form">
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe Now ✉️</button>
+          </div>
+        </div>
+
+        <!-- Popular posts -->
+        <div class="sidebar-widget">
+          <div class="sw-title"><i class="fa-solid fa-fire"></i> Popular Posts</div>
+          <div class="pop-post">
+            <img class="pop-post-img" src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=200&q=60" alt="Kashmir">
+            <div class="pop-post-text">
+              <h4>Best Time to Visit Kashmir: Season-by-Season Guide</h4>
+              <span><i class="fa-regular fa-eye"></i> 22,150 views</span>
+            </div>
+          </div>
+          <div class="pop-post">
+            <img class="pop-post-img" src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=200&q=60" alt="Goa">
+            <div class="pop-post-text">
+              <h4>North Goa vs South Goa: Which Should You Choose?</h4>
+              <span><i class="fa-regular fa-eye"></i> 18,430 views</span>
+            </div>
+          </div>
+          <div class="pop-post">
+            <img class="pop-post-img" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=200&q=60" alt="Kerala">
+            <div class="pop-post-text">
+              <h4>Kerala 7-Day Itinerary: Kochi, Munnar & Alleppey</h4>
+              <span><i class="fa-regular fa-eye"></i> 15,820 views</span>
+            </div>
+          </div>
+          <div class="pop-post">
+            <img class="pop-post-img" src="https://images.unsplash.com/photo-1527838832700-5059252407fa?w=200&q=60" alt="Ladakh">
+            <div class="pop-post-text">
+              <h4>Ladakh Packing List: What to Carry for High-Altitude Travel</h4>
+              <span><i class="fa-regular fa-eye"></i> 12,660 views</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="sidebar-widget">
+          <div class="sw-title"><i class="fa-solid fa-folder"></i> Categories</div>
+          <div class="cat-list">
+            <div class="cat-row"><span class="cat-name">🏔️ India Travel</span><span class="cat-count">24</span></div>
+            <div class="cat-row"><span class="cat-name">✈️ International</span><span class="cat-count">18</span></div>
+            <div class="cat-row"><span class="cat-name">🏕️ Adventure</span><span class="cat-count">12</span></div>
+            <div class="cat-row"><span class="cat-name">💑 Honeymoon</span><span class="cat-count">9</span></div>
+            <div class="cat-row"><span class="cat-name">💡 Travel Tips</span><span class="cat-count">15</span></div>
+            <div class="cat-row"><span class="cat-name">💰 Budget Travel</span><span class="cat-count">11</span></div>
+            <div class="cat-row"><span class="cat-name">👨‍👩‍👧 Family Travel</span><span class="cat-count">8</span></div>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="sidebar-widget">
+          <div class="sw-title"><i class="fa-solid fa-tags"></i> Popular Tags</div>
+          <div class="tag-cloud">
+            <span class="blog-tag">Kashmir</span>
+            <span class="blog-tag">Ladakh</span>
+            <span class="blog-tag">Kerala</span>
+            <span class="blog-tag">Goa</span>
+            <span class="blog-tag">Bali</span>
+            <span class="blog-tag">Dubai</span>
+            <span class="blog-tag">Rajasthan</span>
+            <span class="blog-tag">Honeymoon</span>
+            <span class="blog-tag">Budget Travel</span>
+            <span class="blog-tag">Trekking</span>
+            <span class="blog-tag">Andaman</span>
+            <span class="blog-tag">Manali</span>
+            <span class="blog-tag">Spiti</span>
+            <span class="blog-tag">Chardham</span>
+          </div>
+        </div>
+
+        <!-- Quick enquiry -->
+        <div class="sidebar-widget" style="background:var(--navy-light);border-color:var(--navy-mid);">
+          <div class="sw-title">📋 Plan a Trip</div>
+          <p style="font-size:13.5px;color:var(--muted);margin-bottom:16px;">Inspired by what you read? Let us build your perfect itinerary.</p>
+          <a href="contact.html" class="btn-red" style="width:100%;justify-content:center;">Get a Free Quote</a>
+          <a href="tel:+919220161414" class="btn-navy" style="width:100%;justify-content:center;margin-top:10px;"><i class="fa-solid fa-phone"></i> +91-92-20-16-14-14</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <h2>Inspired to <span>Explore?</span></h2>
+  <p>Let Vista My Trip turn your travel inspiration into a real, unforgettable journey.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Plan My Trip</a>
+    <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+
+<script src="components.js"></script>
+<script src="main.js"></script>
+<script>
+  // Category filter
+  document.querySelectorAll('.bcat-chip').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.bcat-chip').forEach(b => b.classList.remove('on'));
+      this.classList.add('on');
+    });
+  });
+</script>
+</body>
+</html>

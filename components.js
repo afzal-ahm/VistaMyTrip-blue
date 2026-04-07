@@ -118,7 +118,7 @@ const VISTA_FOOTER = `
       </div>
     </div>
     <div class="ft-bottom">
-      <p>© 2025 Vista My Trip Pvt. Ltd. All rights reserved. | CIN: U63090DL2023PTC417352</p>
+      <p>© ${new Date().getFullYear()} Vista My Trip Pvt. Ltd. All rights reserved. | CIN: U63090DL2023PTC417352</p>
       <div class="ft-blinks">
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-and-conditions.html">Terms</a>
