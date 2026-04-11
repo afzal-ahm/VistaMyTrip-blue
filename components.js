@@ -165,6 +165,40 @@ const VISTA_FOOTER = `
   const mobEl = document.getElementById('mobDrawer');
   if (mobEl) mobEl.innerHTML = VISTA_MOB_NAVBAR;
 
+  /* ── Drawer Logic ──────────────── */
+  const burgerBtn   = document.getElementById('burgerBtn');
+  const mobDrawer   = document.getElementById('mobDrawer');
+  const mobClose    = document.getElementById('mobClose');
+  const mobBackdrop = document.getElementById('mobBackdrop');
+
+  function openDrawer() {
+    if (!mobDrawer) return;
+    mobDrawer.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    burgerBtn && burgerBtn.classList.add('open');
+  }
+
+  function closeDrawer() {
+    if (!mobDrawer) return;
+    mobDrawer.classList.remove('open');
+    document.body.style.overflow = '';
+    burgerBtn && burgerBtn.classList.remove('open');
+  }
+
+  burgerBtn   && burgerBtn.addEventListener('click', openDrawer);
+  mobClose    && mobClose.addEventListener('click', closeDrawer);
+  mobBackdrop && mobBackdrop.addEventListener('click', closeDrawer);
+
+  // Close on ESC key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeDrawer();
+  });
+
+  // Close on any drawer link click
+  document.querySelectorAll('.mob-panel-link').forEach(function (link) {
+    link.addEventListener('click', closeDrawer);
+  });
+
 
 
   // Set active nav link based on current filename
