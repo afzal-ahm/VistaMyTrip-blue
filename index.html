@@ -11,6 +11,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<style>
+.review-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rev-text {
+  flex-grow: 1;
+}
+
+.rev-author {
+  margin-top: auto;
+}
+.review-card {
+  padding: 24px;
+}
+</style>
 </head>
 <body>
 
@@ -128,34 +146,34 @@
       <button class="tab"     onclick="filterDest('weekend',this)">🚗 Weekend</button>
     </div>
     <div class="dest-grid" id="destGrid">
-      <a href="#" class="dest-card" data-cat="india">
+      <a href="packages-tour-india/explore-kashmir.html" class="dest-card" data-cat="india">
         <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400&q=80" alt="Kashmir" loading="lazy">
         <div class="dest-grad"></div>
         <div class="dest-body"><div class="dest-name">Kashmir</div><div class="dest-pkgs">7 packages</div></div>
         <div class="dest-badge">🔥 Trending</div>
       </a>
-      <a href="#" class="dest-card" data-cat="india">
+      <a href="packages-tour-india/ladakh.html" class="dest-card" data-cat="india">
         <img src="img/destination/ladakh.webp" alt="Ladakh" loading="lazy">
         <div class="dest-grad"></div>
         <div class="dest-body"><div class="dest-name">Ladakh</div><div class="dest-pkgs">8 packages</div></div>
       </a>
-      <a href="#" class="dest-card" data-cat="india">
+      <a href="packages-tour-india/kerala.html" class="dest-card" data-cat="india">
         <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=400&q=80" alt="Kerala" loading="lazy">
         <div class="dest-grad"></div>
         <div class="dest-body"><div class="dest-name">Kerala</div><div class="dest-pkgs">10 packages</div></div>
         <div class="dest-badge gb">⭐ Popular</div>
       </a>
-      <a href="#" class="dest-card" data-cat="india weekend">
+      <a href="packages-tour-india/goa.html" class="dest-card" data-cat="india weekend">
         <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400&q=80" alt="Goa" loading="lazy">
         <div class="dest-grad"></div>
         <div class="dest-body"><div class="dest-name">Goa</div><div class="dest-pkgs">1 package</div></div>
       </a>
-      <a href="#" class="dest-card" data-cat="india">
+      <a href="packages-tour-india/rajasthan.html" class="dest-card" data-cat="india">
         <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=400&q=80" alt="Rajasthan" loading="lazy">
         <div class="dest-grad"></div>
         <div class="dest-body"><div class="dest-name">Rajasthan</div><div class="dest-pkgs">8 packages</div></div>
       </a>
-      <a href="#" class="dest-card" data-cat="india">
+      <a href="packages-tour-india/spiti-valley.html" class="dest-card" data-cat="india">
         <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=400&q=80" alt="Spiti Valley" loading="lazy">
         <div class="dest-grad"></div>
         <div class="dest-body"><div class="dest-name">Spiti Valley</div><div class="dest-pkgs">2 packages</div></div>
@@ -336,6 +354,10 @@
         <p class="sec-sub">Find the perfect trip that matches your vibe</p>
       </div>
     </div>
+    <div class="theme-controls">
+      <button onclick="scrollThemes(-1)">◀</button>
+      <button onclick="scrollThemes(1)">▶</button>
+    </div>
     <div class="theme-grid">
       <a href="package-theme/honeymoon-package.html" class="theme-card"><img src="img/package/honeymoon.jpg" alt="Honeymoon" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">💕</span><span class="theme-nm">Honeymoon</span></div></a>
       <a href="package-theme/adventure-package.html" class="theme-card"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&q=80" alt="Adventure" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">🧗</span><span class="theme-nm">Adventure</span></div></a>
@@ -436,6 +458,7 @@
 <div id="footer-placeholder"></div>
 
 <script src="main.js"></script>
- <script src="components.js"></script>
+<script src="components.js"></script>
+
 </body>
 </html>

@@ -5,11 +5,11 @@ const VISTA_NAVBAR = `
 <!-- NAVBAR -->
 
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
+    <a href="/" class="nav-logo">
       <img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'">
     </a>
     <div class="nav-links">
-      <a href="index.html"                         class="nav-link">Home</a>
+      <a href="/"                         class="nav-link">Home</a>
       <a href="holiday-package.html"               class="nav-link active">🏔️ India Tours</a>
       <a href="international-holiday-package.html" class="nav-link">✈️ International</a>
       <a href="weekend-getaways.html"              class="nav-link">🚗 Weekend Trips</a>
@@ -19,25 +19,25 @@ const VISTA_NAVBAR = `
       <a href="contact.html"                       class="nav-link">Contact</a>
     </div>
     <div class="nav-end">
-      <a href="tel:+919220161414" class="nav-phone"><i class="fa-solid fa-phone"></i> +91-92-20-16-14-14</a>
+      <a href="tel:+919220161414" class="nav-phone"><i class="fa-solid fa-phone"></i> +91 92201 61414</a>
       <a href="contact.html" class="btn-red"><i class="fa-solid fa-paper-plane"></i> Free Quote</a>
     </div>
     <button class="burger-btn" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
   `;
 
-  const VISTA_MOB_NAVBAR = `
+const VISTA_MOB_NAVBAR = `
 
 <!-- HAMBURGER DRAWER -->
 
   <div class="mob-drawer-backdrop" id="mobBackdrop"></div>
   <div class="mob-drawer-panel">
     <div class="mob-panel-head">
-      <a href="index.html" class="logo"><img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" style="height:42px;" onerror="this.style.display='none'"></a>
+      <a href="/" class="logo"><img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" style="height:42px;" onerror="this.style.display='none'"></a>
       <button class="mob-close-btn" id="mobClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <nav class="mob-panel-links">
-      <a href="index.html"                         class="mob-panel-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="/"                         class="mob-panel-link"><i class="fa-solid fa-house"></i> Home</a>
       <a href="holiday-package.html"               class="mob-panel-link"><i class="fa-solid fa-mountain-sun"></i> India Tours</a>
       <a href="international-holiday-package.html" class="mob-panel-link"><i class="fa-solid fa-earth-asia"></i> International</a>
       <a href="weekend-getaways.html"              class="mob-panel-link"><i class="fa-solid fa-car"></i> Weekend Trips</a>
@@ -102,12 +102,31 @@ const VISTA_FOOTER = `
       </div>
       <div class="ft-col">
         <h4>Contact Us</h4>
-        <div class="c-list">
-          <div class="c-item"><i class="fa-solid fa-phone"></i><span>+91-92-20-16-14-14</span></div>
-          <div class="c-item"><i class="fa-brands fa-whatsapp"></i><span>+91-92-20-16-14-14</span></div>
-          <div class="c-item"><i class="fa-solid fa-envelope"></i><span>info@vistamytrip.com</span></div>
-          <div class="c-item"><i class="fa-solid fa-location-dot"></i><span>New Delhi, India</span></div>
-        </div>
+       <div class="c-list">
+
+  <div class="c-item">
+    <i class="fa-solid fa-phone"></i>
+    <a href="tel:+919220161414">+91 92201 61414</a>
+  </div>
+
+  <div class="c-item">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://wa.me/919220161414" target="_blank">+91 92201 61414</a>
+  </div>
+
+  <div class="c-item">
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:info@vistamytrip.com">info@vistamytrip.com</a>
+  </div>
+
+  <div class="c-item">
+    <i class="fa-solid fa-location-dot"></i>
+    <a href="https://www.google.com/maps?q=Ground+floor,+Puri+81+Business+Hub,+D-015,+High+Street,+Sector+81,+Faridabad,+Haryana+121007" target="_blank">
+      Ground floor, Puri 81 Business Hub, D-015, High Street, Sector 81, Faridabad, Haryana 121007
+    </a>
+  </div>
+
+</div>
         <h4 style="margin-top:22px;">Quick Links</h4>
         <div class="ft-links" style="margin-top:10px;">
           <a href="about-us.html"><i class="fa-solid fa-chevron-right"></i>About Us</a>
@@ -143,13 +162,13 @@ const VISTA_FOOTER = `
   const footEl = document.getElementById('footer-placeholder');
   if (footEl) footEl.innerHTML = VISTA_FOOTER;
 
-   const mobEl = document.getElementById('mobDrawer');
+  const mobEl = document.getElementById('mobDrawer');
   if (mobEl) mobEl.innerHTML = VISTA_MOB_NAVBAR;
 
-  
+
 
   // Set active nav link based on current filename
-  const page = window.location.pathname.split('/').pop() || 'index.html';
+  const page = window.location.pathname.split('/').pop() || '/';
   document.querySelectorAll('.nav-links a').forEach(a => {
     a.classList.remove('active');
     if (a.getAttribute('href') === page) a.classList.add('active');

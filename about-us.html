@@ -11,6 +11,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<style>
+  .team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 260px); /* fixed width */
+  justify-content: center;  /* 👈 MAIN LINE */
+  gap: 24px;
+}
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 220px);
+  }
+}
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 260px);
+  }
+}
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .team-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+</style>
 </head>
 <body>
 
@@ -28,12 +57,12 @@
 <div class="about-hero">
   <div class="about-hero-inner">
     <div class="about-breadcrumb">
-      <a href="index.html">Home</a>
+      <a href="/">Home</a>
       <i class="fa-solid fa-chevron-right"></i>
       <span>About Us</span>
     </div>
-    <div class="about-hero-badge"><i class="fa-solid fa-globe"></i> Since 2023 · New Delhi, India</div>
-    <h1>Crafting <span>Unforgettable</span><br>Journeys Since 2023</h1>
+    <div class="about-hero-badge"><i class="fa-solid fa-globe"></i> Emerging Travel Brand · Faridabad, Haryana</div>
+    <h1>Crafting <span>Unforgettable</span><br>Crafting Unforgettable Journeys</h1>
     <p>Vista My Trip Pvt. Ltd. is a passionate travel company dedicated to turning your travel dreams into extraordinary realities — personalised, affordable, and seamlessly executed.</p>
   </div>
 </div>
@@ -55,12 +84,12 @@
       <div class="who-text">
         <div class="sec-tag tn">🏢 Who We Are</div>
         <h2>A Passionate Agency<br>Built for <span>Real Travellers</span></h2>
-        <p>Vista My Trip Pvt. Ltd. is an online travel portal offering convenient booking services for holiday packages. Based in New Delhi, we provide customised travel solutions for both domestic and international travellers.</p>
+        <p>Vista My Trip Pvt. Ltd. is an online travel portal offering convenient booking services for holiday packages. Based in Faridabads Haryana, we provide customised travel solutions for both domestic and international travellers.</p>
         <p>From honeymoon packages to adventure treks, from corporate retreats to spiritual pilgrimages — our team of dedicated travel specialists curates every journey with care, precision, and a deep love for travel.</p>
-        <p>We are registered under CIN: U63090DL2023PTC417352, and operate with full transparency and commitment to our travellers' satisfaction.</p>
+        <p>We are registered under CIN: U52291HR2025PTC129572, and operate with full transparency and commitment to our travellers' satisfaction.</p>
         <div class="who-badges">
-          <span class="who-badge"><i class="fa-solid fa-check"></i> IATA Affiliated</span>
-          <span class="who-badge"><i class="fa-solid fa-check"></i> Govt. Recognised</span>
+          <span class="who-badge"><i class="fa-solid fa-check"></i> Verified Travel Experts</span>
+          <span class="who-badge"><i class="fa-solid fa-check"></i> Trusted Service Provider</span>
           <span class="who-badge"><i class="fa-solid fa-check"></i> 24/7 Support</span>
           <span class="who-badge"><i class="fa-solid fa-check"></i> Secure Payments</span>
           <span class="who-badge"><i class="fa-solid fa-check"></i> Custom Itineraries</span>
@@ -287,10 +316,10 @@
     <div class="partners-title">Trusted By & Affiliated With</div>
     <div class="partners-row">
       <div class="partner-badge"><i class="fa-solid fa-certificate"></i> Ministry of Tourism</div>
-      <div class="partner-badge"><i class="fa-solid fa-shield-halved"></i> IATA Affiliated</div>
+      <div class="partner-badge"><i class="fa-solid fa-shield-halved"></i> Verified Travel Experts</div>
       <div class="partner-badge"><i class="fa-solid fa-star"></i> Google 4.8★ Rated</div>
-      <div class="partner-badge"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor Listed</div>
-      <div class="partner-badge"><i class="fa-solid fa-building"></i> CIN: U63090DL2023PTC417352</div>
+      <!-- <div class="partner-badge"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor Listed</div> -->
+      <div class="partner-badge"><i class="fa-solid fa-building"></i> CIN: U52291HR2025PTC129572</div>
     </div>
   </div>
 </div>
