@@ -2190,3 +2190,331 @@ footer { background:var(--navy-dark); color:rgba(255,255,255,.7); padding:60px 2
     max-width: 300px;
   }
 }
+
+/* ════════════════════════════════════
+   DESTINATION PAGES (Kashmir, Kerala, Ladakh, etc.)
+   Unified layout and components
+════════════════════════════════════ */
+
+.dest-hero {
+  min-height: 76vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--dest-hero-bg, linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 48%, var(--navy-mid) 100%));
+}
+.dest-hero::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 5px;
+  background: var(--dest-accent-grad, linear-gradient(90deg, var(--gold), var(--red), var(--gold)));
+}
+.dest-hero-bg,
+.dest-hero-overlay,
+.dest-hero-glow {
+  position: absolute;
+  inset: 0;
+}
+.dest-hero-bg {
+  background: var(--dest-hero-img) center/cover no-repeat;
+  opacity: .95;
+}
+.dest-hero-overlay {
+  background: var(--dest-overlay-grad, linear-gradient(to right, rgba(7,30,61,.92) 0%, rgba(10,47,95,.72) 52%, rgba(10,47,95,.2) 100%));
+}
+.dest-hero-glow {
+  background:
+    radial-gradient(circle at top right, rgba(247,202,46,.18), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(209,32,36,.15), transparent 26%);
+}
+.dest-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 28px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+  gap: 34px;
+  align-items: center;
+}
+.dest-copy { max-width: 690px; }
+.dest-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+}
+.dest-breadcrumb a { color: white; }
+.dest-breadcrumb i { font-size: 10px; color: var(--gold); }
+.dest-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 15px;
+  border-radius: 999px;
+  background: rgba(247,202,46,.16);
+  border: 1px solid rgba(247,202,46,.34);
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.dest-pill span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  display: block;
+}
+.dest-title {
+  font-family: var(--fd);
+  font-size: clamp(36px, 5.6vw, 64px);
+  line-height: 1.05;
+  color: white;
+  margin-bottom: 18px;
+}
+.dest-title strong { color: var(--gold); font-weight: 700; }
+.dest-sub {
+  color: rgba(255,255,255,.78);
+  font-size: 15.5px;
+  line-height: 1.75;
+  max-width: 610px;
+  margin-bottom: 26px;
+}
+.dest-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.dest-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.14);
+  color: white;
+  font-size: 12.5px;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+.dest-chip i { color: var(--gold); }
+.dest-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.dest-aside {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 24px;
+  padding: 24px;
+  backdrop-filter: blur(14px);
+  box-shadow: var(--sh-lg);
+  color: white;
+  justify-self: end;
+  width: min(100%, 420px);
+}
+.dest-aside-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.dest-aside-head h2 {
+  font-family: var(--fd);
+  font-size: 28px;
+  line-height: 1.15;
+}
+.dest-aside-head p {
+  color: rgba(255,255,255,.72);
+  font-size: 13.5px;
+  margin-top: 6px;
+}
+.dest-aside-badge {
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 7px 12px;
+}
+.dest-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.dest-stat {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 18px;
+  padding: 16px;
+}
+.dest-stat strong {
+  display: block;
+  font-family: var(--fd);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.dest-stat span {
+  font-size: 12.5px;
+  color: rgba(255,255,255,.72);
+}
+.dest-points {
+  display: grid;
+  gap: 11px;
+  margin-bottom: 20px;
+}
+.dest-point {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: rgba(255,255,255,.82);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.dest-point i {
+  color: var(--gold);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+.dest-aside-contact {
+  border-top: 1px solid rgba(255,255,255,.12);
+  padding-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dest-intro {
+  margin-top: -38px;
+  position: relative;
+  z-index: 2;
+}
+.dest-intro-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--sh-md);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, .95fr);
+  gap: 26px;
+  align-items: start;
+}
+.dest-intro-card p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.75;
+}
+.dest-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.dest-mini-card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+}
+.dest-mini-card .mini-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.dest-mini-card i {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-light);
+  color: var(--navy);
+}
+.dest-mini-card h3 {
+  font-family: var(--fd);
+  font-size: 16px;
+  color: var(--navy);
+}
+.dest-mini-card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* Specific to Kashmir or complex grids */
+.dest-faq {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.dest-faq-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+}
+.dest-faq-card h3 {
+  font-family: var(--fd);
+  font-size: 18px;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.dest-faq-card p {
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 1080px) {
+  .dest-hero-inner,
+  .dest-intro-card {
+    grid-template-columns: 1fr;
+  }
+  .dest-aside {
+    justify-self: stretch;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dest-hero-inner {
+    padding: 78px 18px 56px;
+  }
+  .dest-actions,
+  .dest-aside-contact {
+    flex-direction: column;
+  }
+  .dest-actions a,
+  .dest-aside-contact a {
+    width: 100%;
+    justify-content: center;
+  }
+  .dest-stats,
+  .dest-mini-grid,
+  .dest-faq {
+    grid-template-columns: 1fr;
+  }
+  .dest-intro-card {
+    padding: 22px;
+  }
+}

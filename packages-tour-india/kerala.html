@@ -13,112 +13,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 <style>
-  .kerala-hero {
-    min-height: 76vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: linear-gradient(135deg, #063626 0%, #0f5b43 50%, #0a2f5f 100%);
-  }
-  .kerala-hero::after {
-    content:'';
-    position:absolute; inset:auto 0 0; height:5px;
-    background:linear-gradient(90deg, var(--gold), #2da56c, var(--gold));
-  }
-  .kerala-hero-bg,.kerala-hero-ov,.kerala-hero-glow { position:absolute; inset:0; }
-  .kerala-hero-bg {
-    background:
-      linear-gradient(110deg, rgba(6,54,38,.66), rgba(10,47,95,.24)),
-      url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1600&amp;q=80') center/cover no-repeat;
-    opacity:.95;
-  }
-  .kerala-hero-ov {
-    background:linear-gradient(to right, rgba(6,54,38,.92) 0%, rgba(15,91,67,.7) 50%, rgba(10,47,95,.2) 100%);
-  }
-  .kerala-hero-glow {
-    background:
-      radial-gradient(circle at top right, rgba(247,202,46,.16), transparent 28%),
-      radial-gradient(circle at bottom left, rgba(45,165,108,.18), transparent 30%);
-  }
-  .kerala-hero-inner {
-    position:relative; z-index:1;
-    max-width:1280px; margin:0 auto; width:100%;
-    padding:0 28px;
-    display:grid; grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
-    gap:34px; align-items:center;
-  }
-  .kerala-copy { max-width:700px; }
-  .kerala-breadcrumb {
-    display:flex; align-items:center; gap:9px; flex-wrap:wrap;
-    margin-bottom:18px; color:rgba(255,255,255,.74); font-size:13px;
-  }
-  .kerala-breadcrumb a { color:white; }
-  .kerala-breadcrumb i { font-size:10px; color:var(--gold); }
-  .kerala-pill {
-    display:inline-flex; align-items:center; gap:8px;
-    padding:7px 15px; border-radius:999px;
-    background:rgba(247,202,46,.14); border:1px solid rgba(247,202,46,.3);
-    color:var(--gold); font-size:11px; font-weight:700; letter-spacing:.08em;
-    text-transform:uppercase; margin-bottom:16px;
-  }
-  .kerala-pill span {
-    width:7px; height:7px; border-radius:50%; background:currentColor; display:block;
-  }
-  .kerala-title {
-    font-family:var(--fd); font-size:clamp(36px,5.4vw,64px);
-    line-height:1.05; color:white; margin-bottom:18px;
-  }
-  .kerala-title strong { color:var(--gold); }
-  .kerala-sub {
-    color:rgba(255,255,255,.8); font-size:15.5px; line-height:1.75;
-    max-width:620px; margin-bottom:26px;
-  }
-  .kerala-chips { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:28px; }
-  .kerala-chip {
-    display:inline-flex; align-items:center; gap:7px;
-    padding:8px 14px; border-radius:999px; background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.14); color:white; font-size:12.5px; font-weight:600;
-  }
-  .kerala-chip i { color:var(--gold); }
-  .kerala-aside {
-    background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.14);
-    border-radius:24px; padding:24px; backdrop-filter:blur(14px); box-shadow:var(--sh-lg); color:white;
-  }
-  .kerala-aside h2 { font-family:var(--fd); font-size:28px; margin-bottom:6px; }
-  .kerala-aside p { color:rgba(255,255,255,.72); font-size:13.5px; margin-bottom:18px; }
-  .kerala-stats { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-bottom:18px; }
-  .kerala-stat { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.1); border-radius:16px; padding:14px; }
-  .kerala-stat strong { display:block; font-family:var(--fd); font-size:26px; color:var(--gold); line-height:1; margin-bottom:6px; }
-  .kerala-stat span { font-size:12px; color:rgba(255,255,255,.72); }
-  .kerala-points { display:grid; gap:10px; margin-bottom:18px; }
-  .kerala-point { display:flex; gap:10px; align-items:flex-start; color:rgba(255,255,255,.82); font-size:13.5px; line-height:1.6; }
-  .kerala-point i { color:var(--gold); margin-top:3px; }
-  .kerala-actions { display:flex; gap:12px; flex-wrap:wrap; }
-  .kerala-intro { margin-top:-34px; position:relative; z-index:2; }
-  .kerala-intro-card {
-    background:white; border:1px solid var(--border); border-radius:24px; box-shadow:var(--sh-md);
-    padding:30px; display:grid; grid-template-columns:minmax(0,1.2fr) minmax(280px,.9fr); gap:24px;
-  }
-  .kerala-intro-card p { color:var(--muted); font-size:14.5px; line-height:1.75; }
-  .kerala-mini-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
-  .kerala-mini-card { background:var(--light); border:1px solid var(--border); border-radius:18px; padding:16px; }
-  .kerala-mini-card h3 { font-family:var(--fd); font-size:16px; color:var(--navy); margin-bottom:6px; }
-  .kerala-mini-card p { font-size:13px; color:var(--muted); line-height:1.65; }
-  .pkg-meta.route { align-items:flex-start; color:var(--navy-mid); font-weight:600; }
-  .pkg-meta.route i { margin-top:2px; }
-  .pkg-desc { color:var(--muted); font-size:13.5px; line-height:1.7; margin-top:12px; }
-  .pkg-tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
-  .pkg-tag { font-size:11.5px; font-weight:700; color:var(--navy); background:var(--navy-light); border-radius:999px; padding:6px 11px; }
-  @media (max-width:1080px) {
-    .kerala-hero-inner, .kerala-intro-card { grid-template-columns:1fr; }
-  }
-  @media (max-width:768px) {
-    .kerala-hero-inner { padding:78px 18px 56px; }
-    .kerala-stats, .kerala-mini-grid { grid-template-columns:1fr; }
-    .kerala-actions { flex-direction:column; }
-    .kerala-actions a { width:100%; justify-content:center; }
-    .kerala-intro-card { padding:22px; }
+  :root {
+    --dest-hero-bg: linear-gradient(135deg, #063626 0%, #0f5b43 50%, #0a2f5f 100%);
+    --dest-hero-img: url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1600&amp;q=80');
+    --dest-overlay-grad: linear-gradient(to right, rgba(6,54,38,.92) 0%, rgba(15,91,67,.7) 50%, rgba(10,47,95,.2) 100%);
+    --dest-accent-grad: linear-gradient(90deg, var(--gold), #2da56c, var(--gold));
   }
 </style>
 </head>
@@ -130,46 +29,50 @@
 <nav class="site-nav" id="navbar-placeholder"></nav>
 <div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
 
-<section class="kerala-hero">
-  <div class="kerala-hero-bg"></div>
-  <div class="kerala-hero-ov"></div>
-  <div class="kerala-hero-glow"></div>
-  <div class="kerala-hero-inner">
-    <div class="kerala-copy">
-      <div class="kerala-breadcrumb">
+<section class="dest-hero">
+  <div class="dest-hero-bg"></div>
+  <div class="dest-hero-overlay"></div>
+  <div class="dest-hero-glow"></div>
+  <div class="dest-hero-inner">
+    <div class="dest-copy">
+      <div class="dest-breadcrumb">
         <a href="/">Home</a><i class="fa-solid fa-chevron-right"></i>
         <a href="holiday-package.html">India Tours</a><i class="fa-solid fa-chevron-right"></i>
         <span>Kerala</span>
       </div>
-      <div class="kerala-pill"><span></span> Kerala Collection</div>
-      <h1 class="kerala-title">Discover <strong>Kerala</strong> through backwaters, hill stations, wildlife and coastal escapes.</h1>
-      <p class="kerala-sub">This page mirrors the current Kerala package lineup from Vista My Trip into the same polished, responsive destination format we used for Kashmir, with local package detail pages and shared design components built to scale for more destinations later.</p>
-      <div class="kerala-chips">
-        <div class="kerala-chip"><i class="fa-solid fa-mountain"></i> Munnar hills</div>
-        <div class="kerala-chip"><i class="fa-solid fa-ship"></i> Alleppey backwaters</div>
-        <div class="kerala-chip"><i class="fa-solid fa-leaf"></i> Thekkady wildlife</div>
-        <div class="kerala-chip"><i class="fa-solid fa-umbrella-beach"></i> Kovalam coast</div>
+      <div class="dest-pill"><span></span> Kerala Collection</div>
+      <h1 class="dest-title">Discover <strong>Kerala</strong> through backwaters, hill stations, wildlife and coastal escapes.</h1>
+      <p class="dest-sub">This page mirrors the current Kerala package lineup from Vista My Trip into the same polished, responsive destination format we used for Kashmir, with local package detail pages and shared design components built to scale for more destinations later.</p>
+      <div class="dest-chips">
+        <div class="dest-chip"><i class="fa-solid fa-mountain"></i> Munnar hills</div>
+        <div class="dest-chip"><i class="fa-solid fa-ship"></i> Alleppey backwaters</div>
+        <div class="dest-chip"><i class="fa-solid fa-leaf"></i> Thekkady wildlife</div>
+        <div class="dest-chip"><i class="fa-solid fa-umbrella-beach"></i> Kovalam coast</div>
       </div>
-      <div class="kerala-actions">
+      <div class="dest-actions">
         <a href="#packages" class="btn-red"><i class="fa-solid fa-suitcase-rolling"></i> View Packages</a>
         <a href="https://wa.me/919220161414" class="btn-wh-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Expert</a>
       </div>
     </div>
-    <aside class="kerala-aside">
-      <h2>Kerala at a glance</h2>
-      <p>Current package lineup rendered into your own internal pages.</p>
-      <div class="kerala-stats">
-        <div class="kerala-stat"><strong>10</strong><span>live Kerala packages</span></div>
-        <div class="kerala-stat"><strong>3N-10N</strong><span>trip length range</span></div>
-        <div class="kerala-stat"><strong>₹13.9k</strong><span>starting per person price</span></div>
-        <div class="kerala-stat"><strong>Houseboat</strong><span>featured in select routes</span></div>
+    <aside class="dest-aside">
+      <div class="dest-aside-head">
+        <div>
+          <h2>Kerala at a glance</h2>
+          <p>Current package lineup rendered into your own internal pages.</p>
+        </div>
       </div>
-      <div class="kerala-points">
-        <div class="kerala-point"><i class="fa-solid fa-circle-check"></i><span>Includes honeymoon, family, group and long-duration Kerala routes.</span></div>
-        <div class="kerala-point"><i class="fa-solid fa-circle-check"></i><span>Popular stops include Kochi, Munnar, Thekkady, Alleppey, Kovalam and Trivandrum.</span></div>
-        <div class="kerala-point"><i class="fa-solid fa-circle-check"></i><span>Each card now opens your own local detail page instead of the external site.</span></div>
+      <div class="dest-stats">
+        <div class="dest-stat"><strong>10</strong><span>live Kerala packages</span></div>
+        <div class="dest-stat"><strong>3N-10N</strong><span>trip length range</span></div>
+        <div class="dest-stat"><strong>₹13.9k</strong><span>starting per person price</span></div>
+        <div class="dest-stat"><strong>Houseboat</strong><span>featured in select routes</span></div>
       </div>
-      <div class="kerala-actions">
+      <div class="dest-points">
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Includes honeymoon, family, group and long-duration Kerala routes.</span></div>
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Popular stops include Kochi, Munnar, Thekkady, Alleppey, Kovalam and Trivandrum.</span></div>
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Each card now opens your own local detail page instead of the external site.</span></div>
+      </div>
+      <div class="dest-aside-contact">
         <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> Call Now</a>
         <a href="contact.html" class="btn-gold"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
       </div>
@@ -177,19 +80,19 @@
   </div>
 </section>
 
-<section class="kerala-intro">
+<section class="dest-intro">
   <div class="container">
-    <div class="kerala-intro-card">
+    <div class="dest-intro-card">
       <div>
         <div class="sec-tag tn">🌿 Destination Overview</div>
         <h2 class="sec-title" style="margin-top:12px;">A reusable Kerala destination structure</h2>
         <p>The Kerala page uses the same package-card and detail-page pattern we established for Kashmir, so future destinations can follow one consistent structure: destination hero, filter bar, package grid, local detail pages, and responsive image sliders that can be reused across the entire site.</p>
       </div>
-      <div class="kerala-mini-grid">
-        <div class="kerala-mini-card"><h3>Stays</h3><p>Hotels, hill station stays, romantic rooms and houseboat experiences.</p></div>
-        <div class="kerala-mini-card"><h3>Experiences</h3><p>Tea gardens, wildlife, backwaters, beaches and scenic coastal drives.</p></div>
-        <div class="kerala-mini-card"><h3>Routes</h3><p>Short Munnar getaways to long Kerala + Kanyakumari circuits.</p></div>
-        <div class="kerala-mini-card"><h3>Best For</h3><p>Couples, groups, honeymooners and leisure-first travelers.</p></div>
+      <div class="dest-mini-grid">
+        <div class="dest-mini-card"><h3>Stays</h3><p>Hotels, hill station stays, romantic rooms and houseboat experiences.</p></div>
+        <div class="dest-mini-card"><h3>Experiences</h3><p>Tea gardens, wildlife, backwaters, beaches and scenic coastal drives.</p></div>
+        <div class="dest-mini-card"><h3>Routes</h3><p>Short Munnar getaways to long Kerala + Kanyakumari circuits.</p></div>
+        <div class="dest-mini-card"><h3>Best For</h3><p>Couples, groups, honeymooners and leisure-first travelers.</p></div>
       </div>
     </div>
   </div>
