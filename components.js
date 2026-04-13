@@ -6,7 +6,7 @@ const VISTA_NAVBAR = `
 
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'">
+      <img src="img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'">
     </a>
     <div class="nav-links">
       <a href="/"                         class="nav-link">Home</a>
@@ -33,7 +33,7 @@ const VISTA_MOB_NAVBAR = `
   <div class="mob-drawer-backdrop" id="mobBackdrop"></div>
   <div class="mob-drawer-panel">
     <div class="mob-panel-head">
-      <a href="/" class="logo"><img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" style="height:42px;" onerror="this.style.display='none'"></a>
+      <a href="/" class="logo"><img src="img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" style="height:42px;" onerror="this.style.display='none'"></a>
       <button class="mob-close-btn" id="mobClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <nav class="mob-panel-links">
@@ -62,7 +62,7 @@ const VISTA_FOOTER = `
   <div class="footer-inner">
     <div class="footer-top">
       <div class="ft-brand">
-        <div class="logo"><img src="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'" style="height:38px;"><span>Vista My Trip</span></div>
+        <div class="logo"><img src="img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'" style="height:80px;"></div>
         <div class="ft-tagline">Premium Quality, Perfect Journey....</div>
         <p>We craft unforgettable journeys across India and the world — tailored to your dreams, delivered with care.</p>
         <div class="socials">
@@ -121,7 +121,7 @@ const VISTA_FOOTER = `
 
   <div class="c-item">
     <i class="fa-solid fa-location-dot"></i>
-    <a href="https://www.google.com/maps?q=Ground+floor,+Puri+81+Business+Hub,+D-015,+High+Street,+Sector+81,+Faridabad,+Haryana+121007" target="_blank">
+    <a href="https://maps.app.goo.gl/pwEzBjkqj5YYyT7AA" target="_blank">
       Ground floor, Puri 81 Business Hub, D-015, High Street, Sector 81, Faridabad, Haryana 121007
     </a>
   </div>
@@ -137,7 +137,7 @@ const VISTA_FOOTER = `
       </div>
     </div>
     <div class="ft-bottom">
-      <p>© ${new Date().getFullYear()} Vista My Trip Pvt. Ltd. All rights reserved. | CIN: U63090DL2023PTC417352</p>
+      <p>&copy; ${new Date().getFullYear()} Vista My Trip Pvt. Ltd. All rights reserved. | Developed &amp; Managed by <a href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer"><u>Advertising India</u></a></p>
       <div class="ft-blinks">
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-and-conditions.html">Terms</a>

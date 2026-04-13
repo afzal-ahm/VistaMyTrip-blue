@@ -1,464 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vista My Trip - Book Tours, Weekend Getaways & International Trips</title>
-<meta name="description" content="Book custom holiday packages, Chardham Yatra tours, weekend getaways, honeymoon trips & international tours with Vista My Trip Pvt Ltd – Travel Made Easy.">
-<link rel="icon" href="https://vistamytrip.com/assets/img/general/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<style>
-.review-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista My Trip - Book Tours, Weekend Getaways & International Trips</title>
+  <meta name="description"
+    content="Book custom holiday packages, Chardham Yatra tours, weekend getaways, honeymoon trips & international tours with Vista My Trip Pvt Ltd – Travel Made Easy.">
+  <link rel="icon" href="img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .review-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
 
-.rev-text {
-  flex-grow: 1;
-}
+    .rev-text {
+      flex-grow: 1;
+    }
 
-.rev-author {
-  margin-top: auto;
-}
-.review-card {
-  padding: 24px;
-}
-</style>
+    .rev-author {
+      margin-top: auto;
+    }
+
+    .review-card {
+      padding: 24px;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- ═══ ANNOUNCE BAR ═══ -->
-<div class="announce">
-  🎉 <strong>Early Bird Offer:</strong> Save up to ₹3,000 on Ladakh &amp; Spiti Valley packages &nbsp;·&nbsp;
-  <a href="weekend-getaways.html">Book Now →</a>
-</div>
+  <!-- ═══ ANNOUNCE BAR ═══ -->
+  <div class="announce">
+    🎉 <strong>Early Bird Offer:</strong> Save up to ₹3,000 on Ladakh &amp; Spiti Valley packages &nbsp;·&nbsp;
+    <a href="weekend-getaways.html">Book Now →</a>
+  </div>
 
-<!-- ═══════════════════════════════════════
+  <!-- ═══════════════════════════════════════
      NAVBAR
      Desktop (>1024px): full links + phone + CTA
      Tablet/Mobile (≤1024px): logo + hamburger only
 ═══════════════════════════════════════ -->
-<nav class="site-nav" id="navbar-placeholder"></nav>
+  <nav class="site-nav" id="navbar-placeholder"></nav>
 
 
-<!-- ═══ HAMBURGER DRAWER (Tablet + Mobile) ═══ -->
-<div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
+  <!-- ═══ HAMBURGER DRAWER (Tablet + Mobile) ═══ -->
+  <div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
 
 
-<!-- ═══ HERO ═══ -->
-<section class="hero" style="padding:0;">
-  <div class="hero-bg"></div>
-  <div class="hero-img"></div>
-  <div class="hero-grad"></div>
-  <div class="hero-content">
-    <div class="hero-left">
-      <div class="hero-pill"><span></span> Trusted by 50,000+ Travellers across India</div>
-      <h1 class="hero-h1">Discover <em>Incredible</em><br>Journeys, <span class="ar">Crafted</span><br>Just For You</h1>
-      <p class="hero-sub">From the snow-peaks of Ladakh to the beaches of Bali — Vista My Trip crafts unforgettable experiences tailored to your budget, style, and timeline.</p>
-      <div class="hero-acts">
-        <a href="holiday-package.html" class="btn-red" style="font-size:15px;padding:12px 26px;">
-          <i class="fa-solid fa-mountain-sun"></i> Explore Packages
-        </a>
-        <a href="contact.html" class="btn-wh-outline" style="font-size:15px;padding:12px 26px;">
-          <i class="fa-solid fa-phone"></i> Talk to Expert
-        </a>
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-bg"></div>
+    <div class="hero-img"></div>
+    <div class="hero-grad"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-pill"><span></span> Trusted by 50,000+ Travellers across India</div>
+        <h1 class="hero-h1">Discover <em>Incredible</em><br>Journeys, <span class="ar">Crafted</span><br>Just For You
+        </h1>
+        <p class="hero-sub">From the snow-peaks of Ladakh to the beaches of Bali — Vista My Trip crafts unforgettable
+          experiences tailored to your budget, style, and timeline.</p>
+        <div class="hero-acts">
+          <a href="holiday-package.html" class="btn-red" style="font-size:15px;padding:12px 26px;">
+            <i class="fa-solid fa-mountain-sun"></i> Explore Packages
+          </a>
+          <a href="contact.html" class="btn-wh-outline" style="font-size:15px;padding:12px 26px;">
+            <i class="fa-solid fa-phone"></i> Talk to Expert
+          </a>
+        </div>
+        <div class="h-stats">
+          <div class="h-stat">
+            <div class="num">50K+</div>
+            <div class="lbl">Happy Travellers</div>
+          </div>
+          <div class="h-stat">
+            <div class="num">500+</div>
+            <div class="lbl">Tour Packages</div>
+          </div>
+          <div class="h-stat">
+            <div class="num">4.9★</div>
+            <div class="lbl">Google Rating</div>
+          </div>
+          <div class="h-stat">
+            <div class="num">12+</div>
+            <div class="lbl">Years Expertise</div>
+          </div>
+        </div>
       </div>
-      <div class="h-stats">
-        <div class="h-stat"><div class="num">50K+</div><div class="lbl">Happy Travellers</div></div>
-        <div class="h-stat"><div class="num">500+</div><div class="lbl">Tour Packages</div></div>
-        <div class="h-stat"><div class="num">4.9★</div><div class="lbl">Google Rating</div></div>
-        <div class="h-stat"><div class="num">12+</div><div class="lbl">Years Expertise</div></div>
-      </div>
-    </div>
 
-    <!-- Search Panel -->
-    <div class="hero-search">
-      <div class="srch-title">Plan Your Perfect Trip</div>
-      <div class="srch-sub">Get a free customised itinerary within 24 hours</div>
-      <div class="sf">
-        <label>🌍 Destination</label>
-        <select>
-          <option value="">Where do you want to go?</option>
-          <optgroup label="🇮🇳 India">
-            <option>Kashmir</option><option>Ladakh</option><option>Goa</option>
-            <option>Kerala</option><option>Rajasthan</option><option>Himachal Pradesh</option>
-            <option>Uttarakhand</option><option>Andaman</option><option>Spiti Valley</option><option>Manali</option><option>Sikkim</option>
-          </optgroup>
-          <optgroup label="🌏 International">
-            <option>Bali</option><option>Dubai</option><option>Thailand</option>
-            <option>Maldives</option><option>Singapore</option><option>Vietnam</option>
-            <option>Europe</option><option>Malaysia</option><option>Bhutan</option><option>Baku</option>
-          </optgroup>
-        </select>
-      </div>
-      <div class="sf-row">
+      <!-- Search Panel -->
+      <div class="hero-search">
+        <div class="srch-title">Plan Your Perfect Trip</div>
+        <div class="srch-sub">Get a free customised itinerary within 24 hours</div>
         <div class="sf">
-          <label>🎯 Trip Type</label>
+          <label>🌍 Destination</label>
           <select>
-            <option value="">Select type</option>
-            <option>Honeymoon</option><option>Family Holiday</option><option>Adventure</option>
-            <option>Pilgrimage</option><option>Weekend Getaway</option><option>Group Tour</option><option>Corporate</option>
+            <option value="">Where do you want to go?</option>
+            <optgroup label="🇮🇳 India">
+              <option>Kashmir</option>
+              <option>Ladakh</option>
+              <option>Goa</option>
+              <option>Kerala</option>
+              <option>Rajasthan</option>
+              <option>Himachal Pradesh</option>
+              <option>Uttarakhand</option>
+              <option>Andaman</option>
+              <option>Spiti Valley</option>
+              <option>Manali</option>
+              <option>Sikkim</option>
+            </optgroup>
+            <optgroup label="🌏 International">
+              <option>Bali</option>
+              <option>Dubai</option>
+              <option>Thailand</option>
+              <option>Maldives</option>
+              <option>Singapore</option>
+              <option>Vietnam</option>
+              <option>Europe</option>
+              <option>Malaysia</option>
+              <option>Bhutan</option>
+              <option>Baku</option>
+            </optgroup>
           </select>
         </div>
+        <div class="sf-row">
+          <div class="sf">
+            <label>🎯 Trip Type</label>
+            <select>
+              <option value="">Select type</option>
+              <option>Honeymoon</option>
+              <option>Family Holiday</option>
+              <option>Adventure</option>
+              <option>Pilgrimage</option>
+              <option>Weekend Getaway</option>
+              <option>Group Tour</option>
+              <option>Corporate</option>
+            </select>
+          </div>
+          <div class="sf">
+            <label>📅 Duration</label>
+            <select>
+              <option value="">No. of days</option>
+              <option>2–3 Days</option>
+              <option>4–6 Days</option>
+              <option>7–10 Days</option>
+              <option>10–15 Days</option>
+              <option>15+ Days</option>
+            </select>
+          </div>
+        </div>
         <div class="sf">
-          <label>📅 Duration</label>
+          <label>👤 Travellers</label>
           <select>
-            <option value="">No. of days</option>
-            <option>2–3 Days</option><option>4–6 Days</option><option>7–10 Days</option>
-            <option>10–15 Days</option><option>15+ Days</option>
+            <option value="">Number of people</option>
+            <option>Solo</option>
+            <option>Couple (2)</option>
+            <option>Small Group (3–5)</option>
+            <option>Group (6–15)</option>
+            <option>Large Group (15+)</option>
           </select>
         </div>
-      </div>
-      <div class="sf">
-        <label>👤 Travellers</label>
-        <select>
-          <option value="">Number of people</option>
-          <option>Solo</option><option>Couple (2)</option><option>Small Group (3–5)</option>
-          <option>Group (6–15)</option><option>Large Group (15+)</option>
-        </select>
-      </div>
-      <button class="srch-btn"><i class="fa-solid fa-magnifying-glass"></i> Search Packages</button>
-      <div class="srch-note">Or call us: <a href="tel:+919220161414">+91-92-20-16-14-14</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ TOP DESTINATIONS ═══ -->
-<section>
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag tn">✈ Explore</div>
-        <h2 class="sec-title">Top Destinations</h2>
-        <p class="sec-sub">Handpicked places loved by thousands of happy travellers</p>
-      </div>
-      <a href="holiday-package.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-    <div class="tab-row">
-      <button class="tab on"  onclick="filterDest('all',this)">🌍 All</button>
-      <button class="tab"     onclick="filterDest('india',this)">🇮🇳 India</button>
-      <button class="tab"     onclick="filterDest('intl',this)">✈️ International</button>
-      <button class="tab"     onclick="filterDest('weekend',this)">🚗 Weekend</button>
-    </div>
-    <div class="dest-grid" id="destGrid">
-      <a href="packages-tour-india/explore-kashmir.html" class="dest-card" data-cat="india">
-        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400&q=80" alt="Kashmir" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Kashmir</div><div class="dest-pkgs">7 packages</div></div>
-        <div class="dest-badge">🔥 Trending</div>
-      </a>
-      <a href="packages-tour-india/ladakh.html" class="dest-card" data-cat="india">
-        <img src="img/destination/ladakh.webp" alt="Ladakh" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Ladakh</div><div class="dest-pkgs">8 packages</div></div>
-      </a>
-      <a href="packages-tour-india/kerala.html" class="dest-card" data-cat="india">
-        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=400&q=80" alt="Kerala" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Kerala</div><div class="dest-pkgs">10 packages</div></div>
-        <div class="dest-badge gb">⭐ Popular</div>
-      </a>
-      <a href="packages-tour-india/goa.html" class="dest-card" data-cat="india weekend">
-        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400&q=80" alt="Goa" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Goa</div><div class="dest-pkgs">1 package</div></div>
-      </a>
-      <a href="packages-tour-india/rajasthan.html" class="dest-card" data-cat="india">
-        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=400&q=80" alt="Rajasthan" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Rajasthan</div><div class="dest-pkgs">8 packages</div></div>
-      </a>
-      <a href="packages-tour-india/spiti-valley.html" class="dest-card" data-cat="india">
-        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=400&q=80" alt="Spiti Valley" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Spiti Valley</div><div class="dest-pkgs">2 packages</div></div>
-      </a>
-      <a href="#" class="dest-card" data-cat="intl">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&q=80" alt="Bali" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Bali</div><div class="dest-pkgs">5 packages</div></div>
-        <div class="dest-badge">🌏 Intl</div>
-      </a>
-      <a href="#" class="dest-card" data-cat="intl">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&q=80" alt="Dubai" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Dubai</div><div class="dest-pkgs">6 packages</div></div>
-        <div class="dest-badge">🌏 Intl</div>
-      </a>
-      <a href="#" class="dest-card" data-cat="weekend">
-        <img src="img/destination/manali.jpg" alt="Manali Weekend" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Manali Weekend</div><div class="dest-pkgs">4 packages</div></div>
-      </a>
-      <a href="#" class="dest-card" data-cat="intl">
-        <img src="img/destination/maldives.jpg" alt="Manali Weekend" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Maldives</div><div class="dest-pkgs">4 packages</div></div>
-        <div class="dest-badge">🌏 Intl</div>
-      </a>
-      <a href="#" class="dest-card" data-cat="intl">
-        <img src="img/destination/thailand.avif" alt="Manali Weekend" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Thailand</div><div class="dest-pkgs">3 packages</div></div>
-        <div class="dest-badge">🌏 Intl</div>
-      </a>
-      <a href="#" class="dest-card" data-cat="weekend">
-        <img src="img/package/96c5baf52f1a93b2d1ba090df4927178.jpg" alt="Manali Weekend" loading="lazy">
-        <div class="dest-grad"></div>
-        <div class="dest-body"><div class="dest-name">Kasol Kheerganga</div><div class="dest-pkgs">4 packages</div></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ STATS BANNER ═══ -->
-<div class="stats-banner">
-  <div class="stats-inner">
-    <div class="stat-item"><div class="num">50K+</div><div class="lbl">Happy Travellers</div></div>
-    <div class="stat-item"><div class="num">500+</div><div class="lbl">Tour Packages</div></div>
-    <div class="stat-item"><div class="num">30+</div><div class="lbl">Destinations</div></div>
-    <div class="stat-item"><div class="num">4.9★</div><div class="lbl">Google Rating</div></div>
-    <div class="stat-item"><div class="num">12+</div><div class="lbl">Years Experience</div></div>
-  </div>
-</div>
-
-<!-- ═══ TRENDING PACKAGES ═══ -->
-<section>
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag tr">🔥 Hot Right Now</div>
-        <h2 class="sec-title">Top Trending Packages</h2>
-        <p class="sec-sub">Best-selling tours curated by our travel experts</p>
-      </div>
-      <a href="holiday-package.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-    <div class="pkg-grid">
-
-      <a href="#" class="pkg-card">
-        <div class="pkg-img">
-          <img src="img/destination/haridwar-chardham.jpg" alt="Chardham Yatra" loading="lazy">
-          <div class="pkg-off">₹1,501 OFF</div><div class="pkg-dur">11N / 12D</div>
-        </div>
-        <div class="pkg-body">
-          <div class="pkg-title">Chardham Yatra from Haridwar</div>
-          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span><span><i class="fa-solid fa-users"></i> Group Tours</span></div>
-          <div style="display:flex;align-items:center;gap:5px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span></div>
-          <div class="pkg-foot"><div><div class="pkg-old">₹35,000</div><div class="pkg-new">₹33,499</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
-        </div>
-      </a>
-
-      <a href="#" class="pkg-card">
-        <div class="pkg-img">
-          <img src="img/destination/kashmir.jpeg" alt="Kashmir" loading="lazy">
-          <div class="pkg-dur">5N / 6D</div>
-        </div>
-        <div class="pkg-body">
-          <div class="pkg-title">Explore Kashmir – Heaven on Earth</div>
-          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Jammu & Kashmir</span><span><i class="fa-solid fa-users"></i> 2–20 People</span></div>
-          <div style="display:flex;align-items:center;gap:5px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(412 reviews)</span></div>
-          <div class="pkg-foot"><div><div class="pkg-new">₹22,999</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
-        </div>
-      </a>
-
-      <a href="#" class="pkg-card">
-        <div class="pkg-img">
-          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&q=80" alt="Kerala" loading="lazy">
-          <div class="pkg-off">₹2,000 OFF</div><div class="pkg-dur">6N / 7D</div>
-        </div>
-        <div class="pkg-body">
-          <div class="pkg-title">Kerala – God's Own Country</div>
-          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Kerala</span><span><i class="fa-solid fa-users"></i> 2–15 People</span></div>
-          <div style="display:flex;align-items:center;gap:5px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(289 reviews)</span></div>
-          <div class="pkg-foot"><div><div class="pkg-old">₹24,000</div><div class="pkg-new">₹22,000</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
-        </div>
-      </a>
-
-      <a href="packages-tour-india/andaman.html" class="pkg-card">
-        <div class="pkg-img">
-          <img src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=500&q=80" alt="Andaman" loading="lazy">
-          <div class="pkg-dur">4N / 5D</div>
-        </div>
-        <div class="pkg-body">
-          <div class="pkg-title">Andaman – Tropical Paradise Escape</div>
-          <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Andaman & Nicobar</span><span><i class="fa-solid fa-users"></i> 2–12 People</span></div>
-          <div style="display:flex;align-items:center;gap:5px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(187 reviews)</span></div>
-          <div class="pkg-foot"><div><div class="pkg-new">₹19,999</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══ WEEKEND TRIPS ═══ -->
-<section style="background:var(--light);">
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag tg">🚗 Quick Escapes</div>
-        <h2 class="sec-title">Weekend Trips For You 🤩</h2>
-        <p class="sec-sub">Short breaks crafted for spontaneous travellers</p>
-      </div>
-      <a href="weekend-getaways.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-    <div class="wknd-grid">
-      <a href="weekend-tour-details/manali-sissu-kasol.html" class="wknd-card">
-        <div class="wknd-img"><img src="img/package/78000459f65cf0df0d88b557a86440d3.jpeg" alt="Manali" loading="lazy"><div class="wknd-off">₹1,501 OFF</div></div>
-        <div class="wknd-body">
-          <div class="wknd-title">Manali Sissu Kasol</div>
-          <div class="wknd-meta"><span><i class="fa-solid fa-clock"></i> 3N / 4D</span><span><i class="fa-solid fa-location-dot"></i> Himachal</span></div>
-          <div class="wknd-foot"><div class="wknd-price">₹6,999 <span style="font-size:11px;font-weight:400;color:var(--muted);">/person</span></div><div class="wknd-cta">Book Now</div></div>
-        </div>
-      </a>
-      <a href="weekend-tour-details/mcleodganj-tour-package.html" class="wknd-card">
-        <div class="wknd-img"><img src="img/package/a43d11c045f2a248ba22bb0d338329ca.jpg" alt="McLeodganj" loading="lazy"><div class="wknd-off">₹2,000 OFF</div></div>
-        <div class="wknd-body">
-          <div class="wknd-title">McLeodganj Tour Package</div>
-          <div class="wknd-meta"><span><i class="fa-solid fa-clock"></i> 3N / 4D</span><span><i class="fa-solid fa-location-dot"></i> Himachal</span></div>
-          <div class="wknd-foot"><div class="wknd-price">₹10,000 <span style="font-size:11px;font-weight:400;color:var(--muted);">/person</span></div><div class="wknd-cta">Book Now</div></div>
-        </div>
-      </a>
-      <a href="weekend-tour-details/kanatal-tour-package.html" class="wknd-card">
-        <div class="wknd-img"><img src="img/package/38755f777fd69e3a8c5367707be3ad01.jpg" alt="Kanatal" loading="lazy"><div class="wknd-off">₹1,000 OFF</div></div>
-        <div class="wknd-body">
-          <div class="wknd-title">Kanatal Tour Package</div>
-          <div class="wknd-meta"><span><i class="fa-solid fa-clock"></i> 1N / 2D</span><span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span></div>
-          <div class="wknd-foot"><div class="wknd-price">₹5,200 <span style="font-size:11px;font-weight:400;color:var(--muted);">/person</span></div><div class="wknd-cta">Book Now</div></div>
-        </div>
-      </a>
-      <a href="weekend-tour-details/Kasol-Tour-Package.html" class="wknd-card">
-        <div class="wknd-img"><img src="img/package/96c5baf52f1a93b2d1ba090df4927178.jpg" alt="Kasol" loading="lazy"><div class="wknd-off">₹1,000 OFF</div></div>
-        <div class="wknd-body">
-          <div class="wknd-title">Kasol Kheerganga Tour Package</div>
-          <div class="wknd-meta"><span><i class="fa-solid fa-clock"></i> 2N / 3D</span><span><i class="fa-solid fa-location-dot"></i> Himachal</span></div>
-          <div class="wknd-foot"><div class="wknd-price">₹6,500 <span style="font-size:11px;font-weight:400;color:var(--muted);">/person</span></div><div class="wknd-cta">Book Now</div></div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ HOLIDAYS BY INTEREST ═══ -->
-<section>
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag tn">🎯 Travel Styles</div>
-        <h2 class="sec-title">Holidays by Interest</h2>
-        <p class="sec-sub">Find the perfect trip that matches your vibe</p>
+        <button class="srch-btn"><i class="fa-solid fa-magnifying-glass"></i> Search Packages</button>
+        <div class="srch-note">Or call us: <a href="tel:+919220161414">+91-92-20-16-14-14</a></div>
       </div>
     </div>
-    <div class="theme-controls">
-      <button onclick="scrollThemes(-1)">◀</button>
-      <button onclick="scrollThemes(1)">▶</button>
-    </div>
-    <div class="theme-grid">
-      <a href="package-theme/honeymoon-package.html" class="theme-card"><img src="img/package/honeymoon.jpg" alt="Honeymoon" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">💕</span><span class="theme-nm">Honeymoon</span></div></a>
-      <a href="package-theme/adventure-package.html" class="theme-card"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&q=80" alt="Adventure" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">🧗</span><span class="theme-nm">Adventure</span></div></a>
-      <a href="package-theme/family-package.html" class="theme-card"><img src="img/package/family-trip.avif" alt="Family" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">👨‍👩‍👧‍👦</span><span class="theme-nm">Family</span></div></a>
-      <a href="package-theme/pilgrimage-tour.html" class="theme-card"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400&q=80" alt="Pilgrimage" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">🛕</span><span class="theme-nm">Pilgrimage</span></div></a>
-      <a href="package-theme/golden-triangle.html" class="theme-card"><img src="https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=400&q=80" alt="Golden Triangle" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">🔺</span><span class="theme-nm">Golden Triangle</span></div></a>
-      <a href="weekend-getaways.html" class="theme-card"><img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=400&q=80" alt="Weekend" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">🌄</span><span class="theme-nm">Weekend Trips</span></div></a>
-      <a href="#" class="theme-card"><img src="img/package/beach.avif" alt="beach" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">🏖️</span><span class="theme-nm">Beaches</span></div></a>
-      <a href="#" class="theme-card"><img src="img/package/hill-stations.webp" alt="Weekend" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">🏔</span><span class="theme-nm">Hill Station</span></div></a>
-      <a href="#" class="theme-card"><img src="img/destination/haridwar-chardham.jpg" alt="Weekend" loading="lazy"><div class="theme-ov"></div><div class="theme-lbl"><span class="theme-emo">🙏</span><span class="theme-nm">Chardham Yatra</span></div></a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══ INTERNATIONAL PACKAGES ═══ -->
-<section style="background:var(--light);">
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag tr">🌏 Go Global</div>
-        <h2 class="sec-title">International Holiday Packages</h2>
-        <p class="sec-sub">Explore the world's most stunning destinations with ease</p>
+  <!-- ═══ TOP DESTINATIONS ═══ -->
+  <section>
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tn">✈ Explore</div>
+          <h2 class="sec-title">Top Destinations</h2>
+          <p class="sec-sub">Handpicked places loved by thousands of happy travellers</p>
+        </div>
+        <a href="holiday-package.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
       </div>
-      <a href="international-holiday-package.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-    <div class="intl-grid">
-      <a href="packages-tour-international/bali.html"      class="intl-card"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500&q=80" alt="Bali" loading="lazy"><div class="intl-ov"></div><div class="intl-body"><div class="intl-flag">🇮🇩</div><div class="intl-name">Bali</div><div class="intl-nights">5N / 6D</div><div class="intl-price">From ₹39,999</div></div></a>
-      <a href="packages-tour-international/dubai.html"     class="intl-card"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=80" alt="Dubai" loading="lazy"><div class="intl-ov"></div><div class="intl-body"><div class="intl-flag">🇦🇪</div><div class="intl-name">Dubai</div><div class="intl-nights">4N / 5D</div><div class="intl-price">From ₹49,999</div></div></a>
-      <a href="packages-tour-international/maldives.html"  class="intl-card"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=500&q=80" alt="Maldives" loading="lazy"><div class="intl-ov"></div><div class="intl-body"><div class="intl-flag">🇲🇻</div><div class="intl-name">Maldives</div><div class="intl-nights">4N / 5D</div><div class="intl-price">From ₹59,999</div></div></a>
-      <a href="packages-tour-international/thailand.html"  class="intl-card"><img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=500&q=80" alt="Thailand" loading="lazy"><div class="intl-ov"></div><div class="intl-body"><div class="intl-flag">🇹🇭</div><div class="intl-name">Thailand</div><div class="intl-nights">6N / 7D</div><div class="intl-price">From ₹34,999</div></div></a>
-      <a href="packages-tour-international/singapore.html" class="intl-card"><img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=500&q=80" alt="Singapore" loading="lazy"><div class="intl-ov"></div><div class="intl-body"><div class="intl-flag">🇸🇬</div><div class="intl-name">Singapore</div><div class="intl-nights">5N / 6D</div><div class="intl-price">From ₹44,999</div></div></a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ GOOGLE RATING ═══ -->
-<div class="rating-strip">
-  <div class="rating-inner">
-    <span style="font-size:26px;">⭐</span>
-    <span class="rating-text">Rated 4.9 on Google</span>
-    <span class="rating-stars">★★★★★</span>
-    <div class="rating-div"></div>
-    <span class="rating-count">8,500+ verified reviews</span>
-    <div class="rating-div"></div>
-    <span class="rating-count" style="font-weight:800;color:var(--navy);">Premium Quality · Perfect Journey</span>
-  </div>
-</div>
-
-<!-- ═══ WHY CHOOSE US ═══ -->
-<section style="background:var(--off);">
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag tn">✦ Why Us</div>
-        <h2 class="sec-title">Why Travellers Trust Vista My Trip</h2>
-        <p class="sec-sub">We go beyond booking — we craft memories that last a lifetime</p>
+      <div class="tab-row">
+        <button class="tab on" onclick="filterDest('all',this)">🌍 All</button>
+        <button class="tab" onclick="filterDest('india',this)">🇮🇳 India</button>
+        <button class="tab" onclick="filterDest('intl',this)">✈️ International</button>
+        <button class="tab" onclick="filterDest('weekend',this)">🚗 Weekend</button>
+      </div>
+      <div class="dest-grid" id="destGrid">
+        <a href="packages-tour-india/explore-kashmir.html" class="dest-card" data-cat="india">
+          <img src="img/destination/kashmir1.jfif" alt="Kashmir" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Kashmir</div>
+            <div class="dest-pkgs">7 packages</div>
+          </div>
+          <div class="dest-badge">🔥 Trending</div>
+        </a>
+        <a href="packages-tour-india/ladakh.html" class="dest-card" data-cat="india">
+          <img src="img/destination/ladakh.webp" alt="Ladakh" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Ladakh</div>
+            <div class="dest-pkgs">8 packages</div>
+          </div>
+        </a>
+        <a href="packages-tour-india/kerala.html" class="dest-card" data-cat="india">
+          <img src="img/destination/kerala.jfif" alt="Kerala" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Kerala</div>
+            <div class="dest-pkgs">10 packages</div>
+          </div>
+          <div class="dest-badge gb">⭐ Popular</div>
+        </a>
+        <a href="packages-tour-india/goa.html" class="dest-card" data-cat="india weekend">
+          <img src="img/destination/goa.jfif" alt="Goa" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Goa</div>
+            <div class="dest-pkgs">1 package</div>
+          </div>
+        </a>
+        <a href="packages-tour-india/rajasthan.html" class="dest-card" data-cat="india">
+          <img src="img/destination/rajasthan.jfif" alt="Rajasthan" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Rajasthan</div>
+            <div class="dest-pkgs">8 packages</div>
+          </div>
+        </a>
+        <a href="packages-tour-india/spiti-valley.html" class="dest-card" data-cat="india">
+          <img src="img/destination/spiti-valley.jfif" alt="Spiti Valley" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Spiti Valley</div>
+            <div class="dest-pkgs">2 packages</div>
+          </div>
+        </a>
+        <a href="#" class="dest-card" data-cat="intl">
+          <img src="img/destination/bali.jfif" alt="Bali" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Bali</div>
+            <div class="dest-pkgs">5 packages</div>
+          </div>
+          <div class="dest-badge">🌏 Intl</div>
+        </a>
+        <a href="#" class="dest-card" data-cat="intl">
+          <img src="img/destination/dubai.jfif" alt="Dubai" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Dubai</div>
+            <div class="dest-pkgs">6 packages</div>
+          </div>
+          <div class="dest-badge">🌏 Intl</div>
+        </a>
+        <a href="#" class="dest-card" data-cat="weekend">
+          <img src="img/destination/manali.jpg" alt="Manali Weekend" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Manali Weekend</div>
+            <div class="dest-pkgs">4 packages</div>
+          </div>
+        </a>
+        <a href="#" class="dest-card" data-cat="intl">
+          <img src="img/destination/maldives.jpg" alt="Manali Weekend" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Maldives</div>
+            <div class="dest-pkgs">4 packages</div>
+          </div>
+          <div class="dest-badge">🌏 Intl</div>
+        </a>
+        <a href="#" class="dest-card" data-cat="intl">
+          <img src="img/destination/thailand.avif" alt="Manali Weekend" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Thailand</div>
+            <div class="dest-pkgs">3 packages</div>
+          </div>
+          <div class="dest-badge">🌏 Intl</div>
+        </a>
+        <a href="#" class="dest-card" data-cat="weekend">
+          <img src="img/package/96c5baf52f1a93b2d1ba090df4927178.jpg" alt="Manali Weekend" loading="lazy">
+          <div class="dest-grad"></div>
+          <div class="dest-body">
+            <div class="dest-name">Kasol Kheerganga</div>
+            <div class="dest-pkgs">4 packages</div>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="why-grid">
-      <div class="why-card"><div class="why-icon wi-n"><i class="fa-solid fa-shield-halved"></i></div><h3>100% Safe & Trusted</h3><p>Verified operators, licensed guides, and fully insured packages for your complete peace of mind.</p></div>
-      <div class="why-card"><div class="why-icon wi-r"><i class="fa-solid fa-indian-rupee-sign"></i></div><h3>Best Price Guarantee</h3><p>We match any lower price you find. Transparent pricing with zero hidden charges — ever.</p></div>
-      <div class="why-card"><div class="why-icon wi-n"><i class="fa-solid fa-headset"></i></div><h3>24/7 Travel Support</h3><p>Our expert concierge team is available round the clock throughout your entire journey.</p></div>
-      <div class="why-card"><div class="why-icon wi-g"><i class="fa-solid fa-sliders"></i></div><h3>Fully Customisable</h3><p>Every itinerary tailored to your preferences, group size, and budget — no cookie-cutter packages.</p></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══ TESTIMONIALS ═══ -->
-<section style="background:var(--navy);">
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag" style="background:rgba(247,202,46,.18);color:var(--gold);">⭐ Reviews</div>
-        <h2 class="sec-title" style="color:white;">What Our Travellers Say</h2>
-        <p class="sec-sub" style="color:rgba(255,255,255,.55);">Real stories — 8,500+ five-star reviews on Google</p>
+  <!-- ═══ STATS BANNER ═══ -->
+  <div class="stats-banner">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="num">50K+</div>
+        <div class="lbl">Happy Travellers</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">500+</div>
+        <div class="lbl">Tour Packages</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">30+</div>
+        <div class="lbl">Destinations</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">4.9★</div>
+        <div class="lbl">Google Rating</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">12+</div>
+        <div class="lbl">Years Experience</div>
       </div>
     </div>
-    <div class="review-grid">
-      <div class="review-card"><div class="rev-stars">★★★★★</div><p class="rev-text">"Vista My Trip made our Kashmir trip absolutely magical. Everything was perfectly arranged — the houseboat, shikara rides, the food. Will definitely book again!"</p><div class="rev-author"><div class="rev-av">PS</div><div><div class="rev-name">Priya Sharma</div><div class="rev-trip">Kashmir Honeymoon · March 2025</div></div></div></div>
-      <div class="review-card"><div class="rev-stars">★★★★★</div><p class="rev-text">"Spiti Valley was a dream come true. The team handled everything flawlessly. Our driver was incredibly knowledgeable and the accommodations were beyond expectations."</p><div class="rev-author"><div class="rev-av" style="background:var(--gold-dark);">RK</div><div><div class="rev-name">Rahul Khanna</div><div class="rev-trip">Spiti Valley · June 2025</div></div></div></div>
-      <div class="review-card"><div class="rev-stars">★★★★★</div><p class="rev-text">"Booked our Bali trip with just 10 days' notice and they pulled off an incredible 6-day itinerary. Best travel company we've ever worked with!"</p><div class="rev-author"><div class="rev-av" style="background:var(--navy-mid);">NM</div><div><div class="rev-name">Nisha Mehra</div><div class="rev-trip">Bali International · August 2025</div></div></div></div>
+  </div>
+
+  <!-- ═══ TRENDING PACKAGES ═══ -->
+  <section>
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tr">🔥 Hot Right Now</div>
+          <h2 class="sec-title">Top Trending Packages</h2>
+          <p class="sec-sub">Best-selling tours curated by our travel experts</p>
+        </div>
+        <a href="holiday-package.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="pkg-grid">
+
+        <a href="#" class="pkg-card">
+          <div class="pkg-img">
+            <img src="img/destination/haridwar-chardham.jpg" alt="Chardham Yatra" loading="lazy">
+            <div class="pkg-off">₹1,501 OFF</div>
+            <div class="pkg-dur">11N / 12D</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-title">Chardham Yatra from Haridwar</div>
+            <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span><span><i
+                  class="fa-solid fa-users"></i> Group Tours</span></div>
+            <div style="display:flex;align-items:center;gap:5px;"><span class="pkg-stars">★★★★★</span><span
+                class="pkg-rev">(3,014 reviews)</span></div>
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-old">₹35,000</div>
+                <div class="pkg-new">₹33,499</div>
+                <div class="pkg-per">per person</div>
+              </div>
+              <div class="pkg-cta">View Details</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="pkg-card">
+          <div class="pkg-img">
+            <img src="img/destination/kashmir.jpeg" alt="Kashmir" loading="lazy">
+            <div class="pkg-dur">5N / 6D</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-title">Explore Kashmir – Heaven on Earth</div>
+            <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Jammu & Kashmir</span><span><i
+                  class="fa-solid fa-users"></i> 2–20 People</span></div>
+            <div style="display:flex;align-items:center;gap:5px;"><span class="pkg-stars">★★★★★</span><span
+                class="pkg-rev">(412 reviews)</span></div>
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹22,999</div>
+                <div class="pkg-per">per person</div>
+              </div>
+              <div class="pkg-cta">View Details</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="pkg-card">
+          <div class="pkg-img">
+            <img src="img/destination/kerala.jfif" alt="Kerala" loading="lazy">
+            <div class="pkg-off">₹2,000 OFF</div>
+            <div class="pkg-dur">6N / 7D</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-title">Kerala – God's Own Country</div>
+            <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Kerala</span><span><i
+                  class="fa-solid fa-users"></i> 2–15 People</span></div>
+            <div style="display:flex;align-items:center;gap:5px;"><span class="pkg-stars">★★★★★</span><span
+                class="pkg-rev">(289 reviews)</span></div>
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-old">₹24,000</div>
+                <div class="pkg-new">₹22,000</div>
+                <div class="pkg-per">per person</div>
+              </div>
+              <div class="pkg-cta">View Details</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="packages-tour-india/andaman.html" class="pkg-card">
+          <div class="pkg-img">
+            <img src="img/destination/adman.jfif" alt="Andaman" loading="lazy">
+            <div class="pkg-dur">4N / 5D</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-title">Andaman – Tropical Paradise Escape</div>
+            <div class="pkg-meta"><span><i class="fa-solid fa-location-dot"></i> Andaman & Nicobar</span><span><i
+                  class="fa-solid fa-users"></i> 2–12 People</span></div>
+            <div style="display:flex;align-items:center;gap:5px;"><span class="pkg-stars">★★★★★</span><span
+                class="pkg-rev">(187 reviews)</span></div>
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹19,999</div>
+                <div class="pkg-per">per person</div>
+              </div>
+              <div class="pkg-cta">View Details</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WEEKEND TRIPS ═══ -->
+  <section style="background:var(--light);">
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tg">🚗 Quick Escapes</div>
+          <h2 class="sec-title">Weekend Trips For You 🤩</h2>
+          <p class="sec-sub">Short breaks crafted for spontaneous travellers</p>
+        </div>
+        <a href="weekend-getaways.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="wknd-grid">
+        <a href="weekend-tour-details/manali-sissu-kasol.html" class="wknd-card">
+          <div class="wknd-img"><img src="img/package/78000459f65cf0df0d88b557a86440d3.jpeg" alt="Manali"
+              loading="lazy">
+            <div class="wknd-off">₹1,501 OFF</div>
+          </div>
+          <div class="wknd-body">
+            <div class="wknd-title">Manali Sissu Kasol</div>
+            <div class="wknd-meta"><span><i class="fa-solid fa-clock"></i> 3N / 4D</span><span><i
+                  class="fa-solid fa-location-dot"></i> Himachal</span></div>
+            <div class="wknd-foot">
+              <div class="wknd-price">₹6,999 <span
+                  style="font-size:11px;font-weight:400;color:var(--muted);">/person</span></div>
+              <div class="wknd-cta">Book Now</div>
+            </div>
+          </div>
+        </a>
+        <a href="weekend-tour-details/mcleodganj-tour-package.html" class="wknd-card">
+          <div class="wknd-img"><img src="img/package/a43d11c045f2a248ba22bb0d338329ca.jpg" alt="McLeodganj"
+              loading="lazy">
+            <div class="wknd-off">₹2,000 OFF</div>
+          </div>
+          <div class="wknd-body">
+            <div class="wknd-title">McLeodganj Tour Package</div>
+            <div class="wknd-meta"><span><i class="fa-solid fa-clock"></i> 3N / 4D</span><span><i
+                  class="fa-solid fa-location-dot"></i> Himachal</span></div>
+            <div class="wknd-foot">
+              <div class="wknd-price">₹10,000 <span
+                  style="font-size:11px;font-weight:400;color:var(--muted);">/person</span></div>
+              <div class="wknd-cta">Book Now</div>
+            </div>
+          </div>
+        </a>
+        <a href="weekend-tour-details/kanatal-tour-package.html" class="wknd-card">
+          <div class="wknd-img"><img src="img/package/38755f777fd69e3a8c5367707be3ad01.jpg" alt="Kanatal"
+              loading="lazy">
+            <div class="wknd-off">₹1,000 OFF</div>
+          </div>
+          <div class="wknd-body">
+            <div class="wknd-title">Kanatal Tour Package</div>
+            <div class="wknd-meta"><span><i class="fa-solid fa-clock"></i> 1N / 2D</span><span><i
+                  class="fa-solid fa-location-dot"></i> Uttarakhand</span></div>
+            <div class="wknd-foot">
+              <div class="wknd-price">₹5,200 <span
+                  style="font-size:11px;font-weight:400;color:var(--muted);">/person</span></div>
+              <div class="wknd-cta">Book Now</div>
+            </div>
+          </div>
+        </a>
+        <a href="weekend-tour-details/Kasol-Tour-Package.html" class="wknd-card">
+          <div class="wknd-img"><img src="img/package/96c5baf52f1a93b2d1ba090df4927178.jpg" alt="Kasol" loading="lazy">
+            <div class="wknd-off">₹1,000 OFF</div>
+          </div>
+          <div class="wknd-body">
+            <div class="wknd-title">Kasol Kheerganga Tour Package</div>
+            <div class="wknd-meta"><span><i class="fa-solid fa-clock"></i> 2N / 3D</span><span><i
+                  class="fa-solid fa-location-dot"></i> Himachal</span></div>
+            <div class="wknd-foot">
+              <div class="wknd-price">₹6,500 <span
+                  style="font-size:11px;font-weight:400;color:var(--muted);">/person</span></div>
+              <div class="wknd-cta">Book Now</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOLIDAYS BY INTEREST ═══ -->
+  <section>
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tn">🎯 Travel Styles</div>
+          <h2 class="sec-title">Holidays by Interest</h2>
+          <p class="sec-sub">Find the perfect trip that matches your vibe</p>
+        </div>
+      </div>
+      <div class="theme-controls">
+        <button onclick="scrollThemes(-1)">◀</button>
+        <button onclick="scrollThemes(1)">▶</button>
+      </div>
+      <div class="theme-grid">
+        <a href="package-theme/honeymoon-package.html" class="theme-card"><img src="img/package/honeymoon.jpg"
+            alt="Honeymoon" loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">💕</span><span class="theme-nm">Honeymoon</span></div>
+        </a>
+        <a href="package-theme/adventure-package.html" class="theme-card"><img
+            src="img/destination/adventure.jfif" alt="Adventure" loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">🧗</span><span class="theme-nm">Adventure</span></div>
+        </a>
+        <a href="package-theme/family-package.html" class="theme-card"><img src="img/package/family-trip.avif"
+            alt="Family" loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">👨‍👩‍👧‍👦</span><span class="theme-nm">Family</span></div>
+        </a>
+        <a href="package-theme/pilgrimage-tour.html" class="theme-card"><img
+            src="img/destination/pilgrimage.jfif" alt="Pilgrimage" loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">🛕</span><span class="theme-nm">Pilgrimage</span></div>
+        </a>
+        <a href="package-theme/golden-triangle.html" class="theme-card"><img
+            src="img/destination/golden-triangle.jfif" alt="Golden Triangle"
+            loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">🔺</span><span class="theme-nm">Golden Triangle</span></div>
+        </a>
+        <a href="weekend-getaways.html" class="theme-card"><img
+            src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=400&q=80" alt="Weekend" loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">🌄</span><span class="theme-nm">Weekend Trips</span></div>
+        </a>
+        <a href="#" class="theme-card"><img src="img/package/beach.avif" alt="beach" loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">🏖️</span><span class="theme-nm">Beaches</span></div>
+        </a>
+        <a href="#" class="theme-card"><img src="img/package/hill-stations.webp" alt="Weekend" loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">🏔</span><span class="theme-nm">Hill Station</span></div>
+        </a>
+        <a href="#" class="theme-card"><img src="img/destination/haridwar-chardham.jpg" alt="Weekend" loading="lazy">
+          <div class="theme-ov"></div>
+          <div class="theme-lbl"><span class="theme-emo">🙏</span><span class="theme-nm">Chardham Yatra</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INTERNATIONAL PACKAGES ═══ -->
+  <section style="background:var(--light);">
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tr">🌏 Go Global</div>
+          <h2 class="sec-title">International Holiday Packages</h2>
+          <p class="sec-sub">Explore the world's most stunning destinations with ease</p>
+        </div>
+        <a href="international-holiday-package.html" class="view-all">View All <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="intl-grid">
+        <a href="packages-tour-international/bali.html" class="intl-card"><img
+            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500&q=80" alt="Bali" loading="lazy">
+          <div class="intl-ov"></div>
+          <div class="intl-body">
+            <div class="intl-flag">🇮🇩</div>
+            <div class="intl-name">Bali</div>
+            <div class="intl-nights">5N / 6D</div>
+            <div class="intl-price">From ₹39,999</div>
+          </div>
+        </a>
+        <a href="packages-tour-international/dubai.html" class="intl-card"><img
+            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=80" alt="Dubai" loading="lazy">
+          <div class="intl-ov"></div>
+          <div class="intl-body">
+            <div class="intl-flag">🇦🇪</div>
+            <div class="intl-name">Dubai</div>
+            <div class="intl-nights">4N / 5D</div>
+            <div class="intl-price">From ₹49,999</div>
+          </div>
+        </a>
+        <a href="packages-tour-international/maldives.html" class="intl-card"><img
+            src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=500&q=80" alt="Maldives" loading="lazy">
+          <div class="intl-ov"></div>
+          <div class="intl-body">
+            <div class="intl-flag">🇲🇻</div>
+            <div class="intl-name">Maldives</div>
+            <div class="intl-nights">4N / 5D</div>
+            <div class="intl-price">From ₹59,999</div>
+          </div>
+        </a>
+        <a href="packages-tour-international/thailand.html" class="intl-card"><img
+            src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=500&q=80" alt="Thailand" loading="lazy">
+          <div class="intl-ov"></div>
+          <div class="intl-body">
+            <div class="intl-flag">🇹🇭</div>
+            <div class="intl-name">Thailand</div>
+            <div class="intl-nights">6N / 7D</div>
+            <div class="intl-price">From ₹34,999</div>
+          </div>
+        </a>
+        <a href="packages-tour-international/singapore.html" class="intl-card"><img
+            src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=500&q=80" alt="Singapore"
+            loading="lazy">
+          <div class="intl-ov"></div>
+          <div class="intl-body">
+            <div class="intl-flag">🇸🇬</div>
+            <div class="intl-name">Singapore</div>
+            <div class="intl-nights">5N / 6D</div>
+            <div class="intl-price">From ₹44,999</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GOOGLE RATING ═══ -->
+  <div class="rating-strip">
+    <div class="rating-inner">
+      <span style="font-size:26px;">⭐</span>
+      <span class="rating-text">Rated 4.9 on Google</span>
+      <span class="rating-stars">★★★★★</span>
+      <div class="rating-div"></div>
+      <span class="rating-count">8,500+ verified reviews</span>
+      <div class="rating-div"></div>
+      <span class="rating-count" style="font-weight:800;color:var(--navy);">Premium Quality · Perfect Journey</span>
     </div>
   </div>
-</section>
 
-<!-- ═══ CTA STRIP ═══ -->
-<div class="cta-strip">
-  <h2>Ready to Plan Your <span>Dream Trip?</span></h2>
-  <p>Talk to our travel experts and get a customised itinerary within 24 hours — completely free.</p>
-  <div class="cta-btns">
-    <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Get Free Itinerary</a>
-    <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> +91-92-20-16-14-14</a>
-    <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+  <!-- ═══ WHY CHOOSE US ═══ -->
+  <section style="background:var(--off);">
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tn">✦ Why Us</div>
+          <h2 class="sec-title">Why Travellers Trust Vista My Trip</h2>
+          <p class="sec-sub">We go beyond booking — we craft memories that last a lifetime</p>
+        </div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon wi-n"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>100% Safe & Trusted</h3>
+          <p>Verified operators, licensed guides, and fully insured packages for your complete peace of mind.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon wi-r"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+          <h3>Best Price Guarantee</h3>
+          <p>We match any lower price you find. Transparent pricing with zero hidden charges — ever.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon wi-n"><i class="fa-solid fa-headset"></i></div>
+          <h3>24/7 Travel Support</h3>
+          <p>Our expert concierge team is available round the clock throughout your entire journey.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon wi-g"><i class="fa-solid fa-sliders"></i></div>
+          <h3>Fully Customisable</h3>
+          <p>Every itinerary tailored to your preferences, group size, and budget — no cookie-cutter packages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section style="background:var(--navy);">
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag" style="background:rgba(247,202,46,.18);color:var(--gold);">⭐ Reviews</div>
+          <h2 class="sec-title" style="color:white;">What Our Travellers Say</h2>
+          <p class="sec-sub" style="color:rgba(255,255,255,.55);">Real stories — 8,500+ five-star reviews on Google</p>
+        </div>
+      </div>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Vista My Trip made our Kashmir trip absolutely magical. Everything was perfectly arranged
+            — the houseboat, shikara rides, the food. Will definitely book again!"</p>
+          <div class="rev-author">
+            <div class="rev-av">PS</div>
+            <div>
+              <div class="rev-name">Priya Sharma</div>
+              <div class="rev-trip">Kashmir Honeymoon · March 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Spiti Valley was a dream come true. The team handled everything flawlessly. Our driver
+            was incredibly knowledgeable and the accommodations were beyond expectations."</p>
+          <div class="rev-author">
+            <div class="rev-av" style="background:var(--gold-dark);">RK</div>
+            <div>
+              <div class="rev-name">Rahul Khanna</div>
+              <div class="rev-trip">Spiti Valley · June 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Booked our Bali trip with just 10 days' notice and they pulled off an incredible 6-day
+            itinerary. Best travel company we've ever worked with!"</p>
+          <div class="rev-author">
+            <div class="rev-av" style="background:var(--navy-mid);">NM</div>
+            <div>
+              <div class="rev-name">Nisha Mehra</div>
+              <div class="rev-trip">Bali International · August 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA STRIP ═══ -->
+  <div class="cta-strip">
+    <h2>Ready to Plan Your <span>Dream Trip?</span></h2>
+    <p>Talk to our travel experts and get a customised itinerary within 24 hours — completely free.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Get Free Itinerary</a>
+      <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> +91-92-20-16-14-14</a>
+      <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+        WhatsApp Us</a>
+    </div>
   </div>
-</div>
 
-<!-- ═══ FOOTER ═══ -->
-<div id="footer-placeholder"></div>
+  <!-- ═══ FOOTER ═══ -->
+  <div id="footer-placeholder"></div>
 
-<script src="main.js"></script>
-<script src="components.js"></script>
+  <script src="main.js"></script>
+  <script src="components.js"></script>
 
 </body>
+
 </html>
