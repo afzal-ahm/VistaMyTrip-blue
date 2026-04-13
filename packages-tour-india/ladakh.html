@@ -63,13 +63,13 @@
       </div>
       <div class="dest-stats">
         <div class="dest-stat"><strong>8</strong><span>live Ladakh packages</span></div>
-        <div class="dest-stat"><strong>5N-12N</strong><span>trip length range</span></div>
-        <div class="dest-stat"><strong>₹18.5k</strong><span>starting per person price</span></div>
+        <div class="dest-stat"><strong>4N-9N</strong><span>trip length range</span></div>
+        <div class="dest-stat"><strong>₹24,999</strong><span>starting per person price</span></div>
         <div class="dest-stat"><strong>4x4 Cab</strong><span>included in all routes</span></div>
       </div>
       <div class="dest-points">
-        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Includes bike tours, family trips, and honeymoon specials.</span></div>
-        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Major highlights: Leh, Nubra, Pangong, Tso Moriri and Hanle.</span></div>
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Includes bike tours, family trips, and group specials.</span></div>
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Major highlights: Leh, Nubra, Pangong, Hanle and Tso Moriri.</span></div>
         <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>All packages include permits, transfers, and high-altitude assistance.</span></div>
       </div>
       <div class="dest-aside-contact">
@@ -101,10 +101,11 @@
 <div class="filter-bar">
   <div class="filter-bar-inner">
     <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All Packages</button>
+    <button class="filter-chip" onclick="filterPkgs('adventure',this)">🧗 Adventure</button>
     <button class="filter-chip" onclick="filterPkgs('bike',this)">🏍️ Bike Tours</button>
     <button class="filter-chip" onclick="filterPkgs('family',this)">👨‍👩‍👧 Family</button>
-    <button class="filter-chip" onclick="filterPkgs('adventure',this)">🧗 Adventure</button>
-    <button class="filter-chip" onclick="filterPkgs('honeymoon',this)">💕 Honeymoon</button>
+    <button class="filter-chip" onclick="filterPkgs('short',this)">🗓️ Short Trips</button>
+    <button class="filter-chip" onclick="filterPkgs('group',this)">👥 Group Tours</button>
   </div>
 </div>
 
@@ -118,20 +119,109 @@
       </div>
     </div>
     <div class="pkg-grid">
-      <!-- Ladakh Package 1 -->
-      <a href="packages-tour-india/ladakh/magical-ladakh.html" class="pkg-card" data-pkg-cat="family adventure">
-        <div class="pkg-img"><img src="https://images.unsplash.com/photo-1527838832700-5059252407fa?w=800&amp;q=80" alt="Magical Ladakh" loading="lazy"><div class="pkg-dur">5N / 6D</div></div>
-        <div class="pkg-body"><div class="pkg-title">Magical Ladakh | The Gateway to Nirvana</div><div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Nubra Valley · Pangong Lake · Leh</span></div><div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span><span><i class="fa-solid fa-users"></i> Small Groups</span><span><i class="fa-solid fa-car-side"></i> 4x4 Included</span></div><div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Sightseeing</span><span class="pkg-tag">Permits</span><span class="pkg-tag">Meal</span></div><p class="pkg-desc">Perfect for first-timers, covering the most iconic highlights including the Magnetic Hill and highest motorable passes.</p><div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(1,245 reviews)</span></div><div class="pkg-foot"><div><div class="pkg-new">₹18,500</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div></div>
+      <!-- Package 1 -->
+      <a href="#" class="pkg-card" data-pkg-cat="adventure group">
+        <div class="pkg-img"><img src="img/package/ladhak1.jpg" alt="Leh Ladakh Group Adventure | With Turtuk Village" loading="lazy"><div class="pkg-dur">6N / 7D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Leh Ladakh Group Adventure | With Turtuk Village</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Nubra Valley · Pangong Tso · Leh</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-users"></i> Group Adventure</span><span><i class="fa-solid fa-car-side"></i> Cab Included</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Sightseeing</span><span class="pkg-tag">Meal</span><span class="pkg-tag">Cab</span></div>
+          <p class="pkg-desc">Situated right on the border on the northwest edge of Ladakh is Turtuk which was once a part of Pakistan till the 1971 Indo-Pak war.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹30,745</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
       </a>
-      <!-- Ladakh Package 2 -->
-      <a href="packages-tour-india/ladakh/ladakh-bike-tour.html" class="pkg-card" data-pkg-cat="bike adventure">
-        <div class="pkg-img"><img src="https://images.unsplash.com/photo-1544413647-795b8619d283?w=800&amp;q=80" alt="Ladakh Bike Tour" loading="lazy"><div class="pkg-off">Best Seller</div><div class="pkg-dur">7N / 8D</div></div>
-        <div class="pkg-body"><div class="pkg-title">Leh Ladakh Bike Trip | Manali to Leh via Sarchu</div><div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Manali · Sarchu · Leh · Nubra · Pangong · Leh</span></div><div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-motorcycle"></i> Royal Enfield</span><span><i class="fa-solid fa-wrench"></i> Backup Vehicle</span></div><div class="pkg-tags"><span class="pkg-tag">Bike</span><span class="pkg-tag">Fuel</span><span class="pkg-tag">Camps</span><span class="pkg-tag">Expert Guide</span></div><p class="pkg-desc">An epic road trip crossing multiple high-altitude passes. The ultimate dream for every motorcycle enthusiast.</p><div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(2,840 reviews)</span></div><div class="pkg-foot"><div><div class="pkg-new">₹24,999</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div></div>
+      <!-- Package 2 -->
+      <a href="#" class="pkg-card" data-pkg-cat="adventure family">
+        <div class="pkg-img"><img src="img/package/ladhak2.avif" alt="Srinagar Leh Manali | FREE Customization" loading="lazy"><div class="pkg-dur">10N / 11D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Srinagar Leh Manali | FREE Customization</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Srinagar · Leh · Manali</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-mountain"></i> Multi-City</span><span><i class="fa-solid fa-hotel"></i> Hotel Stay</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Sightseeing</span><span class="pkg-tag">Meal</span></div>
+          <p class="pkg-desc">Explore the beautiful Lakes of Srinagar, thrilling routes of Ladakh, and beautiful Valleys of Himachal, all in a single tour.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,314 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹88,500</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
       </a>
-      <!-- Ladakh Package 3 -->
-      <a href="packages-tour-india/ladakh/leh-honeymoon-special.html" class="pkg-card" data-pkg-cat="honeymoon family">
-        <div class="pkg-img"><img src="https://images.unsplash.com/photo-1581791534721-e599df4417f7?w=800&amp;q=80" alt="Ladakh Honeymoon" loading="lazy"><div class="pkg-dur">6N / 7D</div></div>
-        <div class="pkg-body"><div class="pkg-title">Romantic Ladakh | Honeymoon in the Clouds</div><div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Sham Valley · Nubra · Pangong · Leh</span></div><div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-heart"></i> Private Tour</span><span><i class="fa-solid fa-wine-glass"></i> Candlelight Dinner</span></div><div class="pkg-tags"><span class="pkg-tag">Boutique Hotel</span><span class="pkg-tag">Private Cab</span><span class="pkg-tag">Luxury Camp</span></div><p class="pkg-desc">Curated for couples with premium stays, romantic surprises and a slower pace to enjoy the breathtaking scenery.</p><div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(856 reviews)</span></div><div class="pkg-foot"><div><div class="pkg-new">₹32,000</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div></div>
+      <!-- Package 3 -->
+      <a href="#" class="pkg-card" data-pkg-cat="adventure">
+        <div class="pkg-img"><img src="img/package/ladhak3.webp" alt="Manali Jispa Leh Adventure" loading="lazy"><div class="pkg-dur">9N / 10D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Manali Leh Manali | FREE Camping Stay</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Nubra · Pangong · Tso Moriri</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-water"></i> Lake Circuit</span><span><i class="fa-solid fa-tent"></i> Camp Stay</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Camp</span><span class="pkg-tag">Meal</span><span class="pkg-tag">Cab</span></div>
+          <p class="pkg-desc">Get ready for the most adventurous drive-through of your life. This tour lets you explore both the beauty of Manali and the thrills of Ladakh.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(4,034 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹71,200</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+      <!-- Package 4 -->
+      <a href="#" class="pkg-card" data-pkg-cat="adventure family">
+        <div class="pkg-img"><img src="img/package/ladhak4.avif" alt="8 Days Leh Ladakh with Manali" loading="lazy"><div class="pkg-dur">8N / 9D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">8 Days Leh Ladakh with Manali | Free Excursion</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Nubra · Pangong · Manali</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-school"></i> Rancho School</span><span><i class="fa-solid fa-car-side"></i> Cab Included</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Cab</span><span class="pkg-tag">Meal</span><span class="pkg-tag">Sightseeing</span></div>
+          <p class="pkg-desc">Starting from Leh, this tour features the most amazing journey, which covers both the beautiful valleys of Manali and the adventurous routes of Ladakh.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(6,014 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹51,427</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+      <!-- Package 5 -->
+      <a href="#" class="pkg-card" data-pkg-cat="adventure family">
+        <div class="pkg-img"><img src="img/package/ladhak5.avif" alt="Incredible Ladakh with Hunder Sand Dunes" loading="lazy"><div class="pkg-dur">7N / 8D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Incredible Ladakh with Hunder Sand Dunes</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Nubra · Pangong · Srinagar</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-mountain-sun"></i> Sand Dunes</span><span><i class="fa-solid fa-hotel"></i> Hotel Stay</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Sightseeing</span><span class="pkg-tag">Meal</span><span class="pkg-tag">Cab</span></div>
+          <p class="pkg-desc">Discover the enchanting beauty of Ladakh on this journey that takes you through stunning landscapes, ancient monasteries, and the majestic wonders.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,011 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹47,500</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+      <!-- Package 6 -->
+      <a href="#" class="pkg-card" data-pkg-cat="bike adventure">
+        <div class="pkg-img"><img src="img/package/ladhak6.avif" alt="Thrilling Leh Ladakh Bike Adventure" loading="lazy"><div class="pkg-dur">6N / 7D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Thrilling Leh Ladakh Bike Adventure</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Nubra · Pangong</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-motorcycle"></i> Bike Expedition</span><span><i class="fa-solid fa-car"></i> Support Cab</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Sightseeing</span><span class="pkg-tag">Meal</span><span class="pkg-tag">Cab</span></div>
+          <p class="pkg-desc">Unleash your adventurous spirit with a spectacular bike expedition through the majestic landscapes of Leh-Ladakh. A perfect blend of thrill.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,904 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹28,285</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+      <!-- Package 7 -->
+      <a href="#" class="pkg-card" data-pkg-cat="bike adventure">
+        <div class="pkg-img"><img src="img/package/ladhak7.avif" alt="Thrilling Leh Ladakh Bike Adventure | KTM 390 Edition" loading="lazy"><div class="pkg-dur">5N / 6D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Thrilling Leh Ladakh Bike Adventure | KTM 390</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Nubra · Pangong</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-motorcycle"></i> KTM Edition</span><span><i class="fa-solid fa-tent"></i> Camp Stay</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Camp</span><span class="pkg-tag">Meal</span><span class="pkg-tag">Cab</span></div>
+          <p class="pkg-desc">Embark on the ultimate bike adventure through the rugged terrain of Leh-Ladakh, specially designed for thrill-seekers and motorcycle enthusiasts.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,516 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹25,650</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+      <!-- Package 8 -->
+      <a href="#" class="pkg-card" data-pkg-cat="short family">
+        <div class="pkg-img"><img src="img/package/ladhak8.avif" alt="Thrilling Leh Ladakh | With Flights Included" loading="lazy"><div class="pkg-off">Best Value</div><div class="pkg-dur">4N / 5D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Thrilling Leh Ladakh | With Flights Included</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Leh · Local Sightseeing</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-plane"></i> Flight Included</span><span><i class="fa-solid fa-car-side"></i> Cab Included</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Flight</span><span class="pkg-tag">Meal</span><span class="pkg-tag">Sightseeing</span></div>
+          <p class="pkg-desc">Get ready to make your dream of a Ladakh road trip come true, where you experience the perfect fusion of thrill and serene beauty.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,874 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹37,970</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
       </a>
     </div>
   </div>

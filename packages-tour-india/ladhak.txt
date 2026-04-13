@@ -1,0 +1,105 @@
+TOTAL PACKAGES: 8
+
+----------------------------------------
+PACKAGE 1
+----------------------------------------
+Image URL: /img/package/ladhak1.jpg
+Duration: 6N / 7D
+Title: Leh Ladakh Group Adventure | With Turtuk Village
+Trip Details: 2D Leh 2D Nubra Valley 1D Pangong Tso 1D Leh 1D Kushok Bakula Rimpochee Airport
+Stay Details: Hotel, Sightseeing, Meal, Cab
+Description: Situated right on the border on the northwest edge of Ladakh is Turtuk which was once a part of Pakistan till the 1971 Indo-Pak war to be specific.
+Reviews: 3,014 reviews
+Price: 30,745
+Type: Per Person
+
+----------------------------------------
+PACKAGE 2
+----------------------------------------
+Image URL: /img/package/ladhak2.avif
+Duration: 10N / 11D
+Title: Srinagar Leh Manali | FREE Customization
+Trip Details: 1D Srinagar 1D Kargil 2D Leh 1D Nubra Valley 1D Pangong Tso 1D Leh 1D Sarchu 2D Manali 1D Delhi
+Stay Details: Hotel, Sightseeing, Meal
+Description: Explore the beautiful Lakes of Srinagar, thrilling routes of Ladakh, and beautiful Valleys of Himachal, all in a single tour.
+Reviews: 3,314 reviews
+Price: 88,500
+Type: Per Person
+
+----------------------------------------
+PACKAGE 3
+----------------------------------------
+Image URL: /img/package/ladhak3.webp
+Duration: 9N / 10D
+Title: 1D Delhi 1D Manali 1D Jispa 1D Sarchu 2D Leh 1D Nubra Valley 1D Pangong Tso 1D Leh 1D Leh Airport Travel Terminal
+Trip Details: Leh · Nubra · Pangong · Tso Moriri
+Stay Details: Hotel, Camp, Meal, cab
+Description: Get ready for the most adventurous drive-through of your life. This tour lets you explore both the beauty of Manali and the thrills of Ladakh.
+Reviews: 4,034 reviews
+Price: 71,200
+Type: Per Person
+
+----------------------------------------
+PACKAGE 4
+----------------------------------------
+Image URL: /img/package/ladhak4.avif
+Duration: 8N / 9D
+Title: 8 Days Leh Ladakh with Manali | Free Excursion to Rancho School
+Trip Details: Leh 1D Nubra Valley 1D Pangong Tso 1D Leh 1D Sarchu 1D Manali 1D Delhi
+Stay Details: Hotel, cab, Meal, Sightseeing
+Description: Starting from Leh, this tour features the most amazing journey, which covers both the beautiful valleys of Manali and the adventurous routes of Ladakh.
+Reviews: 6,014 reviews
+Price: 51,427
+Type: Per Person
+
+----------------------------------------
+PACKAGE 5
+----------------------------------------
+Image URL: /img/package/ladhak5.avif
+Duration: 7N / 8D
+Title: Incredible Ladakh with Hunder Sand Dunes
+Trip Details: 2D Leh 1D Nubra Valley 1D Pangong Tso 1D Leh 1D Kargil 2D Srinagar
+Stay Details: Hotel, Sightseeing, Meal, cab
+Description: Discover the enchanting beauty of Ladakh on this 8-day, 7-night journey that takes you through stunning landscapes, ancient monasteries, and the majestic wonders of Leh, Nubra Valley, and Pangong Lake, offering a perfect mix of adventure, culture, and breathtaking Himalayan views.
+Reviews: 3,011 reviews
+Price: 47,500
+Type: Per Person
+
+----------------------------------------
+PACKAGE 6
+----------------------------------------
+Image URL: /img/package/ladhak6.avif
+Duration: 6N / 7D
+Title: Thrilling Leh Ladakh Bike Adventure
+Trip Details: 2D Leh 1D Nubra Valley 1D Pangong Tso 3D Leh
+Stay Details: Hotel, Sightseeing, Meal, cab
+Description: Unleash your adventurous spirit with a spectacular 7-day, 6-night bike expedition through the majestic landscapes of Leh-Ladakh. This journey is a perfect blend of thrill, high-altitude rides, and breathtaking mountain views.
+Reviews: 3,904 reviews
+Price: 28,285
+Type: Per Person
+
+----------------------------------------
+PACKAGE 7
+----------------------------------------
+Image URL: /img/package/ladhak7.avif
+Duration: 5N / 6D
+Title: Thrilling Leh Ladakh Bike Adventure | KTM 390 Edition
+Trip Details: 2D Leh 1D Nubra Valley 1D Pangong Tso 2D Leh
+Stay Details: Hotel, Camp, Meal, cab
+Description: Embark on the ultimate bike adventure through the rugged terrain of Leh-Ladakh, specially designed for thrill-seekers and motorcycle enthusiasts. Ride through high mountain passes and experience breathtaking landscapes at every turn.
+Reviews: 3,516 reviews
+Price: 25,650
+Type: Per Person
+
+----------------------------------------
+PACKAGE 8
+----------------------------------------
+Image URL: /img/package/ladhak8.avif
+Duration: 4N / 5D
+Title: Thrilling Leh Ladakh | With Flights Included
+Trip Details: 5D Leh
+Stay Details: Hotel, Cab, Meal, Sightseeing, Flight
+Description: Get ready to make your dream of a Ladakh road trip come true, where you experience the perfect fusion of thrill, serene beauty, and culture amidst breathtaking Himalayan landscapes.
+Reviews: 3,874 reviews
+Price: 37,970
+Type: Per Person
