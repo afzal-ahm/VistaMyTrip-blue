@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="../">
+<title>Himachal Pradesh Tour Packages | Vista My Trip</title>
+<meta name="description" content="Explore our specially crafted Himachal Pradesh tour packages. Enjoy romantic getaways to Shimla, Kullu, Manali, and more.">
+<link rel="icon" href="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --dest-hero-bg: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #e67e22 100%);
+    --dest-hero-img: url('/img/package/himachal-3.webp');
+    --dest-overlay-grad: linear-gradient(to right, rgba(30,60,114,.92) 0%, rgba(42,82,152,.7) 50%, rgba(230,126,34,.2) 100%);
+    --dest-accent-grad: linear-gradient(90deg, var(--gold), #2a5298, var(--gold));
+  }
+
+  .himachal-guide {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .himachal-guide-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px 22px;
+    transition: var(--ease);
+  }
+  .himachal-guide-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sh-sm);
+    border-color: var(--navy-light);
+  }
+  .himachal-guide-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+  .himachal-guide-card h3 {
+    font-family: var(--fd);
+    font-size: 19px;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .himachal-guide-card p {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 1080px) {
+    .himachal-guide {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 768px) {
+    .himachal-guide {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="announce">
+  ️ <strong>Himachal Getaways:</strong> Shimla, Kullu & Manali tours now open &nbsp;·&nbsp;
+  <a href="contact.html">Plan Your Trip →</a>
+</div>
+
+<nav class="site-nav" id="navbar-placeholder"></nav>
+<div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
+
+<section class="dest-hero">
+  <div class="dest-hero-bg"></div>
+  <div class="dest-hero-overlay"></div>
+  <div class="dest-hero-glow"></div>
+  <div class="dest-hero-inner">
+    <div class="dest-copy">
+      <div class="dest-breadcrumb">
+        <a href="/">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="holiday-package.html">India Tours</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Himachal Pradesh</span>
+      </div>
+      <div class="dest-pill"><span></span> Himachal Pradesh Tours in Packages</div>
+      <h1 class="dest-title">Explore <strong>Himachal Pradesh</strong> with packages shaped around serene hills and snow-capped Himalayas.</h1>
+      <p class="dest-sub">Experience the best of Shimla, Kullu, Manali, and beyond with our customized packages tailored for your perfect getaway.</p>
+      <div class="dest-chips">
+        <div class="dest-chip"><i class="fa-solid fa-mountain"></i> Manali Peaks</div>
+        <div class="dest-chip"><i class="fa-solid fa-tree"></i> Shimla Pines</div>
+        <div class="dest-chip"><i class="fa-solid fa-water"></i> Kullu Valleys</div>
+        <div class="dest-chip"><i class="fa-solid fa-snowflake"></i> Rohtang Snow</div>
+      </div>
+      <div class="dest-actions">
+        <a href="#packages" class="btn-red"><i class="fa-solid fa-suitcase-rolling"></i> View Packages</a>
+        <a href="https://wa.me/919220161414" class="btn-wh-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Expert</a>
+      </div>
+    </div>
+
+    <aside class="dest-aside">
+      <div class="dest-aside-head">
+        <div>
+          <h2>Himachal at a glance</h2>
+          <p>The Land of Snow, now in a responsive and modern layout.</p>
+        </div>
+      </div>
+      <div class="dest-stats">
+        <div class="dest-stat"><strong>3</strong><span>live Himachal packages</span></div>
+        <div class="dest-stat"><strong>6N-7D</strong><span>trip length range</span></div>
+        <div class="dest-stat"><strong>₹23.7k</strong><span>starting per person price</span></div>
+        <div class="dest-stat"><strong>Hill Station</strong><span>stays in all packages</span></div>
+      </div>
+      <div class="dest-points">
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Includes options for romantic honeymoons, family trips, and scenic getaways.</span></div>
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Routes cover Shimla, Manali, Kullu, Jibhi, and Chandigarh.</span></div>
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Each card keeps a clear duration, route, inclusions, and pricing block.</span></div>
+      </div>
+      <div class="dest-aside-contact">
+        <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="contact.html" class="btn-gold"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="dest-intro">
+  <div class="container">
+    <div class="dest-intro-card">
+      <div>
+        <div class="sec-tag tn">🏔️ Destination Overview</div>
+        <h2 class="sec-title" style="margin-top:12px;">A dedicated Himachal page that feels native to the site</h2>
+        <p>Instead of a generic listing, this page introduces Himachal Pradesh with a destination-first layout, then surfaces the live package collection in a card grid that works smoothly across all devices. The styling stays within the existing brand palette so the page looks like it belongs with the rest of the website.</p>
+      </div>
+      <div class="dest-mini-grid">
+        <div class="dest-mini-card"><h3>Stay Types</h3><p>Cozy hill resorts, mountain lodges, and premium valley hotels.</p></div>
+        <div class="dest-mini-card"><h3>Experiences</h3><p>Snow activities, river rafting, temple visits, and mall road walks.</p></div>
+        <div class="dest-mini-card"><h3>Routes</h3><p>Classic Shimla-Manali circuits and offbeat Jibhi trails.</p></div>
+        <div class="dest-mini-card"><h3>Best For</h3><p>Honeymooners, adventure junkies, families, and nature lovers.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filter-bar">
+  <div class="filter-bar-inner">
+    <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All Packages</button>
+    <button class="filter-chip" onclick="filterPkgs('honeymoon',this)">💕 Honeymoon</button>
+    <button class="filter-chip" onclick="filterPkgs('family',this)">👨‍👩‍👧 Family</button>
+    <button class="filter-chip" onclick="filterPkgs('adventure',this)">🧗 Adventure</button>
+  </div>
+</div>
+
+<section id="packages" style="background:var(--light);">
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag tr">🧳 Live Package Lineup</div>
+        <h2 class="sec-title">Himachal Pradesh Tours in Packages</h2>
+        <p class="sec-sub">Carefully crafted tours for a memorable getaway</p>
+      </div>
+    </div>
+
+    <div class="pkg-grid">
+      <a href="packages-tour-india/himachal-pradesh/shimla-kullu-manali-tour-package-from-chandigarh.html" class="pkg-card" data-pkg-cat="family honeymoon">
+        <div class="pkg-img"><img src="/img/package/himachal-1.avif" alt="Romantic Getaway to Shimla & Manali" loading="lazy"><div class="pkg-dur">6N / 7D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Romantic Getaway to Shimla & Manali</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Shimla · Jibhi · Manali · Chandigarh</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-users"></i> Family Friendly</span><span><i class="fa-solid fa-hotel"></i> Hotel Stay</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Sightseeing</span><span class="pkg-tag">Cab</span><span class="pkg-tag">Meal</span></div>
+          <p class="pkg-desc">Escape to the serene hills of Himachal Pradesh with a romantic and family-friendly trip across Shimla, Jibhi, and Manali.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹23,700</div><div class="pkg-per">per person</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <a href="packages-tour-india/himachal-pradesh/magical-manali-shimla-honeymoon-tour-for-a-fairytale-getaway.html" class="pkg-card" data-pkg-cat="honeymoon">
+        <div class="pkg-img"><img src="/img/package/himachal-2.avif" alt="Best of Shimla and Manali" loading="lazy"><div class="pkg-off">Top Seller</div><div class="pkg-dur">6N / 7D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Best of Shimla and Manali | Honeymoon Special Tour</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Delhi · Manali · Shimla · Delhi</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-heart"></i> Honeymoon</span><span><i class="fa-solid fa-hotel"></i> Premium Resort</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Sightseeing</span><span class="pkg-tag">Cab</span><span class="pkg-tag">Meal</span></div>
+          <p class="pkg-desc">Enjoy a fairytale getaway designed exclusively for couples, taking you through the enchanting valleys and snowy peaks of Manali and Shimla.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹38,152</div><div class="pkg-per">per couple</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+
+      <a href="packages-tour-india/himachal-pradesh/himachal-honeymoon-tour.html" class="pkg-card" data-pkg-cat="honeymoon">
+        <div class="pkg-img"><img src="/img/package/himachal-3.webp" alt="Himachal Honeymoon Package" loading="lazy"><div class="pkg-dur">6N / 7D</div></div>
+        <div class="pkg-body">
+          <div class="pkg-title">Himachal Honeymoon Package</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> Delhi · Shimla · Kullu · Manali · Delhi</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-heart"></i> Honeymoon</span><span><i class="fa-solid fa-car-side"></i> Cab Included</span></div>
+          <div class="pkg-tags"><span class="pkg-tag">Hotel</span><span class="pkg-tag">Sightseeing</span><span class="pkg-tag">Cab</span><span class="pkg-tag">Meal</span></div>
+          <p class="pkg-desc">A classic honeymoon route from Delhi to Shimla and Manali, featuring beautiful landscapes, comfortable stays, and private transfers.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;"><span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span></div>
+          <div class="pkg-foot"><div><div class="pkg-new">₹40,000</div><div class="pkg-per">per couple</div></div><div class="pkg-cta">View Details</div></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag tn">✦ Plan Better</div>
+        <h2 class="sec-title">What makes Himachal packages easier to choose here</h2>
+        <p class="sec-sub">The page is organized to help people compare options quickly on any screen size</p>
+      </div>
+    </div>
+    <div class="himachal-guide">
+      <div class="himachal-guide-card">
+        <div class="himachal-guide-icon wi-n"><i class="fa-solid fa-layer-group"></i></div>
+        <h3>Clear Comparison</h3>
+        <p>Each card surfaces duration, route, inclusions and pricing in one consistent layout, which makes the package list easier to scan and compare.</p>
+      </div>
+      <div class="himachal-guide-card">
+        <div class="himachal-guide-icon wi-r"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h3>Responsive by Default</h3>
+        <p>The hero, filters, package cards and planning sections stack cleanly for tablet and mobile without breaking the current brand aesthetic.</p>
+      </div>
+      <div class="himachal-guide-card">
+        <div class="himachal-guide-icon wi-g"><i class="fa-solid fa-link"></i></div>
+        <h3>Direct Detail Access</h3>
+        <p>Every package card can link to its own local detail page, so visitors can move from the curated destination page to a specific itinerary immediately.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <h2>Need a <span>custom Himachal itinerary?</span></h2>
+  <p>We can shape a Shimla, Kullu, and Manali plan around your travel month, budget, and stay style.</p>
+  <div class="cta-btns">
+    <a href="../contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Get Custom Itinerary</a>
+    <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+    <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="main.js"></script>
+<script src="components.js"></script>
+<script>
+  document.querySelectorAll('.nav-link').forEach(function (link) {
+    if (link.getAttribute('href') === 'holiday-package.html') {
+      link.classList.add('active');
+    }
+  });
+</script>
+</body>
+</html>
