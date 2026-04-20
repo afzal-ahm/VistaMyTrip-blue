@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="../">
+<title>Singapore Tour Packages | Vista My Trip</title>
+<meta name="description" content="Explore Singapore tour packages by Vista My Trip. Book luxury, honeymoon, and family trips including Sentosa Island, Universal Studios, and Royal Caribbean cruises.">
+<link rel="icon" href="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --dest-hero-bg: linear-gradient(135deg, #0A2F5F 0%, #163E78 50%, #ED2939 100%);
+    --dest-hero-img: url('/img/dummy-singapore-hero.jpg');
+    --dest-overlay-grad: linear-gradient(to right, rgba(10,47,95,.92) 0%, rgba(22,62,120,.7) 50%, rgba(237,41,57,.2) 100%);
+    --dest-accent-grad: linear-gradient(90deg, var(--gold), #163E78, var(--gold));
+  }
+
+  .singapore-guide {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .singapore-guide-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px 22px;
+    transition: var(--ease);
+  }
+  .singapore-guide-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sh-sm);
+    border-color: var(--navy-light);
+  }
+  .singapore-guide-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+  .singapore-guide-card h3 {
+    font-family: var(--fd);
+    font-size: 19px;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .singapore-guide-card p {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 1080px) {
+    .singapore-guide {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 768px) {
+    .singapore-guide {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="announce">
+  🦁 <strong>Singapore Special:</strong> Unveil the Lion City with exclusive multi-country and cruise packages &nbsp;·&nbsp;
+  <a href="contact.html">Plan Your Trip →</a>
+</div>
+
+<nav class="site-nav" id="navbar-placeholder"></nav>
+<div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
+
+<section class="dest-hero">
+  <div class="dest-hero-bg"></div>
+  <div class="dest-hero-overlay"></div>
+  <div class="dest-hero-glow"></div>
+  <div class="dest-hero-inner">
+    <div class="dest-copy">
+      <div class="dest-breadcrumb">
+        <a href="/">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="international-holiday-package.html">International Tours</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Singapore</span>
+      </div>
+      <div class="dest-pill"><span></span> Singapore Collection</div>
+      <h1 class="dest-title">Explore <strong>Singapore</strong> with packages for modern wonders and luxury escapes.</h1>
+      <p class="dest-sub">Experience the futuristic gardens, world-class theme parks, and vibrant multicultural streets of Singapore with carefully crafted tours.</p>
+      <div class="dest-chips">
+        <div class="dest-chip"><i class="fa-solid fa-leaf"></i> Gardens by the Bay</div>
+        <div class="dest-chip"><i class="fa-solid fa-ship"></i> Luxury Cruises</div>
+        <div class="dest-chip"><i class="fa-solid fa-masks-theater"></i> Sentosa Island</div>
+        <div class="dest-chip"><i class="fa-solid fa-city"></i> Multi-Country Trips</div>
+      </div>
+      <div class="dest-actions">
+        <a href="#packages" class="btn-red"><i class="fa-solid fa-suitcase-rolling"></i> View Packages</a>
+        <a href="https://wa.me/919220161414" class="btn-wh-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Expert</a>
+      </div>
+    </div>
+
+    <aside class="dest-aside">
+      <div class="dest-aside-head">
+        <div>
+          <h2>Singapore at a glance</h2>
+          <p>The dazzling Lion City awaits.</p>
+        </div>
+      </div>
+      <div class="dest-stats">
+        <div class="dest-stat"><strong>4</strong><span>live Singapore packages</span></div>
+        <div class="dest-stat"><strong>3N-8N</strong><span>trip length range</span></div>
+        <div class="dest-stat"><strong>₹64k</strong><span>starting per person price</span></div>
+        <div class="dest-stat"><strong>Flights</strong><span>inclusive options</span></div>
+      </div>
+      <div class="dest-points">
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Includes Sentosa, Universal Studios, and city tours.</span></div>
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Assistance with Singapore tourist visas.</span></div>
+        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Great for family holidays, honeymoons, and cruise lovers.</span></div>
+      </div>
+      <div class="dest-aside-contact">
+        <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="contact.html" class="btn-gold"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="dest-intro">
+  <div class="container">
+    <div class="dest-intro-card">
+      <div>
+        <div class="sec-tag tn">🏙️ Destination Overview</div>
+        <h2 class="sec-title" style="margin-top:12px;">Discover the Magic of Singapore</h2>
+        <p>Singapore is an island city-state off southern Malaysia known for its futuristic architecture, lush gardens, and unparalleled cleanliness. Whether you want to enjoy a cruise, go island-hopping to Malaysia, or experience the thrills of Sentosa, our packages are tailor-made for unforgettable memories.</p>
+      </div>
+      <div class="dest-mini-grid">
+        <div class="dest-mini-card"><h3>Stay Types</h3><p>Premium city hotels, Sentosa beachfront resorts, and luxury cruise cabins.</p></div>
+        <div class="dest-mini-card"><h3>Experiences</h3><p>Universal Studios, Night Safari, Royal Caribbean Cruises, and Gardens by the Bay.</p></div>
+        <div class="dest-mini-card"><h3>Routes</h3><p>Extensive Singapore tours with optional Malaysia (Kuala Lumpur & Langkawi) combos.</p></div>
+        <div class="dest-mini-card"><h3>Best For</h3><p>Families, couples, cruise enthusiasts, and modern city explorers.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filter-bar">
+  <div class="filter-bar-inner">
+    <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All Packages</button>
+    <button class="filter-chip" onclick="filterPkgs('family',this)">👨‍👩‍👧 Family</button>
+    <button class="filter-chip" onclick="filterPkgs('honeymoon',this)">💕 Honeymoon</button>
+    <button class="filter-chip" onclick="filterPkgs('cruise',this)">🚢 Cruises</button>
+  </div>
+</div>
+
+<section id="packages" style="background:var(--light);">
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag tr">🧳 Live Package Lineup</div>
+        <h2 class="sec-title">Singapore Tour Packages</h2>
+        <p class="sec-sub">Carefully crafted itineraries offering the perfect blend of modern attractions, nature, and entertainment.</p>
+      </div>
+    </div>
+
+    <div class="pkg-grid">
+      <!-- Package 1 -->
+      <a href="packages-tour-international/singapore-package/singapore-honeymoon-tour-with-sentosa-island-adventure.html" class="pkg-card" data-pkg-cat="honeymoon family">
+        <div class="pkg-img">
+          <img src="/img/dummy-singapore-pkg1.jpg" alt="Romantic Singapore Vacation" loading="lazy">
+          <div class="pkg-dur">5N / 6D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Romantic Singapore Vacation | Free Adventure Cove Waterpark Tickets</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> 6D Singapore</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-plane"></i> Flight Incl.</span><span><i class="fa-solid fa-hotel"></i> Hotel Stay</span></div>
+          <div class="pkg-meta" style="margin-top: 4px;">
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Flight</span>
+          </div>
+          <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">Escape to the vibrant city of Singapore for a romantic getaway filled with excitement and relaxation. Explore iconic landmarks like the Marina Bay.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span>
+          </div>
+          <div class="pkg-foot">
+            <div>
+              <div class="pkg-new">₹84,000</div>
+              <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">View Details</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Package 2 -->
+      <a href="packages-tour-international/singapore-package/delightful-singapore-and-malaysia-tour-with-langkawi.html" class="pkg-card" data-pkg-cat="family">
+        <div class="pkg-img">
+          <img src="/img/dummy-singapore-pkg2.jpg" alt="Holidays in Singapore & Malaysia" loading="lazy">
+          <div class="pkg-dur">8N / 9D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Holidays in Singapore & Malaysia | Langkawi Special</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> 4D Singapore · 2D Langkawi · 3D Kuala Lumpur</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-earth-asia"></i> Multi-Country</span><span><i class="fa-solid fa-hotel"></i> Hotel Stay</span></div>
+          <div class="pkg-meta" style="margin-top: 4px;">
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+          </div>
+          <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">Embark on a memorable holiday exploring Singapore and Malaysia, with a special focus on the tropical paradise of Langkawi. Begin in vibrant Singapore.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span>
+          </div>
+          <div class="pkg-foot">
+            <div>
+              <div class="pkg-new">₹66,950</div>
+              <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">View Details</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Package 3 -->
+      <a href="packages-tour-international/singapore-package/singapore-royal-caribbean-cruise-package.html" class="pkg-card" data-pkg-cat="cruise luxury family">
+        <div class="pkg-img">
+          <img src="/img/dummy-singapore-pkg3.jpg" alt="Royal Caribbean Singapore Voyage" loading="lazy">
+          <div class="pkg-dur">3N / 4D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Royal Caribbean Singapore Voyage | Luxury on the Seas</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> 1D Singapore · 1D Penang · 2D Singapore</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-ship"></i> Cruise</span><span><i class="fa-solid fa-hotel"></i> Cabin Stay</span></div>
+          <div class="pkg-meta" style="margin-top: 4px;">
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+          </div>
+          <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">Set sail on a luxurious adventure aboard Royal Caribbean’s cruise from Singapore. Experience world-class amenities, gourmet dining, and unparalleled views.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span>
+          </div>
+          <div class="pkg-foot">
+            <div>
+              <div class="pkg-new">₹64,000</div>
+              <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">View Details</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Package 4 -->
+      <a href="packages-tour-international/singapore-package/explore-singapore-with-malaysia.html" class="pkg-card" data-pkg-cat="family">
+        <div class="pkg-img">
+          <img src="/img/dummy-singapore-pkg4.jpg" alt="Singapore & Malaysia Combo Deal" loading="lazy">
+          <div class="pkg-dur">6N / 7D</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Singapore & Malaysia Combo Deal with Day Trip to Sentosa Island</div>
+          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> 4D Singapore · 3D Kuala Lumpur</span></div>
+          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-earth-asia"></i> Multi-Country</span><span><i class="fa-solid fa-hotel"></i> Hotel Stay</span></div>
+          <div class="pkg-meta" style="margin-top: 4px;">
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+          </div>
+          <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">Embark on an exciting journey through Singapore and Malaysia with a special day trip to Sentosa Island. Explore Singapore’s iconic attractions and vibrant culture.</p>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span>
+          </div>
+          <div class="pkg-foot">
+            <div>
+              <div class="pkg-new">₹69,030</div>
+              <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">View Details</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag tn">✦ Plan Better</div>
+        <h2 class="sec-title">Why book your Singapore trip with us?</h2>
+        <p class="sec-sub">We handle all the details so you can enjoy the Lion City seamlessly.</p>
+      </div>
+    </div>
+    <div class="singapore-guide">
+      <div class="singapore-guide-card">
+        <div class="singapore-guide-icon wi-n"><i class="fa-solid fa-passport"></i></div>
+        <h3>Visa Assistance</h3>
+        <p>Singapore requires an e-Visa for Indian passport holders. Our dedicated visa team ensures your documentation is spot-on for a hassle-free approval process.</p>
+      </div>
+      <div class="singapore-guide-card">
+        <div class="singapore-guide-icon wi-r"><i class="fa-solid fa-ticket"></i></div>
+        <h3>Pre-booked Attractions</h3>
+        <p>We bundle entrance tickets for Universal Studios, Night Safari, and Gardens by the Bay into your package so you can skip the long queues.</p>
+      </div>
+      <div class="singapore-guide-card">
+        <div class="singapore-guide-icon wi-g"><i class="fa-solid fa-earth-asia"></i></div>
+        <h3>Multi-Country Combos</h3>
+        <p>Maximize your vacation by effortlessly combining Singapore with Malaysia or a Royal Caribbean luxury cruise, managed entirely by our experts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <h2>Need a <span>custom Singapore itinerary?</span></h2>
+  <p>We can shape a complete holiday around your travel dates, budget, and preferred attractions.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Get Custom Itinerary</a>
+    <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+    <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="main.js"></script>
+<script src="components.js"></script>
+<script>
+  document.querySelectorAll('.nav-link').forEach(function (link) {
+    if (link.getAttribute('href') === 'international-holiday-package.html') {
+      link.classList.add('active');
+    }
+  });
+</script>
+</body>
+</html>
