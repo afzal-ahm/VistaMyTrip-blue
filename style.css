@@ -400,7 +400,7 @@ section { padding:72px 24px; }
 .detail-hero-ov {
   position:absolute;
   inset:0;
-  background:linear-gradient(to right, rgba(7,30,61,.9) 0%, rgba(10,47,95,.72) 52%, rgba(10,47,95,.18) 100%);
+  background:linear-gradient(to right, rgba(7,30,61,.9) 0%, rgba(10,47,95,.72) 30%, rgba(10,47,95,.18) 100%);
 }
 .detail-hero-inner {
   position:relative;
