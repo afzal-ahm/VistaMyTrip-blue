@@ -62,7 +62,7 @@ const VISTA_FOOTER = `
   <div class="footer-inner">
     <div class="footer-top">
       <div class="ft-brand">
-        <div class="logo"><img src="img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'" style="height:80px;"></div>
+        <div class="logo"><img src="img/VMT-LOGO-WHITE.png" alt="Vista My Trip" onerror="this.style.display='none'" style="height:80px;"></div>
         <div class="ft-tagline">Premium Quality, Perfect Journey....</div>
         <p>We craft unforgettable journeys across India and the world — tailored to your dreams, delivered with care.</p>
         <div class="socials">
