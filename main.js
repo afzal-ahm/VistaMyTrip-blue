@@ -37,6 +37,20 @@
   }
   window.filterPkgs = filterPkgs;
 
+  function applyThemeFilterFromQuery() {
+    var params = new URLSearchParams(window.location.search);
+    var theme = params.get('theme');
+
+    if (!theme) return;
+
+    var targetButton = document.querySelector('.filter-chip[data-filter="' + theme + '"]');
+    if (targetButton) {
+      filterPkgs(theme, targetButton);
+    }
+  }
+
+  applyThemeFilterFromQuery();
+
   /* ── Sticky nav shrink on scroll ── */
   var siteNav = document.querySelector('.site-nav');
   if (siteNav) {
