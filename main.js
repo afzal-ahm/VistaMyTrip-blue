@@ -64,10 +64,11 @@
   }
 
   /* ── Active nav link highlight ── */
-  var currentPage = window.location.pathname.split('/').pop() || '/';
-  document.querySelectorAll('.nav-link').forEach(function (link) {
+  var currentPath = window.location.pathname;
+  var pageName = currentPath.split('/').pop();
+  document.querySelectorAll('.nav-link, .mob-panel-link').forEach(function (link) {
     var href = link.getAttribute('href');
-    if (href && href === currentPage) {
+    if (href === currentPath || (pageName && href === '/' + pageName) || (!pageName && href === '/')) {
       link.classList.add('active');
     }
   });

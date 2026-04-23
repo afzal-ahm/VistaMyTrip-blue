@@ -10,7 +10,7 @@ const VISTA_NAVBAR = `
     </a>
     <div class="nav-links">
       <a href="/"                         class="nav-link">Home</a>
-      <a href="/holiday-package.html"               class="nav-link active">🏔️ India Tours</a>
+      <a href="/holiday-package.html"               class="nav-link">🏔️ India Tours</a>
       <a href="/international-holiday-package.html" class="nav-link">✈️ International</a>
       <a href="/weekend-getaways.html"              class="nav-link">🚗 Weekend Trips</a>
       <a href="/corporate-tours.html"               class="nav-link">💼 Corporate</a>
@@ -202,9 +202,13 @@ const VISTA_FOOTER = `
 
 
   // Set active nav link based on current filename
-  const page = window.location.pathname.split('/').pop() || '/';
-  document.querySelectorAll('.nav-links a').forEach(a => {
+  const currentPath = window.location.pathname;
+  const page = currentPath.split('/').pop();
+  document.querySelectorAll('.nav-links a, .mob-panel-links a').forEach(a => {
     a.classList.remove('active');
-    if (a.getAttribute('href') === page) a.classList.add('active');
+    const href = a.getAttribute('href');
+    if (href === currentPath || (page && href === '/' + page) || (!page && href === '/')) {
+      a.classList.add('active');
+    }
   });
 })();
