@@ -6,7 +6,7 @@ const VISTA_NAVBAR = `
 
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <img src="img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'">
+      <img src="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" onerror="this.style.display='none'">
     </a>
     <div class="nav-links">
       <a href="/"                         class="nav-link">Home</a>
@@ -33,7 +33,7 @@ const VISTA_MOB_NAVBAR = `
   <div class="mob-drawer-backdrop" id="mobBackdrop"></div>
   <div class="mob-drawer-panel">
     <div class="mob-panel-head">
-      <a href="/" class="logo"><img src="img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" style="height:42px;" onerror="this.style.display='none'"></a>
+      <a href="/" class="logo"><img src="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png" alt="Vista My Trip" style="height:42px;" onerror="this.style.display='none'"></a>
       <button class="mob-close-btn" id="mobClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <nav class="mob-panel-links">
@@ -62,7 +62,7 @@ const VISTA_FOOTER = `
   <div class="footer-inner">
     <div class="footer-top">
       <div class="ft-brand">
-        <div class="logo"><img src="img/VMT-LOGO-WHITE.png" alt="Vista My Trip" onerror="this.style.display='none'" style="height:80px;"></div>
+        <div class="logo"><img src="/img/VMT-LOGO-WHITE.png" alt="Vista My Trip" onerror="this.style.display='none'" style="height:80px;"></div>
         <div class="ft-tagline">Premium Quality, Perfect Journey....</div>
         <p>We craft unforgettable journeys across India and the world — tailored to your dreams, delivered with care.</p>
         <div class="socials">
