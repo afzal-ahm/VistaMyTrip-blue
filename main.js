@@ -51,6 +51,20 @@
 
   applyThemeFilterFromQuery();
 
+  /* ── Hero Search Form (Homepage) ── */
+  function handleSearch() {
+    var dest = document.getElementById('search-dest');
+
+    if (dest && !dest.value) {
+      alert('Please select a destination to proceed.');
+      return;
+    }
+
+    // Redirect directly to the selected destination page
+    window.location.href = dest.value;
+  }
+  window.handleSearch = handleSearch;
+
   /* ── Sticky nav shrink on scroll ── */
   var siteNav = document.querySelector('.site-nav');
   if (siteNav) {

@@ -102,39 +102,39 @@
         <div class="srch-sub">Get a free customised itinerary within 24 hours</div>
         <div class="sf">
           <label>🌍 Destination</label>
-          <select>
+          <select id="search-dest">
             <option value="">Where do you want to go?</option>
             <optgroup label="🇮🇳 India">
-              <option>Kashmir</option>
-              <option>Ladakh</option>
-              <option>Goa</option>
-              <option>Kerala</option>
-              <option>Rajasthan</option>
-              <option>Himachal Pradesh</option>
-              <option>Uttarakhand</option>
-              <option>Andaman</option>
-              <option>Spiti Valley</option>
-              <option>Manali</option>
-              <option>Sikkim</option>
+              <option value="packages-tour-india/explore-kashmir.html">Kashmir</option>
+              <option value="packages-tour-india/ladakh.html">Ladakh</option>
+              <option value="packages-tour-india/goa.html">Goa</option>
+              <option value="packages-tour-india/kerala.html">Kerala</option>
+              <option value="packages-tour-india/rajasthan.html">Rajasthan</option>
+              <option value="packages-tour-india/himanchal-pradesh.html">Himachal Pradesh</option>
+              <option value="packages-tour-india/uttaraKhand.html">Uttarakhand</option>
+              <option value="packages-tour-india/andaman.html">Andaman</option>
+              <option value="packages-tour-india/spiti-valley.html">Spiti Valley</option>
+              <option value="packages-tour-india/manali.html">Manali</option>
+              <option value="packages-tour-india/sikkim.html">Sikkim</option>
             </optgroup>
             <optgroup label="🌏 International">
-              <option>Bali</option>
-              <option>Dubai</option>
-              <option>Thailand</option>
-              <option>Maldives</option>
-              <option>Singapore</option>
-              <option>Vietnam</option>
-              <option>Europe</option>
-              <option>Malaysia</option>
-              <option>Bhutan</option>
-              <option>Baku</option>
+              <option value="packages-tour-international/bali.html">Bali</option>
+              <option value="packages-tour-international/dubai.html">Dubai</option>
+              <option value="packages-tour-international/thailand.html">Thailand</option>
+              <option value="packages-tour-international/maldives.html">Maldives</option>
+              <option value="packages-tour-international/singapore.html">Singapore</option>
+              <option value="packages-tour-international/vietnam.html">Vietnam</option>
+              <option value="packages-tour-international/europe.html">Europe</option>
+              <option value="packages-tour-international/malaysia.html">Malaysia</option>
+              <option value="packages-tour-international/bhutan.html">Bhutan</option>
+              <option value="packages-tour-international/baku.html">Baku</option>
             </optgroup>
           </select>
         </div>
         <div class="sf-row">
           <div class="sf">
             <label>🎯 Trip Type</label>
-            <select>
+            <select id="search-type">
               <option value="">Select type</option>
               <option>Honeymoon</option>
               <option>Family Holiday</option>
@@ -147,7 +147,7 @@
           </div>
           <div class="sf">
             <label>📅 Duration</label>
-            <select>
+            <select id="search-dur">
               <option value="">No. of days</option>
               <option>2–3 Days</option>
               <option>4–6 Days</option>
@@ -159,7 +159,7 @@
         </div>
         <div class="sf">
           <label>👤 Travellers</label>
-          <select>
+          <select id="search-travellers">
             <option value="">Number of people</option>
             <option>Solo</option>
             <option>Couple (2)</option>
@@ -168,7 +168,7 @@
             <option>Large Group (15+)</option>
           </select>
         </div>
-        <button class="srch-btn"><i class="fa-solid fa-magnifying-glass"></i> Search Packages</button>
+        <button class="srch-btn" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i> Search Packages</button>
         <div class="srch-note">Or call us: <a href="tel:+919220161414">+91-92-20-16-14-14</a></div>
       </div>
     </div>
