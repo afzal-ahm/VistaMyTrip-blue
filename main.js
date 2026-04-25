@@ -7,9 +7,9 @@
   'use strict';
 
   /* ── Destination filter tabs (homepage) ── */
-  function filterDest(cat, btn) {
+  function filterDest(cat, btn, noScroll) {
     document.querySelectorAll('.tab').forEach(function (b) { b.classList.remove('on'); });
-    btn.classList.add('on');
+    if (btn) btn.classList.add('on');
     document.querySelectorAll('.dest-card').forEach(function (card) {
       if (cat === 'all') {
         card.style.display = '';
@@ -18,15 +18,27 @@
         card.style.display = cats.includes(cat) ? '' : 'none';
       }
     });
+
+    if (!noScroll) {
+      var destGrid = document.querySelector('.dest-grid');
+      if (destGrid) {
+        var section = destGrid.closest('section');
+        if (section) {
+          var offset = 120;
+          var y = section.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    }
   }
   // Expose globally for inline onclick (keep backward compat)
   window.filterDest = filterDest;
 
   /* ── Package filter chips (inner pages) ── */
-  function filterPkgs(cat, btn) {
+  function filterPkgs(cat, btn, noScroll) {
     document.querySelectorAll('.filter-chip').forEach(function (b) { b.classList.remove('on'); });
-    btn.classList.add('on');
-    document.querySelectorAll('[data-pkg-cat]').forEach(function (card) {
+    if (btn) btn.classList.add('on');
+    document.querySelectorAll('.pkg-card').forEach(function (card) {
       if (cat === 'all') {
         card.style.display = '';
       } else {
@@ -34,6 +46,18 @@
         card.style.display = cats.includes(cat) ? '' : 'none';
       }
     });
+
+    if (!noScroll) {
+      var pkgGrid = document.querySelector('.pkg-grid');
+      if (pkgGrid) {
+        var section = pkgGrid.closest('section');
+        if (section) {
+          var offset = 160; 
+          var y = section.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    }
   }
   window.filterPkgs = filterPkgs;
 
@@ -45,7 +69,7 @@
 
     var targetButton = document.querySelector('.filter-chip[data-filter="' + theme + '"]');
     if (targetButton) {
-      filterPkgs(theme, targetButton);
+      filterPkgs(theme, targetButton, true);
     }
   }
 

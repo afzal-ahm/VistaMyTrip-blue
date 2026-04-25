@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <title>Bali Tour Packages | Vista My Trip</title>
+    <meta name="description"
+        content="Explore Bali tour packages by Vista My Trip. Book luxury, honeymoon, and adventure trips with custom itineraries for beaches, temples, and island escapes.">
+    <link rel="icon" href="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        :root {
+            --dest-hero-bg: linear-gradient(135deg, #0A2F5F 0%, #163E78 50%, #F7CA2E 100%);
+            --dest-hero-img: url('/img/destination/bali-hero.avif');
+            --dest-overlay-grad: linear-gradient(to right, rgba(10, 47, 95, .92) 0%, rgba(22, 62, 120, .7) 50%, rgba(247, 202, 46, .2) 100%);
+            --dest-accent-grad: linear-gradient(90deg, var(--gold), #163E78, var(--gold));
+        }
+
+        .dubai-guide {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .dubai-guide-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px 22px;
+            transition: var(--ease);
+        }
+
+        .dubai-guide-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--sh-sm);
+            border-color: var(--navy-light);
+        }
+
+        .dubai-guide-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+            font-size: 18px;
+        }
+
+        .dubai-guide-card h3 {
+            font-family: var(--fd);
+            font-size: 19px;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .dubai-guide-card p {
+            font-size: 13.5px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 1080px) {
+            .dubai-guide {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dubai-guide {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="announce">
+        🌴 <strong>Bali Special:</strong> Discover the island of gods with exclusive flight-inclusive deals
+        &nbsp;·&nbsp;
+        <a href="contact.html">Plan Your Trip →</a>
+    </div>
+
+    <nav class="site-nav" id="navbar-placeholder"></nav>
+    <div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
+
+    <section class="dest-hero">
+        <div class="dest-hero-bg"></div>
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-glow"></div>
+        <div class="dest-hero-inner">
+            <div class="dest-copy">
+                <div class="dest-breadcrumb">
+                    <a href="/">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="international-holiday-package.html">International Tours</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>bali</span>
+                </div>
+                <div class="dest-pill"><span></span> Bali Collection</div>
+                <h1 class="dest-title">Explore <strong>Bali</strong> with packages for tropical escapes, culture, and
+                    adventure.</h1>
+                <p class="dest-sub">Experience serene beaches, lush rice terraces, and rich Balinese traditions with
+                    thoughtfully curated tours blending relaxation and exploration.</p>
+                <div class="dest-chips">
+                    <div class="dest-chip"><i class="fa-solid fa-building"></i> Futuristic Skyline</div>
+                    <div class="dest-chip"><i class="fa-solid fa-sun"></i> Desert Safaris</div>
+                    <div class="dest-chip"><i class="fa-solid fa-gem"></i> Luxury Escapes</div>
+                    <div class="dest-chip"><i class="fa-solid fa-ship"></i> Dhow Cruises</div>
+                </div>
+                <div class="dest-actions">
+                    <a href="#packages" class="btn-red"><i class="fa-solid fa-suitcase-rolling"></i> View Packages</a>
+                    <a href="https://wa.me/919220161414" class="btn-wh-outline" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i> WhatsApp Expert</a>
+                </div>
+            </div>
+
+            <aside class="dest-aside">
+                <div class="dest-aside-head">
+                    <div>
+                        <h2>Bali at a glance</h2>
+                        <p>The island of gods and tropical bliss.</p>
+                    </div>
+                </div>
+                <div class="dest-stats">
+                    <div class="dest-stat"><strong>5</strong><span>live Bali packages</span></div>
+                    <div class="dest-stat"><strong>7N-8N</strong><span>trip length range</span></div>
+                    <div class="dest-stat"><strong>₹58.9K</strong><span>starting per person price</span></div>
+                    <div class="dest-stat"><strong>Flights</strong><span>inclusive options</span></div>
+                </div>
+                <div class="dest-points">
+                    <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Includes beach tours, temple
+                            visits, and island excursions.</span></div>
+                    <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Assistance with Indonesia visa
+                            on arrival.</span></div>
+                    <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Flexible dates and premium
+                            villa stays available.</span></div>
+                </div>
+                <div class="dest-aside-contact">
+                    <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> Call Now</a>
+                    <a href="contact.html" class="btn-gold"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section class="dest-intro">
+        <div class="container">
+            <div class="dest-intro-card">
+                <div>
+                    <div class="sec-tag tn">🌴 Destination Overview</div>
+                    <h2 class="sec-title" style="margin-top:12px;">Discover the Magic of Bali</h2>
+                    <p>Bali is a tropical paradise known for its serene beaches, lush rice terraces, and rich cultural
+                        heritage. From peaceful mornings in Ubud to vibrant nightlife in Kuta and scenic adventures like
+                        Mount Batur, our packages ensure you experience the very best of the Island of the Gods.</p>
+                </div>
+                <div class="dest-mini-grid">
+                    <div class="dest-mini-card">
+                        <h3>Stay Types</h3>
+                        <p>Private pool villas, beachfront resorts, jungle retreats, and boutique stays.</p>
+                    </div>
+                    <div class="dest-mini-card">
+                        <h3>Experiences</h3>
+                        <p>Bali Swing, water sports in Nusa Dua, temple tours, and sunrise treks.</p>
+                    </div>
+                    <div class="dest-mini-card">
+                        <h3>Routes</h3>
+                        <p>Ubud, Kuta, Seminyak, Nusa Penida, and Gili Islands itineraries.</p>
+                    </div>
+                    <div class="dest-mini-card">
+                        <h3>Best For</h3>
+                        <p>Couples, honeymooners, solo travellers, and adventure seekers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="filter-bar">
+        <div class="filter-bar-inner">
+            <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All Packages</button>
+            <button class="filter-chip" onclick="filterPkgs('honeymoon',this)">🎀 All Girls Trip</button>
+            <button class="filter-chip" onclick="filterPkgs('family',this)">🧑‍🧒‍🧒 Group Trip </button>
+
+        </div>
+    </div>
+
+    <section id="packages" style="background:var(--light);">
+        <div class="container">
+            <div class="sec-hd">
+                <div>
+                    <div class="sec-tag tr">🌴 Live Package Lineup</div>
+                    <h2 class="sec-title">Bali Tour Packages</h2>
+                    <p class="sec-sub">Carefully crafted itineraries offering the perfect blend of tropical beauty,
+                        cultural experiences, and island adventures.</p>
+                </div>
+            </div>
+
+            <div class="pkg-grid">
+                <!-- Package 1: Zamna Festival Bali -->
+                <a href="packages-tour-international/bali-package/zamna-festival-bali.html" class="pkg-card" data-pkg-cat="general">
+
+                    <div class="pkg-img">
+                        <img src="/img/destination/ZamnaFestivalBali.avif" alt="Zamna Festival Bali" loading="lazy">
+                        <div class="pkg-off">₹5,000 OFF</div>
+                        <div class="pkg-dur">7N / 8D</div>
+                    </div>
+
+                    <div class="pkg-body">
+
+                        <div class="pkg-title">Zamna Festival Bali Packages | Capture A Trip</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Bali</span>
+                            <span><i class="fa-solid fa-users"></i> Group Tours</span>
+                        </div>
+
+                        <!-- ⭐ Added Section (Bali customized) -->
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span>
+                            <span><i class="fa-solid fa-building"></i> Island Tours</span>
+                            <span><i class="fa-solid fa-hotel"></i> Hotel Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top: 4px;">
+                            <span
+                                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+                            <span
+                                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+                            <span
+                                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+                            <span
+                                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">
+                            Experience the best of Bali with vibrant beach clubs, serene temples, scenic rice terraces,
+                            and thrilling island adventures. A perfect blend of relaxation and exploration.
+                        </p>
+
+                        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+                            <span class="pkg-stars">★★★★★</span>
+                            <span class="pkg-rev">(3,014 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹63,999</div>
+                                <div class="pkg-new">₹58,999</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">View Details</div>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- Package 2: Bali with Gili Island -->
+                <a href="packages-tour-international/bali-package/bali-with-gili.html" class="pkg-card" data-pkg-cat="family honeymoon">
+                    <div class="pkg-img">
+                        <img src="/img/destination/BaliwithGiliIsland.avif" alt="Bali with Gili Island" loading="lazy">
+                        <div class="pkg-off">₹5,000 OFF</div>
+                        <div class="pkg-dur">7N / 8D</div>
+                    </div>
+
+                    <div class="pkg-body">
+                        <div class="pkg-title">Bali with Gili Island</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Bali & Gili</span>
+                            <span><i class="fa-solid fa-users"></i> Group Tours</span>
+                        </div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span>
+                            <span><i class="fa-solid fa-building"></i> Island Tours</span>
+                            <span><i class="fa-solid fa-hotel"></i> Hotel Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top:4px;">
+                            <span class="pkg-tag">Hotel</span>
+                            <span class="pkg-tag">Sightseeing</span>
+                            <span class="pkg-tag">Cab</span>
+                            <span class="pkg-tag">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc">Explore Bali’s beauty with a tropical escape to Gili Islands, featuring
+                            beaches, island hopping, and relaxing stays.</p>
+
+                        <div style="display:flex;gap:5px;">
+                            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(2,421 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹54,999</div>
+                                <div class="pkg-new">₹49,999</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">View Details</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Package 3: Bali & Gili Islands Girls Trip -->
+                <a href="packages-tour-international/bali-package/bali-gili-islands-tour-girls.html" class="pkg-card" data-pkg-cat="honeymoon family">
+                    <div class="pkg-img">
+                        <img src="/img/destination/BaliwithGiliIsland2.avif" alt="Girls Trip Bali" loading="lazy">
+                        <div class="pkg-off">₹5,000 OFF</div>
+                        <div class="pkg-dur">7N / 8D</div>
+                    </div>
+
+                    <div class="pkg-body">
+                        <div class="pkg-title">7 Nights, 8 Days | Bali & Gili Islands Girls Trip</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Bali & Gili</span>
+                            <span><i class="fa-solid fa-users"></i> Girls Trip</span>
+                        </div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span>
+                            <span><i class="fa-solid fa-building"></i> Island Tours</span>
+                            <span><i class="fa-solid fa-hotel"></i> Villa Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top:4px;">
+                            <span class="pkg-tag">Villa</span>
+                            <span class="pkg-tag">Sightseeing</span>
+                            <span class="pkg-tag">Beach Club</span>
+                            <span class="pkg-tag">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc">A perfect girls getaway with Bali swing, beach clubs, Gili island vibes, and
+                            premium villa stays.</p>
+
+                        <div style="display:flex;gap:5px;">
+                            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(1,876 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹69,999</div>
+                                <div class="pkg-new">₹64,999</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">View Details</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Package 4: Bali Xmas & New Year -->
+                <a href="packages-tour-international/bali-package/xmas-bali-tour-package.html" class="pkg-card" data-pkg-cat="general">
+                    <div class="pkg-img">
+                        <img src="/img/destination/BaliXmas.avif" alt="Bali Xmas New Year" loading="lazy">
+                        <div class="pkg-off">₹4,000 OFF</div>
+                        <div class="pkg-dur">7N / 8D</div>
+                    </div>
+
+                    <div class="pkg-body">
+                        <div class="pkg-title">Bali with Gili Island Xmas & New Year</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Bali & Gili</span>
+                            <span><i class="fa-solid fa-users"></i> Festive Special</span>
+                        </div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span>
+                            <span><i class="fa-solid fa-building"></i> Festive Tours</span>
+                            <span><i class="fa-solid fa-hotel"></i> Premium Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top:4px;">
+                            <span class="pkg-tag">Hotel</span>
+                            <span class="pkg-tag">Party</span>
+                            <span class="pkg-tag">Sightseeing</span>
+                            <span class="pkg-tag">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc">Celebrate Christmas and New Year in Bali with beach parties, fireworks, and
+                            unforgettable island experiences.</p>
+
+                        <div style="display:flex;gap:5px;">
+                            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(2,103 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹69,999</div>
+                                <div class="pkg-new">₹65,999</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">View Details</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Package 5: Singapore + Bali Combo -->
+                <a href="packages-tour-international/bali-package/9d-singapore-bali-tour.html" class="pkg-card" data-pkg-cat="general">
+                    <div class="pkg-img">
+                        <img src="/img/destination/BaliNight.avif" alt="Singapore Bali Tour" loading="lazy">
+                        <div class="pkg-off">₹5,000 OFF</div>
+                        <div class="pkg-dur">8N / 9D</div>
+                    </div>
+
+                    <div class="pkg-body">
+                        <div class="pkg-title">9 Days Singapore Bali Tour with Night Safari Experience</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Singapore + Bali</span>
+                            <span><i class="fa-solid fa-users"></i> Family Tours</span>
+                        </div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span>
+                            <span><i class="fa-solid fa-building"></i> City + Island Tours</span>
+                            <span><i class="fa-solid fa-hotel"></i> Hotel Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top:4px;">
+                            <span class="pkg-tag">Hotel</span>
+                            <span class="pkg-tag">Sightseeing</span>
+                            <span class="pkg-tag">Cab</span>
+                            <span class="pkg-tag">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc">Enjoy the perfect blend of Singapore’s city life and Bali’s tropical charm
+                            with exciting tours and experiences.</p>
+
+                        <div style="display:flex;gap:5px;">
+                            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(2,987 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹74,999</div>
+                                <div class="pkg-new">₹69,999</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">View Details</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="sec-hd">
+                <div>
+                    <div class="sec-tag tn">✦ Plan Better</div>
+                    <h2 class="sec-title">Why book your Dubai trip with us?</h2>
+                    <p class="sec-sub">We handle the details so you can enjoy the golden emirates seamlessly.</p>
+                </div>
+            </div>
+            <div class="dubai-guide">
+                <div class="dubai-guide-card">
+                    <div class="dubai-guide-icon wi-n"><i class="fa-solid fa-passport"></i></div>
+                    <h3>Visa Assistance</h3>
+                    <p>Our team provides end-to-end support for your UAE tourist visa, making the documentation process
+                        quick and completely stress-free.</p>
+                </div>
+                <div class="dubai-guide-card">
+                    <div class="dubai-guide-icon wi-r"><i class="fa-solid fa-ticket"></i></div>
+                    <h3>Pre-booked Attractions</h3>
+                    <p>Skip the lines at Burj Khalifa, Desert Safari, and theme parks. We secure your tickets in advance
+                        for a smooth sightseeing experience.</p>
+                </div>
+                <div class="dubai-guide-card">
+                    <div class="dubai-guide-icon wi-g"><i class="fa-solid fa-car-side"></i></div>
+                    <h3>Premium Transfers</h3>
+                    <p>Enjoy private and comfortable airport transfers and city travel in air-conditioned vehicles with
+                        professional, experienced local drivers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-strip">
+        <h2>Need a <span>custom Dubai itinerary?</span></h2>
+        <p>We can shape a complete Dubai and Abu Dhabi plan around your travel dates, budget, and interests.</p>
+        <div class="cta-btns">
+            <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Get Custom Itinerary</a>
+            <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+            <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script src="components.js"></script>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(function (link) {
+            if (link.getAttribute('href') === 'international-holiday-package.html') {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
