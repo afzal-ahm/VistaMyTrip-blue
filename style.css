@@ -1912,7 +1912,7 @@ footer { background:var(--navy-dark); color:rgba(255,255,255,.7); padding:60px 2
   .faq-grid { grid-template-columns: 1fr; }
 }
 @media (max-width:600px) {
-  .qc-grid { grid-template-columns: 1fr 1fr; }
+  .qc-grid { grid-template-columns: 1fr; }
   .cf-row { grid-template-columns: 1fr; }
 }
 
