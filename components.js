@@ -13,6 +13,7 @@ const VISTA_NAVBAR = `
       <a href="/holiday-package.html"               class="nav-link">🏔️ India Tours</a>
       <a href="/international-holiday-package.html" class="nav-link">✈️ International</a>
       <a href="/weekend-getaways.html"              class="nav-link">🚗 Weekend Trips</a>
+      <a href="/religious-tour.html"              class="nav-link">🛕 Religious Tours</a>
       <a href="/corporate-tours.html"               class="nav-link">💼 Corporate</a>
       <a href="/about-us.html"                      class="nav-link">About</a>
       <a href="/blog.html"                          class="nav-link">Blog</a>
@@ -41,6 +42,7 @@ const VISTA_MOB_NAVBAR = `
       <a href="/holiday-package.html"               class="mob-panel-link"><i class="fa-solid fa-mountain-sun"></i> India Tours</a>
       <a href="/international-holiday-package.html" class="mob-panel-link"><i class="fa-solid fa-earth-asia"></i> International</a>
       <a href="/weekend-getaways.html"              class="mob-panel-link"><i class="fa-solid fa-car"></i> Weekend Trips</a>
+      <a href="/religious-tour.html"                class="mob-panel-link"><i class="fa-solid fa-om"></i> Religious Tours</a>
       <a href="/corporate-tours.html"               class="mob-panel-link"><i class="fa-solid fa-briefcase"></i> Corporate Tours</a>
       <a href="/about-us.html"                      class="mob-panel-link"><i class="fa-solid fa-circle-info"></i> About Us</a>
       <a href="/blog.html"                          class="mob-panel-link"><i class="fa-solid fa-newspaper"></i> Blog</a>
@@ -81,10 +83,14 @@ const VISTA_FOOTER = `
           <a href="/packages-tour-india/ladakh.html"><i class="fa-solid fa-chevron-right"></i>Ladakh</a>
           <a href="/packages-tour-india/kerala.html"><i class="fa-solid fa-chevron-right"></i>Kerala</a>
           <a href="/packages-tour-india/rajasthan.html"><i class="fa-solid fa-chevron-right"></i>Rajasthan</a>
+          <a href="/packages-tour-india/goa.html"><i class="fa-solid fa-chevron-right"></i>Goa</a>
           <a href="/packages-tour-india/spiti-valley.html"><i class="fa-solid fa-chevron-right"></i>Spiti Valley</a>
           <a href="/packages-tour-india/andaman.html"><i class="fa-solid fa-chevron-right"></i>Andaman</a>
-          <a href="/packages-tour-india/chardham-yatra.html"><i class="fa-solid fa-chevron-right"></i>Chardham Yatra</a>
+          <a href="/packages-tour-india/himanchal-pradesh.html"><i class="fa-solid fa-chevron-right"></i>Himachal Pradesh</a>
           <a href="/packages-tour-india/sikkim.html"><i class="fa-solid fa-chevron-right"></i>Sikkim</a>
+          <a href="/packages-tour-india/manali.html"><i class="fa-solid fa-chevron-right"></i>Manali</a>
+          <a href="/packages-tour-india/chardham-yatra.html"><i class="fa-solid fa-chevron-right"></i>Chardham Yatra</a>
+         
         </div>
       </div>
       <div class="ft-col">
@@ -95,9 +101,13 @@ const VISTA_FOOTER = `
           <a href="/packages-tour-international/maldives.html"><i class="fa-solid fa-chevron-right"></i>Maldives</a>
           <a href="/packages-tour-international/thailand.html"><i class="fa-solid fa-chevron-right"></i>Thailand</a>
           <a href="/packages-tour-international/singapore.html"><i class="fa-solid fa-chevron-right"></i>Singapore</a>
-          <a href="/packages-tour-international/europe.html"><i class="fa-solid fa-chevron-right"></i>Europe</a>
           <a href="/packages-tour-international/vietnam.html"><i class="fa-solid fa-chevron-right"></i>Vietnam</a>
+          <a href="/packages-tour-international/europe.html"><i class="fa-solid fa-chevron-right"></i>Europe</a>
           <a href="/packages-tour-international/malaysia.html"><i class="fa-solid fa-chevron-right"></i>Malaysia</a>
+          <a href="/packages-tour-international/bhutan.html"><i class="fa-solid fa-chevron-right"></i>Bhutan</a>
+          <a href="/packages-tour-international/russia.html"><i class="fa-solid fa-chevron-right"></i>Russia</a>
+          <a href="/packages-tour-international/baku.html"><i class="fa-solid fa-chevron-right"></i>Baku</a>
+          <a href="/packages-tour-international/kazakhstan.html"><i class="fa-solid fa-chevron-right"></i>Kazakhstan</a>
         </div>
       </div>
       <div class="ft-col">

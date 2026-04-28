@@ -337,68 +337,75 @@
       </div>
       <div class="corp-form">
         <h3>Request Corporate Quote</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Your Name*</label>
-            <input type="text" placeholder="Full name">
+        <form action="https://formsubmit.co/adertisingindiawork@gmail.com" method="POST">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Corporate Quote Request">
+          <input type="hidden" name="_next" value="https://vistamytrip.in/thankyou.html">
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name*</label>
+              <input type="text" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label>Company Name*</label>
+              <input type="text" name="company" placeholder="Company name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Mobile*</label>
+              <input type="tel" name="phone" placeholder="9876543210" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number.">
+            </div>
+            <div class="form-group">
+              <label>Work Email*</label>
+              <input type="email" name="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Group Size*</label>
+              <select name="group_size" required>
+                <option value="">Select size</option>
+                <option>10–25 people</option>
+                <option>25–50 people</option>
+                <option>50–100 people</option>
+                <option>100–250 people</option>
+                <option>250+ people</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Trip Type*</label>
+              <select name="trip_type" required>
+                <option value="">Select type</option>
+                <option>Team Outing</option>
+                <option>Conference / Summit</option>
+                <option>Incentive Trip</option>
+                <option>Team Building</option>
+                <option>Business Travel</option>
+                <option>International Trip</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Preferred Destination</label>
+              <input type="text" name="destination" placeholder="e.g. Goa, Dubai, Manali…" required>
+            </div>
+            <div class="form-group">
+              <label>Travel Date</label>
+              <input type="date" name="travel_date" aria-label="Travel Date" required>
+            </div>
           </div>
           <div class="form-group">
-            <label>Company Name*</label>
-            <input type="text" placeholder="Company name">
+            <label>Special Requirements</label>
+            <textarea name="message" placeholder="Tell us about your event goals, budget, special requirements…" required></textarea>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Mobile*</label>
-            <input type="tel" placeholder="+91 XXXXX XXXXX">
-          </div>
-          <div class="form-group">
-            <label>Work Email*</label>
-            <input type="email" placeholder="you@company.com">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Group Size*</label>
-            <select>
-              <option value="">Select size</option>
-              <option>10–25 people</option>
-              <option>25–50 people</option>
-              <option>50–100 people</option>
-              <option>100–250 people</option>
-              <option>250+ people</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Trip Type*</label>
-            <select>
-              <option value="">Select type</option>
-              <option>Team Outing</option>
-              <option>Conference / Summit</option>
-              <option>Incentive Trip</option>
-              <option>Team Building</option>
-              <option>Business Travel</option>
-              <option>International Trip</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Preferred Destination</label>
-            <input type="text" placeholder="e.g. Goa, Dubai, Manali…">
-          </div>
-          <div class="form-group">
-            <label>Travel Date</label>
-            <input type="date" aria-label="Travel Date">
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Special Requirements</label>
-          <textarea placeholder="Tell us about your event goals, budget, special requirements…"></textarea>
-        </div>
-        <a href="tel:+919220161414" class="btn-red" style="width:100%;justify-content:center;padding:14px;">
-          <i class="fa-solid fa-paper-plane"></i> Submit Corporate Enquiry
-        </a>
+          <button type="submit" class="btn-red" style="width:100%;justify-content:center;padding:14px;border:none;cursor:pointer;">
+            <i class="fa-solid fa-paper-plane"></i> Submit Corporate Enquiry
+          </button>
+        </form>
       </div>
     </div>
   </div>
