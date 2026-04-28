@@ -1125,7 +1125,7 @@ footer { background:var(--navy-dark); color:rgba(255,255,255,.7); padding:60px 2
 /* ── 1240px — Squeeze desktop nav to fit screens down to 1025px ── */
 @media (max-width:1240px) {
   .nav-inner { padding: 0 14px; gap: 5px; }
-  .nav-link { padding: 6px 6px; font-size: 12px; }
+  .nav-link { padding: 6px 6px; font-size: 11px; }
   .nav-end { gap: 8px; }
   .nav-phone { padding: 6px 10px; font-size: 12px; }
   .nav-logo img { height: 80px; }
