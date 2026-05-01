@@ -1,260 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<base href="../">
-<title>Thailand Tour Packages | Vista My Trip</title>
-<meta name="description" content="Explore Thailand tour packages by Vista My Trip. Book your Bangkok, Pattaya, and Phuket trips with custom itineraries.">
-<link rel="icon" href="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<style>
-  :root {
-    --dest-hero-bg: linear-gradient(135deg, #0A2F5F 0%, #163E78 50%, #F7CA2E 100%);
-    --dest-hero-img: url('/img/destination/thailand-hero.avif');
-    --dest-overlay-grad: linear-gradient(to right, rgba(10,47,95,.92) 0%, rgba(22,62,120,.7) 50%, rgba(247,202,46,.2) 100%);
-    --dest-accent-grad: linear-gradient(90deg, var(--gold), #163E78, var(--gold));
-  }
-
-  .thailand-guide {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-  }
-  .thailand-guide-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 24px 22px;
-    transition: var(--ease);
-  }
-  .thailand-guide-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--sh-sm);
-    border-color: var(--navy-light);
-  }
-  .thailand-guide-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 14px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 14px;
-    font-size: 18px;
-  }
-  .thailand-guide-card h3 {
-    font-family: var(--fd);
-    font-size: 19px;
-    color: var(--navy);
-    margin-bottom: 10px;
-  }
-  .thailand-guide-card p {
-    font-size: 13.5px;
-    color: var(--muted);
-    line-height: 1.7;
-  }
-
-  @media (max-width: 1080px) {
-    .thailand-guide {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="../">
+  <title>Thailand Tour Packages | Vista My Trip</title>
+  <meta name="description"
+    content="Explore Thailand tour packages by Vista My Trip. Book your Bangkok, Pattaya, and Phuket trips with custom itineraries.">
+  <link rel="icon" href="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --dest-hero-bg: linear-gradient(135deg, #0A2F5F 0%, #163E78 50%, #F7CA2E 100%);
+      --dest-hero-img: url('/img/destination/thailand-hero.avif');
+      --dest-overlay-grad: linear-gradient(to right, rgba(10, 47, 95, .92) 0%, rgba(22, 62, 120, .7) 50%, rgba(247, 202, 46, .2) 100%);
+      --dest-accent-grad: linear-gradient(90deg, var(--gold), #163E78, var(--gold));
     }
-  }
-  @media (max-width: 768px) {
+
     .thailand-guide {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
     }
-  }
-</style>
+
+    .thailand-guide-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px 22px;
+      transition: var(--ease);
+    }
+
+    .thailand-guide-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--sh-sm);
+      border-color: var(--navy-light);
+    }
+
+    .thailand-guide-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      font-size: 18px;
+    }
+
+    .thailand-guide-card h3 {
+      font-family: var(--fd);
+      font-size: 19px;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .thailand-guide-card p {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1080px) {
+      .thailand-guide {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .thailand-guide {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="announce">
-  🌴 <strong>Thailand Special:</strong> Discover vibrant beaches, rich culture, and bustling cities &nbsp;·&nbsp;
-  <a href="contact.html">Plan Your Trip →</a>
-</div>
+  <div class="announce">
+    🌴 <strong>Thailand Special:</strong> Discover vibrant beaches, rich culture, and bustling cities &nbsp;·&nbsp;
+    <a href="contact.html">Plan Your Trip →</a>
+  </div>
 
-<nav class="site-nav" id="navbar-placeholder"></nav>
-<div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
+  <nav class="site-nav" id="navbar-placeholder"></nav>
+  <div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
 
-<section class="dest-hero">
-  <div class="dest-hero-bg"></div>
-  <div class="dest-hero-overlay"></div>
-  <div class="dest-hero-glow"></div>
-  <div class="dest-hero-inner">
-    <div class="dest-copy">
-      <div class="dest-breadcrumb">
-        <a href="/">Home</a>
-        <i class="fa-solid fa-chevron-right"></i>
-        <a href="international-holiday-package.html">International Tours</a>
-        <i class="fa-solid fa-chevron-right"></i>
-        <span>Thailand</span>
+  <section class="dest-hero">
+    <div class="dest-hero-bg"></div>
+    <div class="dest-hero-overlay"></div>
+    <div class="dest-hero-glow"></div>
+    <div class="dest-hero-inner">
+      <div class="dest-copy">
+        <div class="dest-breadcrumb">
+          <a href="/">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="international-holiday-package.html">International Tours</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Thailand</span>
+        </div>
+        <div class="dest-pill"><span></span> Thailand Collection</div>
+        <h1 class="dest-title">Explore <strong>Thailand</strong> with packages for beautiful beaches and cityscapes.
+        </h1>
+        <p class="dest-sub">Experience the vibrant allure of Thailand with our all-inclusive journeys through Bangkok,
+          Pattaya, and Phuket.</p>
+        <div class="dest-chips">
+          <div class="dest-chip"><i class="fa-solid fa-umbrella-beach"></i> Beach Escapes</div>
+          <div class="dest-chip"><i class="fa-solid fa-city"></i> City Tours</div>
+          <div class="dest-chip"><i class="fa-solid fa-martini-glass-empty"></i> Nightlife</div>
+          <div class="dest-chip"><i class="fa-solid fa-camera"></i> Sightseeing</div>
+        </div>
+        <div class="dest-actions">
+          <a href="#packages" class="btn-red"><i class="fa-solid fa-suitcase-rolling"></i> View Packages</a>
+          <a href="https://wa.me/919220161414" class="btn-wh-outline" target="_blank"><i
+              class="fa-brands fa-whatsapp"></i> WhatsApp Expert</a>
+        </div>
       </div>
-      <div class="dest-pill"><span></span> Thailand Collection</div>
-      <h1 class="dest-title">Explore <strong>Thailand</strong> with packages for beautiful beaches and cityscapes.</h1>
-      <p class="dest-sub">Experience the vibrant allure of Thailand with our all-inclusive journeys through Bangkok, Pattaya, and Phuket.</p>
-      <div class="dest-chips">
-        <div class="dest-chip"><i class="fa-solid fa-umbrella-beach"></i> Beach Escapes</div>
-        <div class="dest-chip"><i class="fa-solid fa-city"></i> City Tours</div>
-        <div class="dest-chip"><i class="fa-solid fa-martini-glass-empty"></i> Nightlife</div>
-        <div class="dest-chip"><i class="fa-solid fa-camera"></i> Sightseeing</div>
-      </div>
-      <div class="dest-actions">
-        <a href="#packages" class="btn-red"><i class="fa-solid fa-suitcase-rolling"></i> View Packages</a>
-        <a href="https://wa.me/919220161414" class="btn-wh-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Expert</a>
-      </div>
+
+      <aside class="dest-aside">
+        <div class="dest-aside-head">
+          <div>
+            <h2>Thailand at a glance</h2>
+            <p>The Land of Smiles awaits.</p>
+          </div>
+        </div>
+        <div class="dest-stats">
+          <div class="dest-stat"><strong>1</strong><span>live Thailand package</span></div>
+          <div class="dest-stat"><strong>5N-6N</strong><span>trip length range</span></div>
+          <div class="dest-stat"><strong>₹32k</strong><span>starting per person price</span></div>
+          <div class="dest-stat"><strong>Flights</strong><span>inclusive options</span></div>
+        </div>
+        <div class="dest-points">
+          <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Includes premium hotels, sightseeing,
+              and private transfers.</span></div>
+          <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Visa on arrival available for Indian
+              passports.</span></div>
+          <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Perfect for families, friend groups, and
+              couples.</span></div>
+        </div>
+        <div class="dest-aside-contact">
+          <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> Call Now</a>
+          <a href="contact.html" class="btn-gold"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
+        </div>
+      </aside>
     </div>
+  </section>
 
-    <aside class="dest-aside">
-      <div class="dest-aside-head">
+  <section class="dest-intro">
+    <div class="container">
+      <div class="dest-intro-card">
         <div>
-          <h2>Thailand at a glance</h2>
-          <p>The Land of Smiles awaits.</p>
+          <div class="sec-tag tn">🌴 Destination Overview</div>
+          <h2 class="sec-title" style="margin-top:12px;">Discover the Magic of Thailand</h2>
+          <p>From the buzzing street life of Bangkok to the vibrant beach shores of Pattaya and Phuket, Thailand offers
+            an unparalleled travel experience. Dive into its rich culture, try exotic street foods, and relax by the
+            turquoise sea.</p>
+        </div>
+        <div class="dest-mini-grid">
+          <div class="dest-mini-card">
+            <h3>Stay Types</h3>
+            <p>Luxury city hotels in Bangkok and beachside resorts in Pattaya and Phuket.</p>
+          </div>
+          <div class="dest-mini-card">
+            <h3>Experiences</h3>
+            <p>Island hopping, cultural temple visits, bustling night markets, and watersports.</p>
+          </div>
+          <div class="dest-mini-card">
+            <h3>Routes</h3>
+            <p>Seamlessly connected city-to-island multi-destination itineraries.</p>
+          </div>
+          <div class="dest-mini-card">
+            <h3>Best For</h3>
+            <p>Families, adventure seekers, nightlife enthusiasts, and leisure vacations.</p>
+          </div>
         </div>
       </div>
-      <div class="dest-stats">
-        <div class="dest-stat"><strong>1</strong><span>live Thailand package</span></div>
-        <div class="dest-stat"><strong>5N-6N</strong><span>trip length range</span></div>
-        <div class="dest-stat"><strong>₹32k</strong><span>starting per person price</span></div>
-        <div class="dest-stat"><strong>Flights</strong><span>inclusive options</span></div>
-      </div>
-      <div class="dest-points">
-        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Includes premium hotels, sightseeing, and private transfers.</span></div>
-        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Visa on arrival available for Indian passports.</span></div>
-        <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Perfect for families, friend groups, and couples.</span></div>
-      </div>
-      <div class="dest-aside-contact">
-        <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> Call Now</a>
-        <a href="contact.html" class="btn-gold"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
-      </div>
-    </aside>
-  </div>
-</section>
+    </div>
+  </section>
 
-<section class="dest-intro">
-  <div class="container">
-    <div class="dest-intro-card">
-      <div>
-        <div class="sec-tag tn">🌴 Destination Overview</div>
-        <h2 class="sec-title" style="margin-top:12px;">Discover the Magic of Thailand</h2>
-        <p>From the buzzing street life of Bangkok to the vibrant beach shores of Pattaya and Phuket, Thailand offers an unparalleled travel experience. Dive into its rich culture, try exotic street foods, and relax by the turquoise sea.</p>
-      </div>
-      <div class="dest-mini-grid">
-        <div class="dest-mini-card"><h3>Stay Types</h3><p>Luxury city hotels in Bangkok and beachside resorts in Pattaya and Phuket.</p></div>
-        <div class="dest-mini-card"><h3>Experiences</h3><p>Island hopping, cultural temple visits, bustling night markets, and watersports.</p></div>
-        <div class="dest-mini-card"><h3>Routes</h3><p>Seamlessly connected city-to-island multi-destination itineraries.</p></div>
-        <div class="dest-mini-card"><h3>Best For</h3><p>Families, adventure seekers, nightlife enthusiasts, and leisure vacations.</p></div>
-      </div>
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+      <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All Packages</button>
+      <button class="filter-chip" onclick="filterPkgs('family',this)">👨‍👩‍👧 Family</button>
+      <button class="filter-chip" onclick="filterPkgs('honeymoon',this)">💕 Honeymoon</button>
+      <button class="filter-chip" onclick="filterPkgs('adventure',this)">🧗 Adventure</button>
     </div>
   </div>
-</section>
 
-<div class="filter-bar">
-  <div class="filter-bar-inner">
-    <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All Packages</button>
-    <button class="filter-chip" onclick="filterPkgs('family',this)">👨‍👩‍👧 Family</button>
-    <button class="filter-chip" onclick="filterPkgs('honeymoon',this)">💕 Honeymoon</button>
-    <button class="filter-chip" onclick="filterPkgs('adventure',this)">🧗 Adventure</button>
-  </div>
-</div>
-
-<section id="packages" style="background:var(--light);">
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag tr">🧳 Live Package Lineup</div>
-        <h2 class="sec-title">Thailand Tour Packages</h2>
-        <p class="sec-sub">Carefully crafted itineraries offering the perfect blend of city tours and beach leisure.</p>
-      </div>
-    </div>
-
-    <div class="pkg-grid">
-      <!-- Package 1: Bangkok Pattaya and Phuket | All Together -->
-      <a href="packages-tour-international/thailand-package/phuket-bangkok-pattaya-tour-for-6-days.html" class="pkg-card" data-pkg-cat="family adventure">
-        <div class="pkg-img">
-          <img src="/img/destination/Thailand-package.avif" alt="Bangkok Pattaya and Phuket" loading="lazy">
-          <div class="pkg-dur">5N / 6D</div>
+  <section id="packages" style="background:var(--light);">
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tr">🧳 Live Package Lineup</div>
+          <h2 class="sec-title">Thailand Tour Packages</h2>
+          <p class="sec-sub">Carefully crafted itineraries offering the perfect blend of city tours and beach leisure.
+          </p>
         </div>
-        <div class="pkg-body">
-          <div class="pkg-title">Bangkok Pattaya and Phuket | All Together</div>
-          <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> 2D Phuket · 1D Pattaya · 3D Bangkok</span></div>
-          <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 5.0</span><span><i class="fa-solid fa-heart"></i> Family</span><span><i class="fa-solid fa-hotel"></i> Premium Stay</span></div>
-          <div class="pkg-meta" style="margin-top: 4px;">
-            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
-            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
-            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
-            <span style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+      </div>
+
+      <div class="pkg-grid">
+        <!-- Package 1: Bangkok Pattaya and Phuket | All Together -->
+        <a href="packages-tour-international/thailand-package/phuket-bangkok-pattaya-tour-for-6-days.html"
+          class="pkg-card" data-pkg-cat="family adventure">
+          <div class="pkg-img">
+            <img src="/img/destination/Thailand-package.avif" alt="Bangkok Pattaya and Phuket" loading="lazy">
+            <div class="pkg-dur">5N / 6D</div>
           </div>
-          <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">Experience the vibrant allure of Thailand with this all-inclusive journey through Bangkok, Pattaya, and Phuket. Begin your adventure in Bangkok, where ancient temples meet modern skylines.</p>
-          <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
-            <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span>
-          </div>
-          <div class="pkg-foot">
-            <div>
-              <div class="pkg-new">₹32,000</div>
-              <div class="pkg-per">Per Person</div>
+          <div class="pkg-body">
+            <div class="pkg-title">Bangkok Pattaya and Phuket | All Together</div>
+            <div class="pkg-meta route"><span><i class="fa-solid fa-route"></i> 2D Phuket · 1D Pattaya · 3D
+                Bangkok</span></div>
+            <div class="pkg-meta"><span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i>
+                5.0</span><span><i class="fa-solid fa-heart"></i> Family</span><span><i class="fa-solid fa-hotel"></i>
+                Premium Stay</span></div>
+            <div class="pkg-meta" style="margin-top: 4px;">
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
             </div>
-            <div class="pkg-cta">View Detail <div class="icon-arrow-top-right ml-15" style="display:inline-block;"></div></div>
+            <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">Experience
+              the vibrant allure of Thailand with this all-inclusive journey through Bangkok, Pattaya, and Phuket. Begin
+              your adventure in Bangkok, where ancient temples meet modern skylines.</p>
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(3,014 reviews)</span>
+            </div>
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹32,000</div>
+                <div class="pkg-per">Per Person</div>
+              </div>
+              <div class="pkg-cta">View Detail <div class="icon-arrow-top-right ml-15" style="display:inline-block;">
+                </div>
+              </div>
+            </div>
           </div>
+        </a>
+
+        <!-- Package 2: Thailand – Pattaya & Bangkok (Deal Package) -->
+        <a href="/contact.html" class="pkg-card" data-pkg-cat="family budget">
+          <div class="pkg-img">
+            <img src="/img/destination/Pattaya.avif" alt="Thailand Pattaya Bangkok" loading="lazy">
+            <div class="pkg-dur">4N / 5D</div>
+          </div>
+
+          <div class="pkg-body">
+            <div class="pkg-title">Thailand – Pattaya & Bangkok | Deal Package</div>
+
+            <div class="pkg-meta route">
+              <span><i class="fa-solid fa-route"></i> 2N Pattaya · 2N Bangkok</span>
+            </div>
+
+            <div class="pkg-meta">
+              <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.5</span>
+              <span><i class="fa-solid fa-tag"></i> Budget</span>
+              <span><i class="fa-solid fa-hotel"></i> Standard Stay</span>
+            </div>
+
+            <div class="pkg-meta" style="margin-top:4px;">
+              <span class="pkg-tag">Hotel</span>
+              <span class="pkg-tag">Sightseeing</span>
+              <span class="pkg-tag">Transfers</span>
+              <span class="pkg-tag">Meal</span>
+            </div>
+
+            <p class="pkg-desc">
+              Discover Thailand’s vibrant nightlife and city charm with a perfect mix of Pattaya beaches and Bangkok
+              temples in a budget-friendly deal.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span>
+              <span class="pkg-rev">(1,820 reviews)</span>
+            </div>
+
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹29,100</div>
+                <div class="pkg-per">Per Person</div>
+              </div>
+              <div class="pkg-cta">View Detail</div>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Package 3: Simply Thailand Fully Loaded -->
+        <a href="/contact.html" class="pkg-card" data-pkg-cat="family premium">
+          <div class="pkg-img">
+            <img src="/img/destination/bangkok.avif" alt="Thailand Fully Loaded" loading="lazy">
+            <div class="pkg-dur">5N / 6D</div>
+          </div>
+
+          <div class="pkg-body">
+            <div class="pkg-title">Simply Thailand Fully Loaded (3N Pattaya + 2N Bangkok)</div>
+
+            <div class="pkg-meta route">
+              <span><i class="fa-solid fa-route"></i> 3N Pattaya · 2N Bangkok</span>
+            </div>
+
+            <div class="pkg-meta">
+              <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.6</span>
+              <span><i class="fa-solid fa-heart"></i> Recommended</span>
+              <span><i class="fa-solid fa-hotel"></i> Premium Stay</span>
+            </div>
+
+            <div class="pkg-meta" style="margin-top:4px;">
+              <span class="pkg-tag">Hotel</span>
+              <span class="pkg-tag">Sightseeing</span>
+              <span class="pkg-tag">Cab</span>
+              <span class="pkg-tag">Meal</span>
+            </div>
+
+            <p class="pkg-desc">
+              A complete Thailand experience with beach fun, city exploration, and curated sightseeing across Pattaya
+              and Bangkok.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span>
+              <span class="pkg-rev">(2,240 reviews)</span>
+            </div>
+
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹71,500</div>
+                <div class="pkg-per">Per Person</div>
+              </div>
+              <div class="pkg-cta">View Detail</div>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Package 4: Beautiful Thailand Budget Escape -->
+        <a href="/contact.html" class="pkg-card" data-pkg-cat="budget value">
+          <div class="pkg-img">
+            <img src="/img/destination/Pattaya2.avif" alt="Beautiful Thailand" loading="lazy">
+            <div class="pkg-dur">4N / 5D</div>
+          </div>
+
+          <div class="pkg-body">
+            <div class="pkg-title">Beautiful Thailand | Budget Escape</div>
+
+            <div class="pkg-meta route">
+              <span><i class="fa-solid fa-route"></i> 2N Pattaya · 2N Bangkok</span>
+            </div>
+
+            <div class="pkg-meta">
+              <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.4</span>
+              <span><i class="fa-solid fa-wallet"></i> Value</span>
+              <span><i class="fa-solid fa-hotel"></i> Standard Stay</span>
+            </div>
+
+            <div class="pkg-meta" style="margin-top:4px;">
+              <span class="pkg-tag">Hotel</span>
+              <span class="pkg-tag">Sightseeing</span>
+              <span class="pkg-tag">Transfers</span>
+              <span class="pkg-tag">Meal</span>
+            </div>
+
+            <p class="pkg-desc">
+              Enjoy a relaxing Thailand getaway with beaches, vibrant streets, and cultural attractions at an affordable
+              price.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span>
+              <span class="pkg-rev">(1,050 reviews)</span>
+            </div>
+
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹56,400</div>
+                <div class="pkg-per">Per Person</div>
+              </div>
+              <div class="pkg-cta">View Detail</div>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Package 5: Blissful Thailand – Honeymoon Special -->
+        <a href="/contact.html" class="pkg-card" data-pkg-cat="honeymoon">
+          <div class="pkg-img">
+            <img src="/img/destination/krabi2.avif" alt="Honeymoon Thailand" loading="lazy">
+            <div class="pkg-badge pink">Honeymoon Special</div>
+            <div class="pkg-dur">7N / 8D</div>
+          </div>
+
+          <div class="pkg-body">
+            <div class="pkg-title">Blissful Thailand – Honeymoon Special</div>
+
+            <div class="pkg-meta route">
+              <span><i class="fa-solid fa-route"></i> 2N Phuket · 2N Krabi +1</span>
+            </div>
+
+            <div class="pkg-meta">
+              <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.2</span>
+              <span><i class="fa-solid fa-heart"></i> Customized Tour</span>
+              <span><i class="fa-solid fa-hotel"></i> Standard</span>
+            </div>
+
+            <div class="pkg-meta" style="margin-top: 4px;">
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Flights</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotels</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+            </div>
+
+            <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">
+              A romantic Thailand escape covering Phuket and Krabi with beautiful beaches, island tours, and private
+              experiences designed for couples.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(800 reviews)</span>
+            </div>
+
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-old">₹71,729 <span class="off">10% OFF</span></div>
+                <div class="pkg-new">₹64,800</div>
+                <div class="pkg-per">Starting price per adult</div>
+              </div>
+              <div class="pkg-cta">View Details</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Package 3: Trending Thailand (Recommended) -->
+        <a href="/contact.html" class="pkg-card" data-pkg-cat="family">
+          <div class="pkg-img">
+            <img src="/img/destination/krabi.avif" alt="Trending Thailand" loading="lazy">
+            <div class="pkg-badge blue">Recommended</div>
+            <div class="pkg-dur">6N / 7D</div>
+          </div>
+
+          <div class="pkg-body">
+            <div class="pkg-title">Trending Thailand</div>
+
+            <div class="pkg-meta route">
+              <span><i class="fa-solid fa-route"></i> 1N Phi Phi Island · 2N Krabi +1</span>
+            </div>
+
+            <div class="pkg-meta">
+              <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 3.9</span>
+              <span><i class="fa-solid fa-heart"></i> Customized Tour</span>
+              <span><i class="fa-solid fa-hotel"></i> Standard</span>
+            </div>
+
+            <div class="pkg-meta" style="margin-top: 4px;">
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Flights</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotels</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+            </div>
+
+            <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">
+              Discover the trending destinations of Thailand including Phi Phi Island and Krabi with scenic views and
+              exciting island hopping experiences.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(600 reviews)</span>
+            </div>
+
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-old">₹75,133 <span class="off">10% OFF</span></div>
+                <div class="pkg-new">₹67,700</div>
+                <div class="pkg-per">Starting price per adult</div>
+              </div>
+              <div class="pkg-cta">View Details</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Package 7: Magical Phuket Krabi Bangkok -->
+        <a href="/contact.html" class="pkg-card" data-pkg-cat="family adventure">
+          <div class="pkg-img">
+            <img src="/img/destination/Phuket.avif" alt="Phuket Krabi Bangkok" loading="lazy">
+            <div class="pkg-dur">6N / 7D</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-title">Magical Phuket Krabi Bangkok</div>
+
+            <div class="pkg-meta route">
+              <span><i class="fa-solid fa-route"></i> 2N Phuket · 2N Krabi +1</span>
+            </div>
+
+            <div class="pkg-meta">
+              <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.1</span>
+              <span><i class="fa-solid fa-users"></i> Group Tour</span>
+              <span><i class="fa-solid fa-hotel"></i> Value Stay</span>
+            </div>
+
+            <div class="pkg-meta" style="margin-top: 4px;">
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+            </div>
+
+            <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">
+              Explore Thailand’s most iconic destinations including Phuket, Krabi, and Bangkok with a perfect mix of
+              beaches, nightlife, and cultural experiences.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(1,100 reviews)</span>
+            </div>
+
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹99,900</div>
+                <div class="pkg-per">Per Person</div>
+              </div>
+              <div class="pkg-cta">View Detail</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Package 8: Classic Thailand -->
+        <a href="/contact.html" class="pkg-card" data-pkg-cat="family">
+          <div class="pkg-img">
+            <img src="/img/destination/Phuket2.avif" alt="Classic Thailand" loading="lazy">
+            <div class="pkg-dur">4N / 5D</div>
+          </div>
+
+          <div class="pkg-body">
+            <div class="pkg-title">Classic Thailand</div>
+
+            <div class="pkg-meta route">
+              <span><i class="fa-solid fa-route"></i> 2N Krabi · 2N Phuket</span>
+            </div>
+
+            <div class="pkg-meta">
+              <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 3.9</span>
+              <span><i class="fa-solid fa-heart"></i> Customized Tour</span>
+              <span><i class="fa-solid fa-hotel"></i> Standard Stay</span>
+            </div>
+
+            <div class="pkg-meta" style="margin-top: 4px;">
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+            </div>
+
+            <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">
+              A perfect short getaway covering Krabi and Phuket with scenic beaches, island tours, and relaxing stays.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(300 reviews)</span>
+            </div>
+
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹41,600</div>
+                <div class="pkg-per">Per Person</div>
+              </div>
+              <div class="pkg-cta">View Detail</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Package 9: Explore Thailand -->
+        <a href="/contact.html" class="pkg-card" data-pkg-cat="family">
+          <div class="pkg-img">
+            <img src="/img/destination/Krabi3.avif" alt="Explore Thailand" loading="lazy">
+            <div class="pkg-dur">4N / 5D</div>
+          </div>
+
+          <div class="pkg-body">
+            <div class="pkg-title">Explore Thailand</div>
+
+            <div class="pkg-meta route">
+              <span><i class="fa-solid fa-route"></i> 2N Krabi · 2N Phuket</span>
+            </div>
+
+            <div class="pkg-meta">
+              <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 3.9</span>
+              <span><i class="fa-solid fa-heart"></i> Customized Tour</span>
+              <span><i class="fa-solid fa-hotel"></i> Standard Stay</span>
+            </div>
+
+            <div class="pkg-meta" style="margin-top: 4px;">
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Hotel</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Sightseeing</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Cab</span>
+              <span
+                style="font-size:11.5px;font-weight:700;color:var(--navy);background:var(--navy-light);padding:3px 8px;border-radius:4px;">Meal</span>
+            </div>
+
+            <p class="pkg-desc" style="font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:8px;">
+              Discover Thailand’s top island destinations with a balanced itinerary covering Krabi and Phuket’s best
+              attractions.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+              <span class="pkg-stars">★★★★★</span><span class="pkg-rev">(2,600 reviews)</span>
+            </div>
+
+            <div class="pkg-foot">
+              <div>
+                <div class="pkg-new">₹49,600</div>
+                <div class="pkg-per">Per Person</div>
+              </div>
+              <div class="pkg-cta">View Detail</div>
+            </div>
+          </div>
+        </a>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tn">✦ Plan Better</div>
+          <h2 class="sec-title">Why book your Thailand trip with us?</h2>
+          <p class="sec-sub">We handle the details so you can enjoy the Land of Smiles seamlessly.</p>
         </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="sec-hd">
-      <div>
-        <div class="sec-tag tn">✦ Plan Better</div>
-        <h2 class="sec-title">Why book your Thailand trip with us?</h2>
-        <p class="sec-sub">We handle the details so you can enjoy the Land of Smiles seamlessly.</p>
+      </div>
+      <div class="thailand-guide">
+        <div class="thailand-guide-card">
+          <div class="thailand-guide-icon wi-n"><i class="fa-solid fa-passport"></i></div>
+          <h3>Visa Assistance</h3>
+          <p>Thailand offers Visa on Arrival for Indian tourists. Our team ensures all your documentation and hotel
+            vouchers are perfectly aligned to clear immigration smoothly.</p>
+        </div>
+        <div class="thailand-guide-card">
+          <div class="thailand-guide-icon wi-r"><i class="fa-solid fa-van-shuttle"></i></div>
+          <h3>Seamless Transfers</h3>
+          <p>From airport pickups to inter-city travel between Bangkok and Pattaya, our private cab and transport
+            networks keep your journey comfortable.</p>
+        </div>
+        <div class="thailand-guide-card">
+          <div class="thailand-guide-icon wi-g"><i class="fa-solid fa-umbrella-beach"></i></div>
+          <h3>Curated Sightseeing</h3>
+          <p>We bundle the best of Thailand — from Coral Island tours to bustling Bangkok markets — into perfectly timed
+            daily itineraries.</p>
+        </div>
       </div>
     </div>
-    <div class="thailand-guide">
-      <div class="thailand-guide-card">
-        <div class="thailand-guide-icon wi-n"><i class="fa-solid fa-passport"></i></div>
-        <h3>Visa Assistance</h3>
-        <p>Thailand offers Visa on Arrival for Indian tourists. Our team ensures all your documentation and hotel vouchers are perfectly aligned to clear immigration smoothly.</p>
-      </div>
-      <div class="thailand-guide-card">
-        <div class="thailand-guide-icon wi-r"><i class="fa-solid fa-van-shuttle"></i></div>
-        <h3>Seamless Transfers</h3>
-        <p>From airport pickups to inter-city travel between Bangkok and Pattaya, our private cab and transport networks keep your journey comfortable.</p>
-      </div>
-      <div class="thailand-guide-card">
-        <div class="thailand-guide-icon wi-g"><i class="fa-solid fa-umbrella-beach"></i></div>
-        <h3>Curated Sightseeing</h3>
-        <p>We bundle the best of Thailand — from Coral Island tours to bustling Bangkok markets — into perfectly timed daily itineraries.</p>
-      </div>
+  </section>
+
+  <div class="cta-strip">
+    <h2>Need a <span>custom Thailand itinerary?</span></h2>
+    <p>We can shape a complete island getaway around your travel dates, budget, and destination preferences.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Get Custom Itinerary</a>
+      <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+      <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+        WhatsApp Us</a>
     </div>
   </div>
-</section>
 
-<div class="cta-strip">
-  <h2>Need a <span>custom Thailand itinerary?</span></h2>
-  <p>We can shape a complete island getaway around your travel dates, budget, and destination preferences.</p>
-  <div class="cta-btns">
-    <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Get Custom Itinerary</a>
-    <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> Call Us Now</a>
-    <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
-  </div>
-</div>
+  <div id="footer-placeholder"></div>
 
-<div id="footer-placeholder"></div>
-
-<script src="main.js"></script>
-<script src="components.js"></script>
-<script>
-  document.querySelectorAll('.nav-link').forEach(function (link) {
-    if (link.getAttribute('href') === 'international-holiday-package.html') {
-      link.classList.add('active');
-    }
-  });
-</script>
+  <script src="main.js"></script>
+  <script src="components.js"></script>
+  <script>
+    document.querySelectorAll('.nav-link').forEach(function (link) {
+      if (link.getAttribute('href') === 'international-holiday-package.html') {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
+
 </html>
