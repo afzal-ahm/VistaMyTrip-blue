@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="../../">
+  <title>5 Kedar Tour Packages | Vista My Trip</title>
+  <meta name="description" content="Explore 5 Kedar Yatra packages by Vista My Trip. Book your spiritual journey with custom itineraries.">
+  <link rel="icon" href="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --dest-hero-bg: linear-gradient(135deg, #d35400 0%, #e67e22 50%, #f39c12 100%);
+      --dest-hero-img: url('/img/destination/dummy-1.jpeg');
+      --dest-overlay-grad: linear-gradient(to right, rgba(211, 84, 0, .92) 0%, rgba(230, 126, 34, .7) 50%, rgba(243, 156, 18, .2) 100%);
+      --dest-accent-grad: linear-gradient(90deg, var(--gold), #d35400, var(--gold));
+    }
+
+    .kedar-guide {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .kedar-guide-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px 22px;
+      transition: var(--ease);
+    }
+
+    .kedar-guide-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--sh-sm);
+      border-color: var(--navy-light);
+    }
+
+    .kedar-guide-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      font-size: 18px;
+    }
+
+    .kedar-guide-card h3 {
+      font-family: var(--fd);
+      font-size: 19px;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .kedar-guide-card p {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1080px) {
+      .kedar-guide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 768px) {
+      .kedar-guide { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announce">
+    🛕 <strong>Sacred Journeys:</strong> Book 5 Kedar Yatra packages today! &nbsp;·&nbsp;
+    <a href="contact.html">Plan Your Pilgrimage →</a>
+  </div>
+
+  <nav class="site-nav" id="navbar-placeholder"></nav>
+  <div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
+
+  <section class="dest-hero">
+    <div class="dest-hero-bg"></div>
+    <div class="dest-hero-overlay"></div>
+    <div class="dest-hero-glow"></div>
+    <div class="dest-hero-inner">
+      <div class="dest-copy">
+        <div class="dest-breadcrumb">
+          <a href="/">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="religious-tour.html">Religious Tours</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>5 Kedar Yatra</span>
+        </div>
+        <div class="dest-pill"><span></span> Spiritual Collection</div>
+        <h1 class="dest-title">Explore <strong>5 Kedar Yatra</strong></h1>
+        <p class="dest-sub">Experience the divine aura of all five sacred Kedar shrines with our thoughtfully curated pilgrimage packages. Enjoy comfortable stays, seamless transfers, and guided darshans.</p>
+        <div class="dest-chips">
+          <div class="dest-chip"><i class="fa-solid fa-om"></i> Divine Darshan</div>
+          <div class="dest-chip"><i class="fa-solid fa-mountain"></i> Himalayan Trek</div>
+          <div class="dest-chip"><i class="fa-solid fa-hotel"></i> Comfortable Stays</div>
+        </div>
+        <div class="dest-actions">
+          <a href="#packages" class="btn-red"><i class="fa-solid fa-suitcase-rolling"></i> View Packages</a>
+          <a href="https://wa.me/919220161414" class="btn-wh-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Expert</a>
+        </div>
+      </div>
+
+      <aside class="dest-aside">
+        <div class="dest-aside-head">
+          <div>
+            <h2>Yatra at a glance</h2>
+            <p>Your divine calling, fully organized.</p>
+          </div>
+        </div>
+        <div class="dest-stats">
+          <div class="dest-stat"><strong>6</strong><span>live packages</span></div>
+          <div class="dest-stat"><strong>2N-10N</strong><span>trip length</span></div>
+          <div class="dest-stat"><strong>₹7.5k</strong><span>starting price</span></div>
+          <div class="dest-stat"><strong>Guided</strong><span>Darshan</span></div>
+        </div>
+        <div class="dest-points">
+          <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Dedicated support for a hassle-free yatra.</span></div>
+          <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Premium stays and comfortable transfers.</span></div>
+          <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Helicopter options available upon request.</span></div>
+        </div>
+        <div class="dest-aside-contact">
+          <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> Call Now</a>
+          <a href="contact.html" class="btn-gold"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="dest-intro">
+    <div class="container">
+      <div class="dest-intro-card">
+        <div>
+          <div class="sec-tag tn">🛕 Destination Overview</div>
+          <h2 class="sec-title" style="margin-top:12px;">A deeply spiritual journey to Lord Shiva's shrines</h2>
+          <p>Embark on the Panch Kedar Yatra to seek blessings at all five of the holiest Shiva shrines in the Himalayas. Our packages provide comprehensive support, ensuring a safe, serene, and spiritually enriching experience amidst the majestic mountains.</p>
+        </div>
+        <div class="dest-mini-grid">
+          <div class="dest-mini-card"><h3>Stay Types</h3><p>Hotels, comfortable guesthouses, and premium camps.</p></div>
+          <div class="dest-mini-card"><h3>Modes of Travel</h3><p>AC coaches, private SUVs, and treks.</p></div>
+          <div class="dest-mini-card"><h3>Routes</h3><p>Covering Kedarnath, Tungnath, Rudranath, Madhyamaheshwar, and Kalpeshwar.</p></div>
+          <div class="dest-mini-card"><h3>Best For</h3><p>Devotees, spiritual seekers, and nature lovers.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+      <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All Packages</button>
+      <button class="filter-chip" onclick="filterPkgs('kedarnath',this)">🛕 Kedarnath</button>
+      <button class="filter-chip" onclick="filterPkgs('tungnath',this)">🏔️ Tungnath</button>
+      <button class="filter-chip" onclick="filterPkgs('madhyamaheshwar',this)">🌿 Madhyamaheshwar</button>
+      <button class="filter-chip" onclick="filterPkgs('rudranath',this)">🔱 Rudranath</button>
+      <button class="filter-chip" onclick="filterPkgs('kalpeshwar',this)">🕉️ Kalpeshwar</button>
+    </div>
+  </div>
+
+  <section id="packages" style="background:var(--light);">
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tr">🧳 Live Package Lineup</div>
+          <h2 class="sec-title">5 Kedar Tour Packages</h2>
+          <p class="sec-sub">Carefully curated itineraries for a hassle-free spiritual journey.</p>
+        </div>
+      </div>
+
+      <div class="pkg-grid">
+
+       <!-- Package 1: Kedarnath Panch Kedar Base Yatra -->
+<a href="/contact.html" class="pkg-card" data-pkg-cat="kedarnath">
+    <div class="pkg-img">
+        <img src="/img/destination/kedarnath.avif" alt="Kedarnath Yatra" loading="lazy">
+        <div class="pkg-off">₹3,000 OFF</div>
+        <div class="pkg-dur">4N / 5D</div>
+    </div>
+
+    <div class="pkg-body">
+        <div class="pkg-title">Kedarnath Dham Yatra</div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span>
+            <span><i class="fa-solid fa-users"></i> Religious Trek</span>
+        </div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span>
+            <span><i class="fa-solid fa-mountain"></i> Trek + Darshan</span>
+            <span><i class="fa-solid fa-hotel"></i> Hotel + Camp</span>
+        </div>
+
+        <div class="pkg-meta" style="margin-top:4px;">
+            <span class="pkg-tag">Darshan</span>
+            <span class="pkg-tag">Trek</span>
+            <span class="pkg-tag">Transfers</span>
+            <span class="pkg-tag">Meal</span>
+        </div>
+
+        <p class="pkg-desc">
+            Visit Kedarnath, the most important temple of Panch Kedar, nestled in the Himalayas. This journey includes scenic trekking, temple darshan, and spiritual experiences.
+        </p>
+
+        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span>
+            <span class="pkg-rev">(3,200 reviews)</span>
+        </div>
+
+        <div class="pkg-foot">
+            <div>
+                <div class="pkg-old">₹20,000</div>
+                <div class="pkg-new">₹17,000</div>
+                <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">Get Quote</div>
+        </div>
+    </div>
+</a>
+
+       <!-- Package 2: Tungnath & Chandrashila Trek -->
+<a href="/contact.html" class="pkg-card" data-pkg-cat="tungnath">
+    <div class="pkg-img">
+        <img src="/img/destination/tungnath.avif" alt="Tungnath Trek" loading="lazy">
+        <div class="pkg-off">₹2,000 OFF</div>
+        <div class="pkg-dur">2N / 3D</div>
+    </div>
+
+    <div class="pkg-body">
+        <div class="pkg-title">Tungnath & Chandrashila Trek</div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Chopta</span>
+            <span><i class="fa-solid fa-users"></i> Trek Tour</span>
+        </div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-star"></i> 4.8</span>
+            <span><i class="fa-solid fa-mountain"></i> Highest Shiva Temple</span>
+            <span><i class="fa-solid fa-hotel"></i> Camp Stay</span>
+        </div>
+
+        <div class="pkg-meta" style="margin-top:4px;">
+            <span class="pkg-tag">Trek</span>
+            <span class="pkg-tag">Camping</span>
+            <span class="pkg-tag">Darshan</span>
+            <span class="pkg-tag">Meal</span>
+        </div>
+
+        <p class="pkg-desc">
+            Trek to Tungnath, the highest Shiva temple in the world, followed by Chandrashila peak for stunning Himalayan views and spiritual experience.
+        </p>
+
+        <div style="display:flex;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span>
+            <span class="pkg-rev">(1,200 reviews)</span>
+        </div>
+
+        <div class="pkg-foot">
+            <div>
+                <div class="pkg-old">₹10,000</div>
+                <div class="pkg-new">₹8,000</div>
+                <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">Get Quote</div>
+        </div>
+    </div>
+</a>
+
+       <!-- Package 3: Madhyamaheshwar Trek -->
+<a href="/contact.html" class="pkg-card" data-pkg-cat="madhyamaheshwar">
+    <div class="pkg-img">
+        <img src="/img/destination/madhyamaheshwar.avif" alt="Madhyamaheshwar Trek" loading="lazy">
+        <div class="pkg-off">₹2,500 OFF</div>
+        <div class="pkg-dur">3N / 4D</div>
+    </div>
+
+    <div class="pkg-body">
+        <div class="pkg-title">Madhyamaheshwar Trek & Darshan</div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span>
+            <span><i class="fa-solid fa-users"></i> Trek Tour</span>
+        </div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-star"></i> 4.7</span>
+            <span><i class="fa-solid fa-mountain"></i> Himalayan Trek</span>
+            <span><i class="fa-solid fa-hotel"></i> Camp Stay</span>
+        </div>
+
+        <div class="pkg-meta" style="margin-top:4px;">
+            <span class="pkg-tag">Trek</span>
+            <span class="pkg-tag">Darshan</span>
+            <span class="pkg-tag">Transfers</span>
+            <span class="pkg-tag">Meal</span>
+        </div>
+
+        <p class="pkg-desc">
+            A peaceful Himalayan trek to Madhyamaheshwar temple, surrounded by lush valleys and snow peaks, offering a deep spiritual connection.
+        </p>
+
+        <div style="display:flex;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span>
+            <span class="pkg-rev">(900 reviews)</span>
+        </div>
+
+        <div class="pkg-foot">
+            <div>
+                <div class="pkg-old">₹14,000</div>
+                <div class="pkg-new">₹11,500</div>
+                <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">Get Quote</div>
+        </div>
+    </div>
+</a>
+
+<!-- Package 4: Rudranath Trek -->
+<a href="/contact.html" class="pkg-card" data-pkg-cat="rudranath">
+    <div class="pkg-img">
+        <img src="/img/destination/rudranath.avif" alt="Rudranath Trek" loading="lazy">
+        <div class="pkg-off">₹3,000 OFF</div>
+        <div class="pkg-dur">4N / 5D</div>
+    </div>
+
+    <div class="pkg-body">
+        <div class="pkg-title">Rudranath Trek & Darshan</div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span>
+            <span><i class="fa-solid fa-users"></i> Trek Tour</span>
+        </div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.7</span>
+            <span><i class="fa-solid fa-mountain"></i> High Altitude Trek</span>
+            <span><i class="fa-solid fa-hotel"></i> Camp Stay</span>
+        </div>
+
+        <div class="pkg-meta" style="margin-top:4px;">
+            <span class="pkg-tag">Trek</span>
+            <span class="pkg-tag">Darshan</span>
+            <span class="pkg-tag">Guide</span>
+            <span class="pkg-tag">Meal</span>
+        </div>
+
+        <p class="pkg-desc">
+            Trek through alpine meadows to reach Rudranath, one of the most remote Panch Kedar temples. Enjoy a serene Himalayan experience with guided trek and temple darshan.
+        </p>
+
+        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span>
+            <span class="pkg-rev">(820 reviews)</span>
+        </div>
+
+        <div class="pkg-foot">
+            <div>
+                <div class="pkg-old">₹18,000</div>
+                <div class="pkg-new">₹15,000</div>
+                <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">Get Quote</div>
+        </div>
+    </div>
+</a>
+
+<!-- Package 5: Kalpeshwar Yatra -->
+ <a href="/contact.html" class="pkg-card" data-pkg-cat="kalpeshwar">
+    <div class="pkg-img">
+        <img src="/img/destination/kalpeshwar.avif" alt="Kalpeshwar Yatra" loading="lazy">
+        <div class="pkg-off">₹1,500 OFF</div>
+        <div class="pkg-dur">2N / 3D</div>
+    </div>
+
+    <div class="pkg-body">
+        <div class="pkg-title">Kalpeshwar Jyotirlinga Darshan</div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span>
+            <span><i class="fa-solid fa-users"></i> Religious Tour</span>
+        </div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.6</span>
+            <span><i class="fa-solid fa-place-of-worship"></i> Cave Temple</span>
+            <span><i class="fa-solid fa-hotel"></i> Hotel Stay</span>
+        </div>
+
+        <div class="pkg-meta" style="margin-top:4px;">
+            <span class="pkg-tag">Darshan</span>
+            <span class="pkg-tag">Short Trek</span>
+            <span class="pkg-tag">Transfers</span>
+            <span class="pkg-tag">Meal</span>
+        </div>
+
+        <p class="pkg-desc">
+            Visit Kalpeshwar, the only Panch Kedar temple accessible throughout the year. Enjoy a short scenic trek, cave temple darshan, and peaceful Himalayan surroundings.
+        </p>
+
+        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span>
+            <span class="pkg-rev">(610 reviews)</span>
+        </div>
+
+        <div class="pkg-foot">
+            <div>
+                <div class="pkg-old">₹9,000</div>
+                <div class="pkg-new">₹7,500</div>
+                <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">Get Quote</div>
+        </div>
+    </div>
+</a>
+
+<!-- Package 6: Complete Panch Kedar Yatra -->
+ <a href="/contact.html" class="pkg-card" data-pkg-cat="kedarnath tungnath madhyamaheshwar rudranath kalpeshwar">
+    <div class="pkg-img">
+        <img src="/img/destination/panch-kedar.avif" alt="Complete Panch Kedar Yatra" loading="lazy">
+        <div class="pkg-off">₹8,000 OFF</div>
+        <div class="pkg-dur">10N / 11D</div>
+    </div>
+
+    <div class="pkg-body">
+        <div class="pkg-title">Complete Panch Kedar Yatra</div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span>
+            <span><i class="fa-solid fa-users"></i> Trek + Religious</span>
+        </div>
+
+        <div class="pkg-meta">
+            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span>
+            <span><i class="fa-solid fa-place-of-worship"></i> 5 Temples</span>
+            <span><i class="fa-solid fa-hotel"></i> Hotel + Camp</span>
+        </div>
+
+        <div class="pkg-meta" style="margin-top:4px;">
+            <span class="pkg-tag">Kedarnath</span>
+            <span class="pkg-tag">Tungnath</span>
+            <span class="pkg-tag">Rudranath</span>
+            <span class="pkg-tag">Meal</span>
+        </div>
+
+        <p class="pkg-desc">
+            Complete spiritual trek covering all five Panch Kedar temples including Kedarnath, Tungnath, Rudranath, Madhyamaheshwar, and Kalpeshwar with a well-planned Himalayan journey.
+        </p>
+
+        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+            <span class="pkg-stars">★★★★★</span>
+            <span class="pkg-rev">(1,450 reviews)</span>
+        </div>
+
+        <div class="pkg-foot">
+            <div>
+                <div class="pkg-old">₹55,000</div>
+                <div class="pkg-new">₹47,000</div>
+                <div class="pkg-per">per person</div>
+            </div>
+            <div class="pkg-cta">Get Quote</div>
+        </div>
+    </div>
+</a>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-tag tn">✦ Plan Better</div>
+          <h2 class="sec-title">Why Book Your 5 Kedar Yatra With Us</h2>
+          <p class="sec-sub">We handle everything so you can focus entirely on your devotion.</p>
+        </div>
+      </div>
+      <div class="kedar-guide">
+        <div class="kedar-guide-card">
+          <div class="kedar-guide-icon wi-n"><i class="fa-solid fa-bed"></i></div>
+          <h3>Comfortable Stays</h3>
+          <p>Handpicked accommodations near the shrines to ensure you get proper rest after a long day of trekking and travel.</p>
+        </div>
+        <div class="kedar-guide-card">
+          <div class="kedar-guide-icon wi-r"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3>Guided Assistance</h3>
+          <p>Our local guides and tour managers are with you every step of the way to assist with temple timings and logistics.</p>
+        </div>
+        <div class="kedar-guide-card">
+          <div class="kedar-guide-icon wi-g"><i class="fa-solid fa-helicopter"></i></div>
+          <h3>Special Arrangements</h3>
+          <p>From VIP darshans to helicopter bookings, we organize special services to cater to elderly family members.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-strip">
+    <h2>Ready for Your <span>Divine Journey?</span></h2>
+    <p>Contact our yatra specialists to customize your 5 Kedar Pilgrimage package.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Plan My Yatra</a>
+      <a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+      <a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="main.js"></script>
+  <script src="components.js"></script>
+</body>
+</html>
