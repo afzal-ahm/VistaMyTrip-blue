@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../../">
+    <title>Bada Char Dham Yatra Tour Packages | Vista My Trip</title>
+    <meta name="description"
+        content="Book Bada Char Dham Yatra Tour with Vista My Trip. Explore tailored pilgrimage packages.">
+    <link rel="icon" href="/img/VMT_logo_High_res_2.3_page-0001-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --dest-hero-bg: linear-gradient(135deg, #d35400 0%, #e67e22 50%, #f39c12 100%);
+            --dest-hero-img: url('/img/destination/dummy-1.jpeg');
+            --dest-overlay-grad: linear-gradient(to right, rgba(211, 84, 0, .92) 0%, rgba(230, 126, 34, .7) 50%, rgba(243, 156, 18, .2) 100%);
+            --dest-accent-grad: linear-gradient(90deg, var(--gold), #d35400, var(--gold));
+        }
+
+        .religious-guide {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .religious-guide-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px 22px;
+            transition: var(--ease);
+        }
+
+        .religious-guide-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--sh-sm);
+            border-color: var(--navy-light);
+        }
+
+        .religious-guide-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+            font-size: 18px;
+        }
+
+        .religious-guide-card h3 {
+            font-family: var(--fd);
+            font-size: 19px;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .religious-guide-card p {
+            font-size: 13.5px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 1080px) {
+            .religious-guide {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .religious-guide {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="announce">🛕 <strong>Sacred Journeys:</strong> Bada Char Dham Yatra &nbsp;·&nbsp; <a
+            href="contact.html">Get Quote →</a></div>
+    <nav class="site-nav" id="navbar-placeholder"></nav>
+    <div class="mob-drawer" id="mobDrawer" role="dialog" aria-modal="true"></div>
+
+    <section class="dest-hero">
+        <div class="dest-hero-bg"></div>
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-glow"></div>
+        <div class="dest-hero-inner">
+            <div class="dest-copy">
+                <div class="dest-breadcrumb">
+                    <a href="/">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="religious-tour.html">Religious Tours</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Bada Char Dham Yatra</span>
+                </div>
+                <div class="dest-pill"><span></span> Spiritual Collection</div>
+                <h1 class="dest-title">Bada Char Dham Yatra | The Supreme Pilgrimage</h1>
+                <p class="dest-sub">Embark on the ultimate spiritual journey across India covering the four sacred
+                    abodes established by Adi Shankaracharya: Badrinath, Dwarka, Puri, and Rameswaram.</p>
+                <div class="dest-chips">
+                    <div class="dest-chip"><i class="fa-solid fa-om"></i> VIP Darshan</div>
+                    <div class="dest-chip"><i class="fa-solid fa-hotel"></i> Premium Stays</div>
+                    <div class="dest-chip"><i class="fa-solid fa-plane"></i> Flight/Train Transfers</div>
+                </div>
+                <div class="dest-actions">
+                    <a href="#individual-pkgs" class="btn-red"><i class="fa-solid fa-suitcase-rolling"></i> View
+                        Packages</a>
+                    <a href="https://wa.me/919220161414" class="btn-wh-outline" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i> WhatsApp Expert</a>
+                </div>
+            </div>
+
+            <aside class="dest-aside">
+                <div class="dest-aside-head">
+                    <div>
+                        <h2>Yatra at a glance</h2>
+                        <p>Experience deep cultural heritage and spiritual energy.</p>
+                    </div>
+                </div>
+                <div class="dest-stats">
+                    <div class="dest-stat"><strong>4</strong><span>Sacred Dhams</span></div>
+                    <div class="dest-stat"><strong>4N-15N</strong><span>trip length range</span></div>
+                    <div class="dest-stat"><strong>₹14k</strong><span>starting per person price</span></div>
+                    <div class="dest-stat"><strong>All India</strong><span>destinations</span></div>
+                </div>
+                <div class="dest-points">
+                    <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Handpicked clean, comfortable
+                            hotels.</span></div>
+                    <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>Experienced local coordinators
+                            for darshan.</span></div>
+                    <div class="dest-point"><i class="fa-solid fa-circle-check"></i><span>24/7 dedicated support
+                            team.</span></div>
+                </div>
+                <div class="dest-aside-contact">
+                    <a href="tel:+919220161414" class="btn-navy"><i class="fa-solid fa-phone"></i> Call Now</a>
+                    <a href="contact.html" class="btn-gold"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section class="dest-intro">
+        <div class="container">
+            <div class="dest-intro-card">
+                <div>
+                    <div class="sec-tag tn">🛕 Overview</div>
+                    <h2 class="sec-title" style="margin-top:12px;">A spiritually enriching pilgrimage</h2>
+                    <p>The Bada Char Dham Yatra is considered the most sacred pilgrimage in Hinduism, connecting the
+                        four
+                        corners of India. It comprises Badrinath in the North, Dwarka in the West, Jagannath Puri in the
+                        East,
+                        and Rameswaram in the South. This journey offers devotees absolute spiritual liberation and
+                        divine blessings.</p>
+                </div>
+                <div class="dest-mini-grid">
+                    <div class="dest-mini-card">
+                        <h3>Main Destinations</h3>
+                        <p>Badrinath (Uttarakhand), Dwarka (Gujarat), Puri (Odisha), Rameswaram (Tamil Nadu).</p>
+                    </div>
+                    <div class="dest-mini-card">
+                        <h3>Main Draw</h3>
+                        <p>Divine blessings, ancient temple architecture, and spiritual awakening.</p>
+                    </div>
+                    <div class="dest-mini-card">
+                        <h3>Best For</h3>
+                        <p>Families, senior citizens, and devotees of Lord Vishnu and Lord Shiva.</p>
+                    </div>
+                    <div class="dest-mini-card">
+                        <h3>Pace</h3>
+                        <p>Relaxed and deeply spiritual, tailored to your comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="filter-bar">
+        <div class="filter-bar-inner" id="bar-1">
+            <button class="filter-chip on" onclick="filterSectionPkgs('all',this,'grid-1','bar-1')">🌍 All
+                Packages</button>
+            
+            <button class="filter-chip" onclick="filterSectionPkgs('badrinath',this,'grid-1','bar-1')">📍
+                Badrinath</button>
+            <button class="filter-chip" onclick="filterSectionPkgs('dwarka',this,'grid-1','bar-1')">📍 Dwarka</button>
+            <button class="filter-chip" onclick="filterSectionPkgs('puri',this,'grid-1','bar-1')">📍 Puri</button>
+            <button class="filter-chip" onclick="filterSectionPkgs('rameswaram',this,'grid-1','bar-1')">📍
+                Rameswaram</button>
+        </div>
+    </div>
+
+    <section id="individual-pkgs" style="background:var(--light);">
+        <div class="container">
+            <div class="sec-hd">
+                <div>
+                    <div class="sec-tag tr">🙏 Sacred Dhams</div>
+                    <h2 class="sec-title">Bada Char Dham Packages</h2>
+                    <p class="sec-sub">Perfect for extensive spiritual journeys across India.</p>
+                </div>
+            </div>
+            <div class="pkg-grid" id="grid-1">
+
+                <!-- Package 1: Rameswaram Dham -->
+                <a href="/contact.html" class="pkg-card" data-pkg-cat="char-dham rameswaram">
+                    <div class="pkg-img">
+                        <img src="/img/destination/rameswaram.avif" alt="Rameswaram Dham" loading="lazy">
+                        <div class="pkg-off">₹2,500 OFF</div>
+                        <div class="pkg-dur">3N / 4D</div>
+                    </div>
+
+                    <div class="pkg-body">
+                        <div class="pkg-title">Rameswaram Dham Yatra</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Tamil Nadu</span>
+                            <span><i class="fa-solid fa-users"></i> Religious Tour</span>
+                        </div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span>
+                            <span><i class="fa-solid fa-place-of-worship"></i> Temple Darshan</span>
+                            <span><i class="fa-solid fa-hotel"></i> Hotel Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top:4px;">
+                            <span class="pkg-tag">Darshan</span>
+                            <span class="pkg-tag">Temple Visit</span>
+                            <span class="pkg-tag">Transfers</span>
+                            <span class="pkg-tag">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc">
+                            Visit the sacred Rameswaram Dham, one of the four Char Dhams of India. Experience divine
+                            darshan at Ramanathaswamy Temple and explore spiritual sites near the Indian Ocean.
+                        </p>
+
+                        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+                            <span class="pkg-stars">★★★★★</span>
+                            <span class="pkg-rev">(1,420 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹32,500</div>
+                                <div class="pkg-new">₹30,000</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">Get Quote</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Package 2: Dwarkadhish Dham -->
+                <a href="/contact.html" class="pkg-card" data-pkg-cat="char-dham dwarka">
+                    <div class="pkg-img">
+                        <img src="/img/destination/dwarka.avif" alt="Dwarkadhish Dham" loading="lazy">
+                        <div class="pkg-off">₹3,000 OFF</div>
+                        <div class="pkg-dur">2N / 3D</div>
+                    </div>
+
+                    <div class="pkg-body">
+                        <div class="pkg-title">Dwarkadhish Dham Yatra</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Gujarat</span>
+                            <span><i class="fa-solid fa-users"></i> Religious Tour</span>
+                        </div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.8</span>
+                            <span><i class="fa-solid fa-place-of-worship"></i> Krishna Temple</span>
+                            <span><i class="fa-solid fa-hotel"></i> Hotel Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top:4px;">
+                            <span class="pkg-tag">Darshan</span>
+                            <span class="pkg-tag">Temple Visit</span>
+                            <span class="pkg-tag">Transfers</span>
+                            <span class="pkg-tag">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc">
+                            Explore Dwarkadhish Temple, the sacred kingdom of Lord Krishna. This Char Dham journey
+                            includes temple darshan and coastal spiritual experiences in Gujarat.
+                        </p>
+
+                        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+                            <span class="pkg-stars">★★★★★</span>
+                            <span class="pkg-rev">(1,300 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹17,500</div>
+                                <div class="pkg-new">₹14,500</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">Get Quote</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Package 3: Jagannath Puri Dham -->
+                <a href="/contact.html" class="pkg-card" data-pkg-cat="char-dham puri">
+                    <div class="pkg-img">
+                        <img src="/img/destination/puri.avif" alt="Jagannath Puri" loading="lazy">
+                        <div class="pkg-off">₹2,000 OFF</div>
+                        <div class="pkg-dur">2N / 3D</div>
+                    </div>
+
+                    <div class="pkg-body">
+                        <div class="pkg-title">Jagannath Puri Dham Yatra</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Odisha</span>
+                            <span><i class="fa-solid fa-users"></i> Religious Tour</span>
+                        </div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.7</span>
+                            <span><i class="fa-solid fa-place-of-worship"></i> Jagannath Temple</span>
+                            <span><i class="fa-solid fa-hotel"></i> Hotel Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top:4px;">
+                            <span class="pkg-tag">Darshan</span>
+                            <span class="pkg-tag">Temple Visit</span>
+                            <span class="pkg-tag">Transfers</span>
+                            <span class="pkg-tag">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc">
+                            Visit Jagannath Puri, one of the holiest Char Dham sites in India. Experience divine
+                            darshan, beachside temples, and rich spiritual traditions of Odisha.
+                        </p>
+
+                        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+                            <span class="pkg-stars">★★★★★</span>
+                            <span class="pkg-rev">(1,150 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹27,000</div>
+                                <div class="pkg-new">₹25,000</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">Get Quote</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 4: Badrinath Dham -->
+                <a href="/contact.html" class="pkg-card" data-pkg-cat="char-dham badrinath">
+                    <div class="pkg-img">
+                        <img src="/img/destination/badrinath.avif" alt="Badrinath Dham" loading="lazy">
+                        <div class="pkg-off">₹3,000 OFF</div>
+                        <div class="pkg-dur">3N / 4D</div>
+                    </div>
+
+                    <div class="pkg-body">
+                        <div class="pkg-title">Badrinath Dham Yatra</div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Uttarakhand</span>
+                            <span><i class="fa-solid fa-users"></i> Religious Tour</span>
+                        </div>
+
+                        <div class="pkg-meta">
+                            <span><i class="fa-solid fa-star" style="color:var(--gold-dark);"></i> 4.9</span>
+                            <span><i class="fa-solid fa-place-of-worship"></i> Vishnu Temple</span>
+                            <span><i class="fa-solid fa-hotel"></i> Hotel Stay</span>
+                        </div>
+
+                        <div class="pkg-meta" style="margin-top:4px;">
+                            <span class="pkg-tag">Darshan</span>
+                            <span class="pkg-tag">Temple Visit</span>
+                            <span class="pkg-tag">Transfers</span>
+                            <span class="pkg-tag">Meal</span>
+                        </div>
+
+                        <p class="pkg-desc">
+                            Travel to Badrinath Dham, the sacred temple of Lord Vishnu nestled in the Himalayas. Enjoy
+                            spiritual serenity, temple darshan, and scenic mountain views.
+                        </p>
+
+                        <div style="display:flex;align-items:center;gap:5px;margin-top:14px;">
+                            <span class="pkg-stars">★★★★★</span>
+                            <span class="pkg-rev">(1,950 reviews)</span>
+                        </div>
+
+                        <div class="pkg-foot">
+                            <div>
+                                <div class="pkg-old">₹30,000</div>
+                                <div class="pkg-new">₹27,000</div>
+                                <div class="pkg-per">per person</div>
+                            </div>
+                            <div class="pkg-cta">Get Quote</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section style="background:var(--light);">
+        <div class="container">
+            <div class="sec-hd">
+                <div>
+                    <div class="sec-tag tn">✦ Plan Better</div>
+                    <h2 class="sec-title">What makes Pilgrimage packages easier to choose here</h2>
+                    <p class="sec-sub">We understand that a spiritual journey requires comfort, precision, and peace of
+                        mind.</p>
+                </div>
+            </div>
+            <div class="religious-guide">
+                <div class="religious-guide-card">
+                    <div class="religious-guide-icon wi-n"><i class="fa-solid fa-bed"></i></div>
+                    <h3>Comfortable Stays</h3>
+                    <p>We handpick clean, comfortable hotels and premium Dharamshalas located close to the shrines to
+                        minimize walking distance for elderly family members.</p>
+                </div>
+                <div class="religious-guide-card">
+                    <div class="religious-guide-icon wi-r"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3>Guided Darshans</h3>
+                    <p>Our experienced local coordinators assist you with temple timings, VIP darshan passes (where
+                        applicable), and ensure a smooth spiritual experience.</p>
+                </div>
+                <div class="religious-guide-card">
+                    <div class="religious-guide-icon wi-g"><i class="fa-solid fa-headset"></i></div>
+                    <h3>24/7 Yatra Support</h3>
+                    <p>From the moment your journey begins until you return home safely, our dedicated support team is
+                        available round-the-clock for any assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-strip">
+        <h2>Want this as your <span>spiritual yatra?</span></h2>
+        <p>We can customize stay category, room choice and premium inclusions around this sacred route.</p>
+        <div class="cta-btns"><a href="contact.html" class="cta-gold"><i class="fa-solid fa-paper-plane"></i> Customize
+                This Package</a><a href="tel:+919220161414" class="cta-wh"><i class="fa-solid fa-phone"></i> Call Us
+                Now</a><a href="https://wa.me/919220161414" class="cta-wh cta-wa" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="main.js"></script>
+    <script src="components.js"></script>
+    <script>
+        function filterSectionPkgs(cat, btn, gridId, barId) {
+            document.querySelectorAll('#' + barId + ' .filter-chip').forEach(function (b) { b.classList.remove('on'); });
+            if (btn) btn.classList.add('on');
+            document.querySelectorAll('#' + gridId + ' .pkg-card').forEach(function (card) {
+                if (cat === 'all') {
+                    card.style.display = '';
+                } else {
+                    var cats = (card.dataset.pkgCat || '').split(' ');
+                    card.style.display = cats.includes(cat) ? '' : 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
