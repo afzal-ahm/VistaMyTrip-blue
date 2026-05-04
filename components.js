@@ -20,7 +20,7 @@ const VISTA_NAVBAR = `
       <a href="/contact.html"                       class="nav-link">Contact</a>
     </div>
     <div class="nav-end">
-      <a href="/tel:+917830913555" class="nav-phone"><i class="fa-solid fa-phone"></i> +91 78309 13555</a>
+      <a href="tel:+917830913555" class="nav-phone"><i class="fa-solid fa-phone"></i> +91 78309 13555</a>
       <a href="/contact.html" class="btn-red"><i class="fa-solid fa-paper-plane"></i> Free Quote</a>
     </div>
     <button class="burger-btn" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
@@ -49,7 +49,7 @@ const VISTA_MOB_NAVBAR = `
       <a href="/contact.html"                       class="mob-panel-link"><i class="fa-solid fa-envelope"></i> Contact</a>
     </nav>
     <div class="mob-panel-cta">
-      <a href="/tel:+917830913555" class="btn-navy"><i class="fa-solid fa-phone"></i> +91-78-30-91-35-55</a>
+      <a href="tel:+917830913555" class="btn-navy"><i class="fa-solid fa-phone"></i> +91-78-30-91-35-55</a>
       <a href="/contact.html" class="btn-red"><i class="fa-solid fa-paper-plane"></i> Get Free Quote</a>
     </div>
   </div>
@@ -68,12 +68,12 @@ const VISTA_FOOTER = `
         <div class="ft-tagline">Premium Quality, Perfect Journey....</div>
         <p>We craft unforgettable journeys across India and the world — tailored to your dreams, delivered with care.</p>
         <div class="socials">
-          <a href="/https:/www.facebook.com/vistamytrips"  class="soc" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="/https:/www.instagram.com/vistamytrip"  class="soc" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="/https:/www.youtube.com/@VistaMyTrip"   class="soc" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-          <a href="/https:/x.com/vistamytrip"              class="soc" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="/https:/www.linkedin.com/company/vistamytrip" class="soc" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="/https:/wa.me/917830913555"             class="soc wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/vistamytrips"  class="soc" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/vistamytrip"  class="soc" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@VistaMyTrip"   class="soc" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://x.com/vistamytrip"              class="soc" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/vistamytrip" class="soc" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/917830913555"             class="soc wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
       <div class="ft-col">
@@ -116,22 +116,22 @@ const VISTA_FOOTER = `
 
   <div class="c-item">
     <i class="fa-solid fa-phone"></i>
-    <a href="/tel:+917830913555">+91 78309 13555</a>
+    <a href="tel:+917830913555">+91 78309 13555</a>
   </div>
 
   <div class="c-item">
     <i class="fa-brands fa-whatsapp"></i>
-    <a href="/https:/wa.me/917830913555" target="_blank">+91 78309 13555</a>
+    <a href="https://wa.me/917830913555" target="_blank">+91 78309 13555</a>
   </div>
 
   <div class="c-item">
     <i class="fa-solid fa-envelope"></i>
-    <a href="/mailto:info@vistamytrip.com">info@vistamytrip.com</a>
+    <a href="mailto:info@vistamytrip.com">info@vistamytrip.com</a>
   </div>
 
   <div class="c-item">
     <i class="fa-solid fa-location-dot"></i>
-    <a href="/https:/maps.app.goo.gl/pwEzBjkqj5YYyT7AA" target="_blank">
+    <a href="https://maps.app.goo.gl/pwEzBjkqj5YYyT7AA" target="_blank">
       Ground floor, Puri 81 Business Hub, D-015, High Street, Sector 81, Faridabad, Haryana 121007
     </a>
   </div>
@@ -147,7 +147,7 @@ const VISTA_FOOTER = `
       </div>
     </div>
     <div class="ft-bottom">
-      <p>&copy; ${new Date().getFullYear()} Vista My Trip Pvt. Ltd. All rights reserved. | Developed &amp; Managed by <a href="/https:/lso360seoplugin.com/" target="_blank" rel="noopener noreferrer"><u>Advertising India</u></a></p>
+      <p>&copy; ${new Date().getFullYear()} Vista My Trip Pvt. Ltd. All rights reserved. | Developed &amp; Managed by <a href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer"><u>Advertising India</u></a></p>
       <div class="ft-blinks">
         <a href="/privacy-policy.html">Privacy Policy</a>
         <a href="/terms-and-conditions.html">Terms</a>
@@ -157,7 +157,7 @@ const VISTA_FOOTER = `
   </div>
 </footer>
 
-<a href="/https:/wa.me/917830913555" class="wa-fab" target="_blank" title="Chat on WhatsApp">
+<a href="https://wa.me/917830913555" class="wa-fab" target="_blank" title="Chat on WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
