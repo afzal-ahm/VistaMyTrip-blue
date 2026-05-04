@@ -221,6 +221,101 @@
   }
   window.closeInquiryModal = closeInquiryModal;
 
+  /* ── Auto-Upgrade All Package Cards ── */
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.pkg-card').forEach(function(card) {
+      var titleEl = card.querySelector('.pkg-title');
+      var pkgName = titleEl ? titleEl.textContent.trim() : 'Holiday Package';
+
+      // 1. Prevent navigation to contact.html and open modal instead
+      var href = card.getAttribute('href');
+      var isContactRedirect = href && href.endsWith('contact.html');
+      if (isContactRedirect) {
+        card.setAttribute('href', '#');
+        card.addEventListener('click', function(e) {
+          // Only trigger if not clicking a button directly
+          if (!e.target.closest('button')) {
+            e.preventDefault();
+            openInquiryModal(pkgName);
+          }
+        });
+      }
+
+      // 2. Inject 'Book Now' button if missing, or rename 'Enquire'
+      var foot = card.querySelector('.pkg-foot');
+      if (foot) {
+        var cta = foot.querySelector('.pkg-cta');
+        var actions = foot.querySelector('.pkg-actions');
+        
+        if (!actions && cta) {
+          // Skip auto-upgrade for category cards that use 'View All Packages'
+          if (cta.textContent.replace(/\s+/g, ' ').trim().toLowerCase() === 'view all packages') {
+            return;
+          }
+
+          var actionsDiv = document.createElement('div');
+          actionsDiv.className = 'pkg-actions';
+          
+          var btn = document.createElement('button');
+          btn.className = 'pkg-enq';
+          btn.textContent = 'Book Now';
+          btn.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            openInquiryModal(pkgName);
+          };
+          
+          if (isContactRedirect || cta.textContent.trim() === 'Get Quote') {
+            cta.parentNode.replaceChild(actionsDiv, cta);
+            actionsDiv.appendChild(btn);
+          } else {
+            cta.textContent = 'Details';
+            cta.parentNode.insertBefore(actionsDiv, cta);
+            actionsDiv.appendChild(btn);
+            actionsDiv.appendChild(cta);
+          }
+        } else if (actions) {
+          var existingBtn = actions.querySelector('.pkg-enq');
+          if (existingBtn && (existingBtn.textContent.trim() === 'Enquire' || existingBtn.textContent.trim() === 'Get Quote' || existingBtn.textContent.trim() === 'Book Now')) {
+            existingBtn.textContent = 'Book Now';
+          }
+        }
+      }
+    });
+
+    /* ── Auto-Upgrade Global Contact Links to Modal ── */
+    var contextName = 'Holiday Package';
+    var detailTitle = document.querySelector('.detail-title');
+    var destTitle = document.querySelector('.dest-title');
+    
+    if (detailTitle) {
+      contextName = detailTitle.textContent.trim();
+    } else if (destTitle) {
+      contextName = destTitle.textContent.trim();
+    }
+
+    document.querySelectorAll('a[href*="contact.html"]').forEach(function(link) {
+      if (link.classList.contains('pkg-card')) return; // Already handled above
+      if (link.closest('.nav-links') || link.closest('.mob-panel-links') || link.closest('.ft-links') || link.closest('.ft-blinks')) return;
+      
+      link.setAttribute('href', '#');
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        openInquiryModal(contextName);
+      });
+      
+      var text = link.textContent.trim().toLowerCase();
+      var shouldRename = ['get quote', 'itinerary', 'customize', 'plan '].some(function(t) { return text.includes(t); });
+      
+      if (shouldRename) {
+        var hasArrow = text.includes('→');
+        var icon = link.querySelector('i');
+        link.textContent = hasArrow ? ' Enquire Now →' : ' Enquire Now';
+        if (icon) link.prepend(icon);
+      }
+    });
+  });
+
 })();
 
 function scrollThemes(direction) {

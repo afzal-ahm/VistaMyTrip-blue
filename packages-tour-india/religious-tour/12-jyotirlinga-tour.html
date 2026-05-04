@@ -181,22 +181,22 @@
     </section>
 
     <div class="filter-bar">
-        <div class="filter-bar-inner" id="bar-1">
-            <button class="filter-chip on" onclick="filterSectionPkgs('all',this,'grid-1','bar-1')">🌍 All
+        <div class="filter-bar-inner">
+            <button class="filter-chip on" onclick="filterPkgs('all',this)">🌍 All
                 Packages</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('gujarat',this,'grid-1','bar-1')">📍 Gujarat</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('maharashtra',this,'grid-1','bar-1')">📍
+            <button class="filter-chip" onclick="filterPkgs('gujarat',this)">📍 Gujarat</button>
+            <button class="filter-chip" onclick="filterPkgs('maharashtra',this)">📍
                 Maharashtra</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('mp',this,'grid-1','bar-1')">📍 Madhya
+            <button class="filter-chip" onclick="filterPkgs('mp',this)">📍 Madhya
                 Pradesh</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('uttarakhand',this,'grid-1','bar-1')">📍
+            <button class="filter-chip" onclick="filterPkgs('uttarakhand',this)">📍
                 Uttarakhand</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('up',this,'grid-1','bar-1')">📍 Uttar
+            <button class="filter-chip" onclick="filterPkgs('up',this)">📍 Uttar
                 Pradesh</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('ap',this,'grid-1','bar-1')">📍 Andhra
+            <button class="filter-chip" onclick="filterPkgs('ap',this)">📍 Andhra
                 Pradesh</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('tn',this,'grid-1','bar-1')">📍 Tamil Nadu</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('jharkhand',this,'grid-1','bar-1')">📍
+            <button class="filter-chip" onclick="filterPkgs('tn',this)">📍 Tamil Nadu</button>
+            <button class="filter-chip" onclick="filterPkgs('jharkhand',this)">📍
                 Jharkhand</button>
         </div>
     </div>
@@ -210,7 +210,7 @@
                     <p class="sec-sub">Perfect for quick, dedicated visits to specific shrines.</p>
                 </div>
             </div>
-            <div class="pkg-grid" id="grid-1">
+            <div class="pkg-grid">
 
                 <!-- Package 1: Somnath Jyotirlinga -->
                 <a href="/contact.html" class="pkg-card" data-pkg-cat="gujarat">
@@ -835,20 +835,6 @@
         </div>
     </section>
 
-    <!-- <div class="filter-bar">
-        <div class="filter-bar-inner" id="bar-2">
-            <button class="filter-chip on" onclick="filterSectionPkgs('all',this,'grid-2','bar-2')">🌍 All
-                Packages</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('gujarat',this,'grid-2','bar-2')">📍 Gujarat</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('maharashtra',this,'grid-2','bar-2')">📍 Maharashtra</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('mp',this,'grid-2','bar-2')">📍 Madhya Pradesh</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('uttarakhand',this,'grid-2','bar-2')">📍 Uttarakhand</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('up',this,'grid-2','bar-2')">📍 Uttar Pradesh</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('ap',this,'grid-2','bar-2')">📍 Andhra Pradesh</button>
-            <button class="filter-chip" onclick="filterSectionPkgs('tn',this,'grid-2','bar-2')">📍 Tamil Nadu</button>
-        </div>
-    </div> -->
-
     <section id="group-pkgs" style="padding-top: 20px;">
         <div class="container">
             <div class="sec-hd">
@@ -859,7 +845,7 @@
                         trip.</p>
                 </div>
             </div>
-            <div class="pkg-grid" id="grid-2">
+            <div class="pkg-grid">
 
                 <!-- Group 1: Maharashtra Jyotirlinga Group Package (All 3) -->
                 <a href="/contact.html" class="pkg-card" data-pkg-cat="shiva jyotirlinga maharashtra">
@@ -1117,20 +1103,6 @@
     <div id="footer-placeholder"></div>
     <script src="main.js"></script>
     <script src="components.js"></script>
-    <script>
-        function filterSectionPkgs(cat, btn, gridId, barId) {
-            document.querySelectorAll('#' + barId + ' .filter-chip').forEach(function (b) { b.classList.remove('on'); });
-            if (btn) btn.classList.add('on');
-            document.querySelectorAll('#' + gridId + ' .pkg-card').forEach(function (card) {
-                if (cat === 'all') {
-                    card.style.display = '';
-                } else {
-                    var cats = (card.dataset.pkgCat || '').split(' ');
-                    card.style.display = cats.includes(cat) ? '' : 'none';
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
