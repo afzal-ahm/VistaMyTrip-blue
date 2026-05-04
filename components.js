@@ -160,6 +160,74 @@ const VISTA_FOOTER = `
 <a href="/https:/wa.me/917830913555" class="wa-fab" target="_blank" title="Chat on WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
+
+<!-- INQUIRY POPUP MODAL -->
+<div class="inquiry-modal" id="inquiryModal">
+  <div class="inquiry-modal-overlay" onclick="closeInquiryModal()"></div>
+  <div class="inquiry-modal-content contact-form-card">
+    <button class="inquiry-close-btn" onclick="closeInquiryModal()"><i class="fa-solid fa-xmark"></i></button>
+    
+    <h3>Get a Free Quote</h3>
+    <div class="fc-sub">Inquiring about: <strong id="modalPackageNameText" style="color: var(--navy);">Package Name</strong></div>
+    
+    <form id="inquiryForm">
+      <input type="hidden" name="package_name" id="modalPackageNameInput" value="">
+      
+      <div class="cf-row">
+        <div class="cf-group">
+          <label>Full Name*</label>
+          <input type="text" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="cf-group">
+          <label>Mobile Number*</label>
+          <input type="tel" name="phone" placeholder="Mobile Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number.">
+        </div>
+      </div>
+      
+      <div class="cf-group">
+        <label>Email Address*</label>
+        <input type="email" name="email" placeholder="your@email.com" required>
+      </div>
+      
+      <div class="cf-row">
+        <div class="cf-group">
+          <label>Travellers*</label>
+          <select name="travellers" required>
+            <option value="">Select</option>
+            <option>Solo</option>
+            <option>2 People</option>
+            <option>3–5 People</option>
+            <option>6–10 People</option>
+            <option>10+ People</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label>Travel Date*</label>
+          <input type="date" name="travel_date" required>
+        </div>
+      </div>
+      
+      <div class="cf-group">
+        <label>Special Requests (Optional)</label>
+        <textarea name="message" placeholder="Any specific requirements or budget constraints?" style="min-height: 80px;"></textarea>
+      </div>
+      
+      <button type="submit" class="cf-submit" id="inquirySubmitBtn">
+        <i class="fa-solid fa-paper-plane"></i> Send Enquiry
+      </button>
+      
+      <div class="cf-note" style="margin-top: 15px;">
+        <i class="fa-solid fa-clock"></i> We reply to every enquiry within 2 business hours.
+      </div>
+    </form>
+    
+    <div id="inquirySuccessMsg" style="display:none; text-align:center; padding: 40px 10px 20px;">
+      <div style="font-size: 54px; color: #25D366; margin-bottom: 15px;"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 style="color: var(--navy); font-size: 22px; margin-bottom: 8px;">Thank You!</h3>
+      <p style="color: var(--muted); font-size: 14.5px; line-height: 1.6;">Your enquiry has been successfully received. Our travel experts will get in touch with you shortly.</p>
+    </div>
+  </div>
+</div>
 `;
 
 // ── INJECT & ACTIVATE ────────────────

@@ -938,6 +938,13 @@ section { padding:72px 24px; }
   border-radius:var(--r-sm); font-size:12.5px; font-weight:700; transition:var(--ease);
 }
 .pkg-card:hover .pkg-cta { background:var(--navy); color:white; }
+.pkg-enq {
+  background:var(--red); color:white; padding:8px 15px;
+  border-radius:var(--r-sm); font-size:12.5px; font-weight:700; transition:var(--ease);
+  border: none; cursor: pointer; font-family: inherit;
+}
+.pkg-card:hover .pkg-enq { background:var(--red-dark); }
+.pkg-actions { display: flex; gap: 6px; }
 
 /* ── WEEKEND CARDS ── */
 .wknd-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:20px; }
@@ -1172,6 +1179,65 @@ footer { background:var(--navy-dark); color:rgba(255,255,255,.7); padding:60px 2
 
   .stats-inner { grid-template-columns:repeat(2,1fr); }
   .sf-row { grid-template-columns:1fr; }
+}
+
+/* ── INQUIRY POPUP MODAL ── */
+.inquiry-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.inquiry-modal.show {
+  visibility: visible;
+  opacity: 1;
+}
+.inquiry-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 30, 61, 0.7);
+  backdrop-filter: blur(4px);
+}
+.inquiry-modal-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+.inquiry-modal.show .inquiry-modal-content {
+  transform: translateY(0);
+}
+.inquiry-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--light);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--navy);
+  cursor: pointer;
+  transition: var(--ease);
+}
+.inquiry-close-btn:hover {
+  background: var(--red-light);
+  color: var(--red);
 }
 
 /* ── 600px — Mobile ── */

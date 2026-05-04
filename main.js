@@ -151,6 +151,75 @@
 
     renderGallery(0);
   });
+  
+  /* ── Popup Modal Logic ── */
+  function openInquiryModal(packageName) {
+    var modal = document.getElementById('inquiryModal');
+    var nameText = document.getElementById('modalPackageNameText');
+    var nameInput = document.getElementById('modalPackageNameInput');
+    
+    if (modal && nameText && nameInput) {
+      nameText.textContent = packageName || "Custom Holiday Package";
+      nameInput.value = packageName || "Custom Holiday Package";
+      
+      // Reset form view in case it was previously submitted
+      document.getElementById('inquiryForm').style.display = 'block';
+      document.getElementById('inquirySuccessMsg').style.display = 'none';
+      
+      modal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  window.openInquiryModal = openInquiryModal;
+
+  // Handle Form Submission to Google Sheets
+  document.addEventListener('submit', function(e) {
+    if (e.target && (e.target.id === 'inquiryForm' || e.target.id === 'contactForm')) {
+      e.preventDefault();
+      
+      var form = e.target;
+      var isContact = form.id === 'contactForm';
+      var btnId = isContact ? 'contactSubmitBtn' : 'inquirySubmitBtn';
+      var msgId = isContact ? 'contactSuccessMsg' : 'inquirySuccessMsg';
+      var noteId = isContact ? 'contactNote' : null;
+      
+      var btn = document.getElementById(btnId);
+      var originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+      btn.disabled = true;
+      
+      var formData = new FormData(form);
+      // Replace this URL with your actual Google Apps Script Web App URL
+      var googleScriptURL = 'https://script.google.com/macros/s/AKfycbyJo9hEin1APxTsr2K0RYe_e2cjHr_aasaX1kaaNZ3I3BDIT9cyt7yv1y_VS4EEJV6B/exec';
+      
+      fetch(googleScriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+        .then(response => {
+          form.style.display = 'none';
+          if (noteId && document.getElementById(noteId)) document.getElementById(noteId).style.display = 'none';
+          
+          var successMsg = document.getElementById(msgId);
+          if (successMsg) successMsg.style.display = 'block';
+          
+          form.reset();
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+        })
+        .catch(error => {
+          alert('Something went wrong. Please try again.');
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+        });
+    }
+  });
+
+  function closeInquiryModal() {
+    var modal = document.getElementById('inquiryModal');
+    if (modal) {
+      modal.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  }
+  window.closeInquiryModal = closeInquiryModal;
 
 })();
 
