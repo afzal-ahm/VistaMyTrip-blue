@@ -190,7 +190,7 @@
       
       var formData = new FormData(form);
       // Replace this URL with your actual Google Apps Script Web App URL
-      var googleScriptURL = 'https://script.google.com/macros/s/AKfycbyJo9hEin1APxTsr2K0RYe_e2cjHr_aasaX1kaaNZ3I3BDIT9cyt7yv1y_VS4EEJV6B/exec';
+      var googleScriptURL = 'https://script.google.com/macros/s/AKfycbxXQsKLwe2sp29zQl8B-iq9NFsb-LUiEo-tmgJ5F3bXkHVBekadXjgENgxvZpJsyyR6zw/exec';
       
       fetch(googleScriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
         .then(response => {
